@@ -1,0 +1,25 @@
+#!/usr/bin/perl -w
+#
+# Generate a VW training-set from our raw data CSV
+#
+my $prev_weight;
+
+my $header = <>;
+while(<>) {
+    next if (/^#/);
+
+    chomp;
+    my ($date, $weight, $food) = split(',');
+
+    # Only generate a training set if everything is defined and
+    # we have a prior day weight to compare to
+    if ($weight =~ /\d/ &&
+            defined $prev_weight && $prev_weight =~ /\d/ &&
+                length($food) > 10) {
+
+        my $gain = sprintf('%.2f', $weight - $prev_weight);
+        print "$gain | $food\n";
+    }
+    $prev_weight = $weight;
+}
+
