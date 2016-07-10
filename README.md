@@ -140,7 +140,7 @@ Sleep time is our fasting time. The time we could potentially lose weight, provi
 
 You may note that in the top chart there's a notable acceleration in the rate of weight loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the causes of weight gain and loss.
 
-Extending the fasting time was one major accelerator: I did that by 1) skipping breakfast and 2) stopping to eat earlier in the evening before going to bed.
+Extending the fasting time was one major accelerator: I did that by 1) skipping breakfast and 2) stop eating earlier in the evening before going to bed.
 
 Loading up on fat in order to feel full was another accelerator of weight loss rate.
 
