@@ -25,7 +25,9 @@ PASSES = 4
 VW_ARGS = \
 	-k \
 	--loss_function squared \
-	--bootstrap 10 \
+	--progress 1 \
+	--bootstrap 16 \
+	-l 1.0 \
 	--l2 1.85201e-08 \
 	-c --passes $(PASSES) --holdout_off
 
@@ -33,6 +35,8 @@ VW_ARGS = \
 # -- programs
 TOVW := lifestyle-csv2vw
 VW := vw $(VW_ARGS)
+SHUFFLE := shuf
+# unsort --seed $(SEED)
 
 # -- data files
 MASTERDATA = $(NAME).csv
@@ -52,7 +56,7 @@ s score: $(TRAINFILE)
 	vw-varinfo $(VW_ARGS) $(TRAINFILE)
 
 m $(MODELFILE): FORCE
-	$(VW) $(TRAINFILE) -f $(MODELFILE)
+	$(VW) -f $(MODELFILE) $(TRAINFILE)
 
 t $(TRAINFILE): $(MASTERDATA) $(TOVW)
 	$(TOVW) $(MASTERDATA) > $(TRAINFILE)
@@ -61,8 +65,7 @@ c chart: $(DWCSV)
 	date-weight.r $(DWCSV) $(DWPNG)
 
 conv: $(TRAINFILE)
-	$(VW) $(TRAINFILE)  2>&1 | tee $(NAME).training_progress
-	vw-convergence -p $(NAME).training_progress
+	$(SHUFFLE) $(TRAINFILE) | $(VW) 2>&1 | vw-convergence
 
 clean:
 	/bin/rm -f $(MODELFILE) *.cache* *.tmp*
