@@ -97,6 +97,11 @@ I wrote a script to convert this file to vowpal-wabbit training-set regression f
 
 I was not dieting at that time. Just collecting data.
 
+The machine learning process error convergence after roughly sorting
+descending by delta (which reduces noise) looks like this:
+
+![error convergence (after partial descending sort by delta)](vw-convergence.png  "loss convergence in 4 data passes")
+
 You can reproduce my work by building your own data-file, installing vowpal-wabbit (and its utility `vw-varinfo`) and running `make` in this directory.
 
 Here's how a typical result of running `make` looks like.
