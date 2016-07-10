@@ -118,14 +118,6 @@ You can reproduce my work by building your own data-file, installing vowpal-wabb
 
 Here's how a typical result of running `make` looks like.
 
-The positive relative-score values are life-style choices that make you gain weight, while the negative ones make you lose weight. This particular data set is very noisy, since:
-
-- The number of examples is too small
-- My scales have a large error
-- Items that make you both lose and gain weight, often appear on the same line so they cancel each other and confuse the learning process.
-
-So I focused mostly on the extremes (start and end) of the list which looked like this:
-
     FeatureName       HashVal   ...   Weight RelScore
     nosleep            143407   ...  +0.6654 90.29%
     watermelon         149311   ...  +0.4636 62.91%
@@ -144,6 +136,14 @@ So I focused mostly on the extremes (start and end) of the list which looked lik
     oliveoil           156831   ...  -0.3754 -50.95%
     halfnhalf          171855   ...  -0.4673 -63.41%
     sleep              127071   ...  -0.7369 -100.00%
+
+The positive relative-score values are life-style choices that make you gain weight, while the negative ones make you lose weight. This particular data set is very noisy, since:
+
+- The number of original data-points (days) is small
+- My scales are not accurate, and a typical daily change in weight is very small
+- Items that make you both lose and gain weight, often appear on the same line so they cancel each other and confuse the learning process.
+
+So I focused mostly on the extremes (start and end) of the list as presented above. 
 
 Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts very obvious, pretty early:
 
