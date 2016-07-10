@@ -43,6 +43,9 @@ In the following I'll describe the thought process, other people ideas,  and the
 - I used to be a pretty thin person. Unfortunately, since moving to the US, I've been gaining weight.
 - The US is a country where obesity is an epidemic.
 
+[! First DMV photo and weight (with full clothing)](1992-ariel-dmv.png "143 pounds, sometimes in the 90's")
+
+
 Does a US typical lifestyle has anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
 
  - Fast food is the default food
@@ -106,7 +109,7 @@ You can reproduce my work by building your own data-file, installing vowpal-wabb
 
 Here's how a typical result of running `make` looks like.
 
-The positive relative-score values are life-style choices that make you gain weight, while the negative ones make you lose weight. Note that this data set is very noisy since it the number of examples is too small, the scale has a large error and items that make you lose and gain weight often appear on the same line so they cancel each other. It is thus advised to focus mostly on the extremes (start and end) of the list.
+The positive relative-score values are life-style choices that make you gain weight, while the negative ones make you lose weight. Note that this data set is very noisy since it the number of examples is too small, my scales have a large error, and items that make you both lose and gain weight, often appear on the same line so they cancel each other and confuse the learning process. It is thus advised to focus mostly on the extremes (start and end) of the list.
 
 
     FeatureName       HashVal   ...   Weight RelScore
@@ -128,24 +131,25 @@ The positive relative-score values are life-style choices that make you gain wei
     halfnhalf          171855   ...  -0.4673 -63.41%
     sleep              127071   ...  -0.7369 -100.00%
 
-Despite its noisy nature, insufficient data, and inaccuracies in weighting, the diet machine-learning experiment made three things very obvious, very early:
+Despite its noisy nature, insufficient data, and inaccuracies in weighting, the diet machine-learning experiment made 4 facts very obvious pretty early:
 
-- Sleeping longer is #1 factor in losing weight. Lack of sleep does the opposite.
+- Sleeping longer is #1 factor in losing weight.
+- Lack of sleep does the opposite.
 - Carbs make you gain weight. The worst are high-starch foods.
 - Fatty and oily food does the opposite: it makes you lose weight
 
-It took me a while to figure out the sleep part. When we sleep we don't eat. It is as simple as that.
+It took me a while to figure out the sleep part. When we sleep we don't eat. It is that simple.
 
 Moreover: we tend to binge and snack while not particularly hungry, but we never do it during sleep.
 
-Sleep time is our fasting time. The time we could potentially lose weight, provided that we channel our body chemistry to break-up excess stored-fat during that period of fasting.
+Our sleeping time is our fasting time. The time we could potentially lose weight, provided that we channel our body chemistry to break-up excess stored-fat in these hours.
 
 
 ## Further progress
 
 You may note that in the top chart there's a notable acceleration in the rate of weight loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the causes of weight gain and loss.
 
-Extending the fasting time was one major accelerator: I did that by:
+Extending the fasting time was one major accelerator. I did that by:
 
 - Skipping breakfast and
 - Stop eating earlier in the evening before going to bed.
