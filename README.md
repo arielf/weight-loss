@@ -78,7 +78,7 @@ I realized early on that I need to adopt a lifesyle that not just reduces carbs,
 
 Early in the process I started using machine learning to identify the factors that make me gain or lose weight. I used a simple method: every morning I would weight myself and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much etc.
 
-The format of the data collection file was very simple, essentially a CSV with 3 columns, Date, Weight, and Yesterday Food/actions:
+The format of the data collection file was very simple, essentially a CSV with 3 columns: *Date*, *Weight*, and *Yesterday's lifestyle/food/actions* as a bag of words (with optional weights, to express whenever I ate unusually little or unusually much of something):
  
     #
     # vim: textwidth=0 nowrap
@@ -86,7 +86,7 @@ The format of the data collection file was very simple, essentially a CSV with 3
     #
     # 'sleep' means at least 8 hours of sleep. Add weight for more hours.
     #
-    Date,Weight,YesterdayFood
+    Date,Weight,YesterdayFactors
     2012-06-01,186.8,
     2012-06-12,184.8,
     2012-06-13,183.8,
@@ -97,7 +97,7 @@ The format of the data collection file was very simple, essentially a CSV with 3
     # and so on ...
 
 
-I wrote a script to convert this file to vowpal-wabbit training-set regression format where the label is the change in weight (delta) in the past 24 hours, and the input features are what I've done or ate in the ~24 hours which led to this delta.
+Then I wrote a script to convert this file to [vowpal-wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki) training-set regression format where the label is the change in weight (delta) in the past 24 hours, and the input features are what I've done or ate in the ~24 hours which led to this delta.
 
 I was not dieting at that time. Just collecting data.
 
@@ -106,7 +106,7 @@ descending by delta (which reduces noise) looks like this:
 
 ![error convergence (after partial descending sort by delta)](vw-convergence.png  "loss convergence in 4 data passes")
 
-You can reproduce my work by building your own data-file, installing vowpal-wabbit (and its utility `vw-varinfo`) and running `make` in this directory.
+You can reproduce my work by building your own data-file, installing vowpal-wabbit, and its utility [`vw-varinfo`](https://github.com/JohnLangford/vowpal_wabbit/wiki/using-vw-varinfo), and running `make` in this directory.
 
 Here's how a typical result of running `make` looks like.
 
