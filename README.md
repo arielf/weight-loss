@@ -70,7 +70,7 @@ I realized early on that I need to adopt a lifesyle that not just reduces carbs,
         - Is not hard, or unpleasant for me to do
 
 
-## Early insights, and eureka moments
+## Early insights & eureka moments
 
 Early in the process I started using machine learning to identify the factors that make me gain or lose weight. I used a simple method: every morning I would weight myself and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much etc.
 
@@ -140,7 +140,10 @@ Sleep time is our fasting time. The time we could potentially lose weight, provi
 
 You may note that in the top chart there's a notable acceleration in the rate of weight loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the causes of weight gain and loss.
 
-Extending the fasting time was one major accelerator: I did that by 1) skipping breakfast and 2) stop eating earlier in the evening before going to bed.
+Extending the fasting time was one major accelerator: I did that by:
+
+- Skipping breakfast and
+- Stop eating earlier in the evening before going to bed.
 
 Loading up on fat in order to feel full was another accelerator of weight loss rate.
 
