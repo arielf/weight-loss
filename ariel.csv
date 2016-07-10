@@ -4,7 +4,7 @@
 #
 # 'sleep' means at least 8 hours of sleep. Add weight for more hours.
 #
-Date,Weight,YesterdayFood
+Date,MorningWeight,YesterdayFactors
 2012-06-01,186.8,
 2012-06-10,185.0,
 2012-06-11,182.6,salad sleep bacon cheese tea halfnhalf icecream

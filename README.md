@@ -80,7 +80,7 @@ Early in the process I started using machine learning to identify the factors th
 
 The format of the data collection file is very simple. A CSV with 3 columns:
 
-> *Date*, *Weight*, *Yesterday's lifestyle/food/actions*
+> *Date*, *MorningWeight*, *Yesterday's lifestyle/food/actions*
 
 The last column is a list of <word>[:<weight>]. The optional numerical weight expresses higher/lower quantities. The default weight, when missing is 1:
  
@@ -91,7 +91,7 @@ The last column is a list of <word>[:<weight>]. The optional numerical weight ex
     # 'sleep' is at least 8-hours of sleep.
     # Increase weights for more hours of sleep or larger quantities of food.
     #
-    Date,Weight,YesterdayFactors
+    Date,MorningWeight,YesterdayFactors
     2012-06-10,185.0,
     2012-06-11,182.6,salad sleep bacon cheese tea halfnhalf icecream
     2012-06-12,181.0,sleep egg
