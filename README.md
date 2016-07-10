@@ -93,19 +93,15 @@ The format of the data collection file was very simple, essentially a CSV with 3
     # and so on ...
 
 
-I wrote a script to convert this file to vowpal-wabbit training-set regression format where the label is weight delta in the past 24 hours, and the input features are what I've done or ate that led to this delta.
+I wrote a script to convert this file to vowpal-wabbit training-set regression format where the label is the change in weight (delta) in the past 24 hours, and the input features are what I've done or ate in the ~24 hours which led to this delta.
 
 I was not dieting at that time. Just collecting data.
 
-You can reproduce my work by having your own data-file, installing vowpal-wabbit and running `make` in this directory.
+You can reproduce my work by building your own data-file, installing vowpal-wabbit (and its utility `vw-varinfo`) and running `make` in this directory.
 
-Here's how a typical result looks like. The positive relative-score
-values are life-style choices that make you gain weight, while the
-negative ones make you lose weight. Note that this data set is very
-noisy since it the number of examples is too small, the scale has a
-large error and items that make you lose and gain weight often appear
-on the same line so they cancel each other. It is thus advised to
-focus mostly on the extremes (start and end) of the list.
+Here's how a typical result of running `make` looks like.
+
+The positive relative-score values are life-style choices that make you gain weight, while the negative ones make you lose weight. Note that this data set is very noisy since it the number of examples is too small, the scale has a large error and items that make you lose and gain weight often appear on the same line so they cancel each other. It is thus advised to focus mostly on the extremes (start and end) of the list.
 
 
     FeatureName       HashVal   ...   Weight RelScore
