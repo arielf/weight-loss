@@ -153,7 +153,7 @@ Now, your night sleep fasting time becomes your best friend.  These fat-breaking
 
 ***
 
-## Further reading (wikipedia, Google)
+## Further reading:
 
 - [The Krebs (aka Citric acid) cycle](https://en.wikipedia.org/wiki/Citric_acid_cycle)
 - [Spikes of Insulin and their effects](https://en.wikipedia.org/wiki/Sugar_crash) - what the body does when it has excess of sugar vs excess of fat.
