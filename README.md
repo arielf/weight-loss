@@ -82,7 +82,9 @@ The format of the data collection file is very simple. A CSV with 3 columns:
 
 > *Date*, *MorningWeight*, *Yesterday's lifestyle/food/actions*
 
-The last column is a list of *word[:weight]* items. The optional numerical weight expresses higher/lower quantities. The default weight, when missing is 1:
+The last column is a arbitrary-length list of *`word[:weight]`* items.
+
+The (optional) numerical-weight following `:`, expresses higher/lower quantities. The default weight, when missing is 1:
  
     #
     # vim: textwidth=0 nowrap
