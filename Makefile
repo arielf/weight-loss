@@ -17,27 +17,39 @@ NAME := $(shell ./username)
 # How much to "overfit" the raw data
 # Data is probably stationary.
 #
-PASSES = 10
+PASSES = 4
 
 #
 # vowpal-wabbit args
 #
 VW_ARGS = \
 	-k \
-	-c --passes $(PASSES) \
-	-l 2
+	--loss_function squared \
+	--bootstrap 10 \
+	--l2 1.85201e-08 \
+	-c --passes $(PASSES) --holdout_off
 
+
+# -- programs
 TOVW := lifestyle-csv2vw
 VW := vw $(VW_ARGS)
 
+# -- data files
 MASTERDATA = $(NAME).csv
 TRAINFILE  = $(NAME).train
 MODELFILE  = $(NAME).model
+DWCSV := weight.2015.csv
+DWPNG := weight.png
 
 .PRECIOUS: Makefile $(MASTERDATA) $(TOVW)
 
+#
 # -- rules
+#
 all:: score
+
+s score: $(TRAINFILE)
+	vw-varinfo $(VW_ARGS) $(TRAINFILE)
 
 m $(MODELFILE): FORCE
 	$(VW) $(TRAINFILE) -f $(MODELFILE)
@@ -45,20 +57,12 @@ m $(MODELFILE): FORCE
 t $(TRAINFILE): $(MASTERDATA) $(TOVW)
 	$(TOVW) $(MASTERDATA) > $(TRAINFILE)
 
-s score i: $(TRAINFILE)
-	vw-varinfo $(VW_ARGS) $(TRAINFILE)
+c chart: $(DWCSV)
+	date-weight.r $(DWCSV) $(DWPNG)
 
-d dups check-for-dups:
-	make i | field 1 | sort -n | uniq -c | sort -n | \
-		grep -v '^ *1 ' || /bin/true
-
-c chart: $(TRAINFILE)
+conv: $(TRAINFILE)
 	$(VW) $(TRAINFILE)  2>&1 | tee $(NAME).training_progress
 	vw-convergence -p $(NAME).training_progress
-
-
-csoaa:
-	vw-varinfo -k --csoaa 25 -c --passes 3 -l 0.1 --power_t 0 --l2 0.01 csoaa.train
 
 clean:
 	/bin/rm -f $(MODELFILE) *.cache* *.tmp*
