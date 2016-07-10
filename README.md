@@ -128,9 +128,11 @@ It is important to stress that I also feel much better the more weight I lose. A
 
 Beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous.
 
-My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not your ***high fat consumption***, it is the ***storage of fat process*** that makes you unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so your body fat gets converted to energy, you need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogene left in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents. When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become elevated.
+My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not your ***high fat consumption***, it is the ***storage of fat process*** that makes you unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so your body fat gets converted to energy, you need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogene left in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
 
-Now, your night sleep fasting time becomes your best friend.  These fat-breaking agents keep working while you sleep, breaking up the stored fat, and that's what's make you lose weight and become healthier.
+When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become constantly elevated in your body, you reach a new steady state (called ketosis) and that's when you start winning this fight.
+
+Now, your night sleep fasting time becomes your best friend.  These fat-breaking agents keep working while you sleep, breaking up the stored fat, make you lose weight, and become healthier.
 
 
 ## Bottom-line: how to do it?
