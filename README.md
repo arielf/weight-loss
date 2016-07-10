@@ -108,24 +108,24 @@ on the same line so they cancel each other. It is thus advised to
 focus mostly on the extremes (start and end) of the list.
 
 
-    FeatureName       HashVal   MinVal   MaxVal    Weight RelScore
-    nosleep            143407     0.00     0.00   +0.6654 90.29%
-    watermelon         149311     0.00     0.00   +0.4636 62.91%
-    sugarlemonade      203375     0.00     0.00   +0.3975 53.94%
-    trailmix           174671     0.00     0.00   +0.3362 45.63%
-    bread              135055     0.00     0.00   +0.3345 45.40%
-    caramelizedwalnut  148079     0.00     0.00   +0.3316 44.99%
-    bun                  1791     0.00     0.00   +0.3094 41.98%
+    FeatureName       HashVal   ...   Weight RelScore
+    nosleep            143407   ...  +0.6654 90.29%
+    watermelon         149311   ...  +0.4636 62.91%
+    sugarlemonade      203375   ...  +0.3975 53.94%
+    trailmix           174671   ...  +0.3362 45.63%
+    bread              135055   ...  +0.3345 45.40%
+    caramelizedwalnut  148079   ...  +0.3316 44.99%
+    bun                  1791   ...  +0.3094 41.98%
 
     ... (trimmed for brevity) ...
 
-    stayhome           148879     0.00     0.00   -0.2690 -36.50%
-    bacon               64431     0.00     0.00   -0.2998 -40.69%
-    egg                197743     0.00     0.00   -0.3221 -43.70%
-    parmagian          121679     0.00     0.00   -0.3385 -45.94%
-    oliveoil           156831     0.00     0.00   -0.3754 -50.95%
-    halfnhalf          171855     0.00     0.00   -0.4673 -63.41%
-    sleep              127071     0.00     0.00   -0.7369 -100.00%
+    stayhome           148879   ...  -0.2690 -36.50%
+    bacon               64431   ...  -0.2998 -40.69%
+    egg                197743   ...  -0.3221 -43.70%
+    parmagian          121679   ...  -0.3385 -45.94%
+    oliveoil           156831   ...  -0.3754 -50.95%
+    halfnhalf          171855   ...  -0.4673 -63.41%
+    sleep              127071   ...  -0.7369 -100.00%
 
 Despite its noisy nature, insufficient data, and inaccuracies in weighting, the diet machine-learning experiment made three things very obvious, very early:
 
@@ -191,7 +191,7 @@ Now, your night sleep fasting time becomes your best friend.  These fat-breaking
 
 And watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
-- [James McCarter: a year in ketosis](https://vimeo.com/147795263) 
+- [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
 
 
 
