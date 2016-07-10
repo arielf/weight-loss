@@ -160,7 +160,7 @@ It is important to stress that I also feel much better the more weight I lose. A
 
 Beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous.
 
-My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not your ***high fat consumption***, it is the ***storage of fat process*** that makes you unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so your body fat gets converted to energy, you need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogene left in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
+My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not your ***high fat consumption***, it is the ***storage of fat process*** that makes you unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so your body fat gets converted to energy, you need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogen left in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
 
 When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become constantly elevated in your body, you reach a new steady state (called ketosis) and that's when you start winning this fight.
 
@@ -190,7 +190,7 @@ Now, your night sleep fasting time becomes your best friend.  These fat-breaking
 - [The Krebs (aka Citric acid) cycle](https://en.wikipedia.org/wiki/Citric_acid_cycle)
 - [Spikes of Insulin and their effects](https://en.wikipedia.org/wiki/Sugar_crash) - what the body does when it has excess of sugar vs excess of fat.
 - [Glycemic Index](https://en.wikipedia.org/wiki/Glycemic_index)
-- [Glycogene and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
+- [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
 
 And watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
