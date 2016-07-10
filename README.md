@@ -172,7 +172,7 @@ When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and
 Now, your night sleep fasting time becomes your best friend.  These fat-breaking agents keep working while you sleep, breaking up the stored fat, make you lose weight, and become healthier.
 
 
-## Bottom-line: how to do it?
+## The bottom-line recipe: all you need to succeed:
 
 - The hardest part (especially at the beginning) is reduce carbs. The worst carbs are starches (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, other juices, etc). You may afford carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to get you out of ketosis. However, you need to make sure you consume ***much less carbs*** than in the past. Particularly, you must avoid binges of snacks like chips, pizza, doughnuts, and white bread.
 
