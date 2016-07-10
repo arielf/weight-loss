@@ -105,7 +105,9 @@ The diet machine learning experiment made two things very obvious, very early:
 - Sleeping longer is #1 factor in losing weight. Lack of sleep does the opposite.
 - Carbs make you gain weight. The worst are high-starch foods: bread, pizza, pasta
 
-It took me a while to figure out the sleep part. When you sleep you don't eat. Obviously, we tend to binge and snack while not particularly hungry but we never do it during sleep.
+It took me a while to figure out the sleep part. When you sleep you don't eat. We tend to binge and snack while not particularly hungry, but we never do it during sleep.
+
+Sleep time is our fasting time. The time we could potentially lose weight, provided that we channel our body chemistry to break-up excess stored-fat during that period of fasting.
 
 
 ## Further progress
