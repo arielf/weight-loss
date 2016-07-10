@@ -2,7 +2,7 @@
 
 
 
-**Here is a chart of my weight vs time in the past 16 months or so:**
+*Here is a chart of my weight vs time in the past 16 months or so:*
 
 ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
