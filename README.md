@@ -127,11 +127,11 @@ focus mostly on the extremes (start and end) of the list.
     halfnhalf          171855     0.00     0.00   -0.4673 -63.41%
     sleep              127071     0.00     0.00   -0.7369 -100.00%
 
-Despite its noisy nature, insufficient data, and inaccuracies in weighting, the diet machine-learning experiment made two things very obvious, very early:
+Despite its noisy nature, insufficient data, and inaccuracies in weighting, the diet machine-learning experiment made three things very obvious, very early:
 
 - Sleeping longer is #1 factor in losing weight. Lack of sleep does the opposite.
-- Carbs make you gain weight. The worst are high-starch foods, fatty
-  and oily stuff does the opposite.
+- Carbs make you gain weight. The worst are high-starch foods.
+- Fatty and oily food does the opposite: it makes you lose weight
 
 It took me a while to figure out the sleep part. When we sleep we don't eat. It is as simple as that.
 
