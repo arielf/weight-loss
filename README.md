@@ -217,6 +217,9 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 - [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
 
+- [The Eating Academy | Peter Attia, M.D.](http://eatingacademy.com/)
+
+
 And watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
 - [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
