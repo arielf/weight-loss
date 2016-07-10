@@ -58,7 +58,8 @@ Once I did, the results followed.
 
 In the past, I tried several times to change my diet. After reading one of Atkins' books, I realized and accepted the fact that carbs are a major factor in gaining weight. But that realization alone, has not led to success.
 
-My will power, apparently, was not enough. I had too much love of pizza, etc.  I would reduce my carb consumption and lose a few pounds (never more than about 5 pounds) and then break-down go back to eating excess carbs, and gain all these pounds back, and then some.
+My will power, apparently, was not enough. I had too much love of pizza, etc.  I would reduce my carb consumption and lose a few pounds (typically ~5 pounds) and then break-down go back to eating excess carbs, and gain all these pounds back, and then some.
+My longest diet stretch lasted a few months.
 
 It was obvious that something was missing in my method. I just had to find it. Obviously, I could increase my physical activity: say start training for a mini-marathon, but that's not what I felt comfortable with.
 
