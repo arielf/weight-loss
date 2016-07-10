@@ -40,7 +40,9 @@ In the following I'll describe the thought process, other people ideas,  and the
 
 ## Salient facts & initial observations
 
-- I used to be a pretty thin person. Unfortunately, since moving to the US, I've been gaining weight.
+- I used to be a pretty thin person. My 1st DMV card below, says 143 lb.
+- Unfortunately, since moving to the US, I've been gaining more and
+  more weight. I peaked in 2015, over 50 lbs higher.
 - The US is a country where obesity is an epidemic.
 
 ![First DMV photo and weight (with full clothing)](1992-ariel-dmv.png "143 pounds, sometimes in the 90's")
