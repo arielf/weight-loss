@@ -184,11 +184,11 @@ It is important to stress that I also feel much better the more weight I lose. A
 
 Beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous.
 
-My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so our body fat gets converted to energy, we need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogen left in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
+My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block for many essential by-products. The liver produces as much cholesterol as it needs. It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so our body fat gets converted to energy, we need to give the body fat as an alternative to carbohydrates. When the body depleted both the blood sugar and the glycogen buffer in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
 
-When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become elevated, we reach a new steady state (called ketosis) and that's when we start winning this fight.
+When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight battle.
 
-In ketosis, our night sleep (fasting time) becomes our best friend.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat. This leads to weight-loss, and a healthier body.
+In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.
 
 
 ## The bottom-line recipe - all you need to succeed:
