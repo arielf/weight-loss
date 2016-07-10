@@ -116,9 +116,13 @@ Sleep time is our fasting time. The time we could potentially lose weight, provi
 
 You may note that in the top chart there's a notable acceleration in the rate of weight loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the causes of weight gain and loss.
 
-Extending the fasting time by 1) skipping breakfast and stopping to eat earlier in the evening before going to bed, was one major accelerator. Loading up on fat in order to feel full was another.
+Extending the fasting time was one major accelerator: I did that by 1) skipping breakfast and 2) stopping to eat earlier in the evening before going to bed.
 
-I now feel pretty confident that I can go all the way back to my original weight when I first landed in US soil. At the present rate, it should take not more than 2 years to completely undo the damage of the past 20 years. 
+Loading up on fat in order to feel full was another accelerator of weight loss rate.
+
+I now feel pretty confident that I can go all the way back to my original weight when I first landed in US soil.
+
+At the present rate, it should take not more than 2 years to completely undo the damage of the past 20 years. 
 
 It is important to stress that I also feel much better the more weight I lose. As a welcome side-effect, all the bordeline-high levels in my blood tests, have moved significantly towards normal averages during the same period when I lost weight.
 
