@@ -172,7 +172,7 @@ Extending the fasting time was one major accelerator of weight-loss rate. I did 
 - Skipping breakfast and
 - Stop eating earlier in the evening before going to bed.
 
-This gave me 14-16 hours of fasting each day. Rather than the more typical 10-12 hours/day fast.
+This gave me 14-16 hours of fasting each day. Rather than the more typical 10-12 hours/day of fasting.
 
 The 2nd accelerator was loading up on fat in order to feel full.
 
