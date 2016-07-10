@@ -105,7 +105,9 @@ The diet machine learning experiment made two things very obvious, very early:
 - Sleeping longer is #1 factor in losing weight. Lack of sleep does the opposite.
 - Carbs make you gain weight. The worst are high-starch foods: bread, pizza, pasta
 
-It took me a while to figure out the sleep part. When you sleep you don't eat. We tend to binge and snack while not particularly hungry, but we never do it during sleep.
+It took me a while to figure out the sleep part. When we sleep we don't eat. It is as simple as that.
+
+Moreover: we tend to binge and snack while not particularly hungry, but we never do it during sleep.
 
 Sleep time is our fasting time. The time we could potentially lose weight, provided that we channel our body chemistry to break-up excess stored-fat during that period of fasting.
 
@@ -114,13 +116,17 @@ Sleep time is our fasting time. The time we could potentially lose weight, provi
 
 You may note that in the top chart there's a notable acceleration in the rate of weight loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the causes of weight gain and loss.
 
-Extending the fasting time by 1) skipping breakfast and stopping to eat earlier in the evening before going to bed, was one major accelerator. Loading up on fat in order to not feel hungry was another.
+Extending the fasting time by 1) skipping breakfast and stopping to eat earlier in the evening before going to bed, was one major accelerator. Loading up on fat in order to feel full was another.
 
-I now feel pretty confident that I can go all the way back to my original weight when I first landed in US soil. At the present rate, it should take about 2 more years to undo the damage of the past 20 years. 
+I now feel pretty confident that I can go all the way back to my original weight when I first landed in US soil. At the present rate, it should take not more than 2 years to completely undo the damage of the past 20 years. 
 
-It is important to stress that I also feel much better the more weight I lose. All the bordeline-high levels in my blood tests have moved significantly towards normal averages.
+It is important to stress that I also feel much better the more weight I lose. As a welcome side-effect, all the bordeline-high levels in my blood tests, have moved significantly towards normal averages during the same period when I lost weight.
 
-Beware of doctors who push statins instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous. The body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not your high fat ***consumption***, it is the ***storage of fat*** that makes you unhealthy.  An enzyme cales Lipase breaks up fat. To raise the levels of lipase, you need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogene left in the liver it starts to adapt and compensate.  The source of energy (ATP sythesis) is switched by producing more fat-breaking agents. When lipase (and all other enzymes in the fat to ATP chemical path mobilization) levels are elevated, your night sleep fasting time makes these agents keep working, breaking up the stored fat, and that's what's make you lose weight and become healthier.
+Beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous.
+
+My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block and your liver produces as much as it needs of it. It is not your ***high fat consumption***, it is the ***storage of fat process*** that makes you unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so your body fat gets converted to energy, you need to give the body fat as an alternative to carbohydrates. When the body has no blood sugar, and no glycogene left in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents. When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become elevated.
+
+Now, your night sleep fasting time becomes your best friend.  These fat-breaking agents keep working while you sleep, breaking up the stored fat, and that's what's make you lose weight and become healthier.
 
 
 ## Bottom-line: how to do it?
