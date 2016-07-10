@@ -43,7 +43,7 @@ In the following I'll describe the thought process, other people ideas,  and the
 - I used to be a pretty thin person. Unfortunately, since moving to the US, I've been gaining weight.
 - The US is a country where obesity is an epidemic.
 
-[! First DMV photo and weight (with full clothing)](1992-ariel-dmv.png "143 pounds, sometimes in the 90's")
+![First DMV photo and weight (with full clothing)](1992-ariel-dmv.png "143 pounds, sometimes in the 90's")
 
 
 Does a US typical lifestyle has anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
