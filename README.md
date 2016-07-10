@@ -87,9 +87,11 @@ The format of the data collection file was very simple, essentially a CSV with 3
     2012-06-12,184.8,
     2012-06-13,183.8,
     2012-06-14,183.6,coffeecandy:5 egg mayo oliveoil cheese:4 rice meat bread:0 peanut:5
-    2012-06-15,183.4,meat sugarlesscandy salad cherry:4 bread:0 dietsnapple:2 egg mayo oliveoil cheese yogurt:2 bread:0 peanut:5
-    2012-06-16,183.6,caprise bread grape:10 pasadena sugaryogurt dietsnapple:2 peanut:5 hotdog ketchup:2
+    2012-06-15,183.4,meat sugarlesscandy salad cherry:4 bread:0 dietsnapple:2 egg mayo oliveoil
+    2012-06-16,183.6,caprise bread grape:10 pasadena sugaryogurt dietsnapple:2 peanut:5 hotdog
     2012-06-17,182.6,grape:6 meat pistachio:5 peanut:5 cheese sorbet:5 orangejuice:2
+    # and so on ...
+
 
 
 I wrote a script to convert this file to vowpal-wabbit training-set regression format where the label is weight delta in the past 24 hours, and the input features are what I've done or ate that led to this delta.
