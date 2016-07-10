@@ -55,24 +55,23 @@ Does a US typical lifestyle has anything to do with this epidemic? After reading
  - "No Fat" and "Low Fat" labels are everywhere on supermarket shelves
  - Many foods are enriched and sweetened with corn-syrup -- [Sugar Coated (documentary)](http://sugarcoateddoc.com/)
 
-As in many other instances, I realized I need to think for myself, ignore the "expert" advice, ideas like the FDA "food pyramid" and start listening to my own body, my own logic, and my data.
+As in many other instances, I realized I need to think for myself. Ignore all "expert" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic & data I can collect myself and trust.
 
 Once I did, the results followed.
 
 ## What didn't work
 
-In the past, I tried several times to change my diet. After reading one of Atkins' books, I realized and accepted the fact that carbs are a major factor in gaining weight. But that realization alone, has not led to success.
+In the past, I tried several times to change my diet. After reading one of Atkins' books, I realized, checked, and accepted the fact that excess carbs are a major factor in gaining weight. But that realization alone has not led to success.
 
-My will power, apparently, was not enough. I had too much love of pizza, etc.  I would reduce my carb consumption and lose a few pounds (typically ~5 pounds) and then break-down go back to eating excess carbs, and gain all these pounds back, and then some.
-My longest diet stretch lasted a few months.
+My will power, apparently, was insufficient. I had too much love of pizza and bread.  I would reduce my carb consumption, lose a few pounds (typically ~5 pounds), and then break-down, go back to consuming excess carbs, and gain all these pounds back, and then some. My longest diet stretch lasted just a few months.
 
 It was obvious that something was missing in my method. I just had to find it. Obviously, I could increase my physical activity: say start training for a mini-marathon, but that's not what I felt comfortable with.
 
-I realized early on that I need to adopt a lifesyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable. Something that:
+I realized early on that I need to adopt a lifesyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable so it can turn into a painless routine. Something that:
 
-        - I could do for years
-        - Never feel the urge to break habits
-        - Is not hard, or unpleasant for me to do
+> - I could do for years
+> - Never feel the urge to break habits
+> - Is not hard, or unpleasant for me to do
 
 
 ## Early insights & eureka moments
