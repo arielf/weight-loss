@@ -101,17 +101,19 @@ You can reproduce my work by having your own data-file, installing vowpal-wabbit
 
 Here's how a typical result looks like. The positive relative-score
 values are life-style choices that make you gain weight, while the
-negative ones make you lose weight:
+negative ones make you lose weight. Note that this data set is very
+noisy since it the number of examples is too small, the scale has a
+large error and items that make you lose and gain weight often appear
+on the same line so they cancel each other. It is thus advised to
+focus mostly on the extremes (start and end) of the list.
 
 
     FeatureName       HashVal   MinVal   MaxVal    Weight RelScore
     nosleep            143407     0.00     0.00   +0.6654 90.29%
     watermelon         149311     0.00     0.00   +0.4636 62.91%
-    nathans             39951     0.00     0.00   +0.4488 60.90%
-    peanuts             80975     0.00     0.00   +0.4089 55.49%
     sugarlemonade      203375     0.00     0.00   +0.3975 53.94%
     trailmix           174671     0.00     0.00   +0.3362 45.63%
-    breaded            135055     0.00     0.00   +0.3345 45.40%
+    bread              135055     0.00     0.00   +0.3345 45.40%
     caramelizedwalnut  148079     0.00     0.00   +0.3316 44.99%
     bun                  1791     0.00     0.00   +0.3094 41.98%
 
@@ -125,10 +127,11 @@ negative ones make you lose weight:
     halfnhalf          171855     0.00     0.00   -0.4673 -63.41%
     sleep              127071     0.00     0.00   -0.7369 -100.00%
 
-The diet machine learning experiment made two things very obvious, very early:
+Despite its noisy nature, insufficient data, and inaccuracies in weighting, the diet machine-learning experiment made two things very obvious, very early:
 
 - Sleeping longer is #1 factor in losing weight. Lack of sleep does the opposite.
-- Carbs make you gain weight. The worst are high-starch foods: bread, pizza, pasta
+- Carbs make you gain weight. The worst are high-starch foods, fatty
+  and oily stuff does the opposite.
 
 It took me a while to figure out the sleep part. When we sleep we don't eat. It is as simple as that.
 
