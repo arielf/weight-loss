@@ -158,8 +158,10 @@ Now, your night sleep fasting time becomes your best friend.  These fat-breaking
 - [The Krebs (aka Citric acid) cycle](https://en.wikipedia.org/wiki/Citric_acid_cycle)
 - [Spikes of Insulin and their effects](https://en.wikipedia.org/wiki/Sugar_crash) - what the body does when it has excess of sugar vs excess of fat.
 - [Glycemic Index](https://en.wikipedia.org/wiki/Glycemic_index)
+- [Glycogene and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
-And watch this nice 7:41 minute video. Best recipe for health:
+
+And watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
 - [James McCarter: a year in ketosis](https://vimeo.com/147795263) 
 
