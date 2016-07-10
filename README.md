@@ -93,12 +93,37 @@ The format of the data collection file was very simple, essentially a CSV with 3
     # and so on ...
 
 
-
 I wrote a script to convert this file to vowpal-wabbit training-set regression format where the label is weight delta in the past 24 hours, and the input features are what I've done or ate that led to this delta.
 
 I was not dieting at that time. Just collecting data.
 
 You can reproduce my work by having your own data-file, installing vowpal-wabbit and running `make` in this directory.
+
+Here's how a typical result looks like. The positive relative-score
+values are life-style choices that make you gain weight, while the
+negative ones make you lose weight:
+
+
+    FeatureName       HashVal   MinVal   MaxVal    Weight RelScore
+    nosleep            143407     0.00     0.00   +0.6654 90.29%
+    watermelon         149311     0.00     0.00   +0.4636 62.91%
+    nathans             39951     0.00     0.00   +0.4488 60.90%
+    peanuts             80975     0.00     0.00   +0.4089 55.49%
+    sugarlemonade      203375     0.00     0.00   +0.3975 53.94%
+    trailmix           174671     0.00     0.00   +0.3362 45.63%
+    breaded            135055     0.00     0.00   +0.3345 45.40%
+    caramelizedwalnut  148079     0.00     0.00   +0.3316 44.99%
+    bun                  1791     0.00     0.00   +0.3094 41.98%
+
+    ... (trimmed for brevity) ...
+
+    stayhome           148879     0.00     0.00   -0.2690 -36.50%
+    bacon               64431     0.00     0.00   -0.2998 -40.69%
+    egg                197743     0.00     0.00   -0.3221 -43.70%
+    parmagian          121679     0.00     0.00   -0.3385 -45.94%
+    oliveoil           156831     0.00     0.00   -0.3754 -50.95%
+    halfnhalf          171855     0.00     0.00   -0.4673 -63.41%
+    sleep              127071     0.00     0.00   -0.7369 -100.00%
 
 The diet machine learning experiment made two things very obvious, very early:
 
