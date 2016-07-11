@@ -229,10 +229,10 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 - [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
 
-- [The Eating Academy | Peter Attia, M.D.](http://eatingacademy.com/)
-- [Why We Get Fat: And What to Do About It by Gary Taubes](http://www.amazon.com/gp/product/0307272702)
-- [Summary of Good Calories, Bad Calories - Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
-
+- [The Eating Academy / Peter Attia, M.D.](http://eatingacademy.com/)
+- [Why We Get Fat: And What to Do About It / Gary Taubes](http://www.amazon.com/gp/product/0307272702)
+- [Summary of Good Calories, Bad Calories / Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
+- [The Obesity Code: Unlocking the Secrets of Weight Loss / Jason Fung](https://www.amazon.com/Obesity-Code-Unlocking-Secrets-Weight-ebook/dp/B01C6D0LCK/)
 
 Watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
