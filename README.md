@@ -157,7 +157,7 @@ Despite the noisy & insufficient data, and the inaccuracies in weighting, the ma
 - Carbs make you gain weight. The worst are high-starch and sugary foods.
 - Fatty and oily foods do the opposite: they make you lose weight.
 
-The 'stayhome' lifestlye, which fell mostly on weekends, was of a red-herring, I simply slept longer when I didn't have to commute to work.
+The 'stayhome' lifestlye, which fell mostly on weekends, was a red-herring, I simply slept longer when I didn't have to commute to work.
 
 It took me a while to figure out the sleep part. When we sleep we don't eat. It is that simple.
 
@@ -165,7 +165,7 @@ Moreover: we tend to binge and snack while not particularly hungry, but we never
 
 And our sleeping time is our fasting time.
 
-But it is not enough to fast. We also need to channel our body chemistry to break-up excess stored-fat whenever we fast.
+But it is not enough to fast. We also need to channel our body chemistry to break-up excess stored-fat while we fast.
 
 
 ## Further progress
@@ -180,6 +180,8 @@ Extending the fasting time was one major accelerator of weight-loss rate. I did 
 This gave me 14-16 hours of fasting each day. Rather than the more typical 10-12 hours/day of fasting.
 
 The 2nd accelerator was loading up on fat in order to feel full.
+
+The 3rd accelerator was understanding the concepts of [Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load), and shifting whatever I chose to eat towards lower Glycemic loads.
 
 I now feel pretty confident that I can go all the way back to my original weight when I first landed on US soil.
 
