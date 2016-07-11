@@ -219,9 +219,9 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 ## Further reading:
 
 - [The Krebs (aka Citric acid) cycle](https://en.wikipedia.org/wiki/Citric_acid_cycle)
-- [Spikes of Insulin and their effects](https://en.wikipedia.org/wiki/Sugar_crash) - what the body does when it has excess of sugar vs excess of fat.
+- [Spikes of Insulin and their effects](https://en.wikipedia.org/wiki/Sugar_crash) -- what the body does when it has excess of sugar vs excess of fat.
 - [Glycemic Index](https://en.wikipedia.org/wiki/Glycemic_index)
-- [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load) - a better metric for weight-loss than Glycemic Index.
+- [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load) -- a better metric for weight-loss than Glycemic Index.
 - [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
 
