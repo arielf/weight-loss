@@ -1,0 +1,22 @@
+#!/usr/bin/perl -w
+# vim: sw=4 ts=4
+#
+
+#
+# Convert every line to a pair: absolute-value, as-is-line
+#
+my @LinesInMem = ();
+
+while (<>) {
+    my $first_field = (split(' ', $_))[0];
+    push(@LinesInMem, [abs($first_field), $_]);
+}
+
+#
+# In the end print original lines in descending order of the
+# absolute value
+#
+print map $_->[1], sort {
+        $b->[0] <=> $a->[0] 
+} @LinesInMem;  
+

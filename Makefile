@@ -35,7 +35,9 @@ VW_ARGS = \
 # -- programs
 TOVW := lifestyle-csv2vw
 VW := vw $(VW_ARGS)
-SHUFFLE := shuf
+SORTABS := sort-by-abs
+
+# SHUFFLE := shuf
 # unsort --seed $(SEED)
 
 # -- data files
@@ -59,13 +61,13 @@ m $(MODELFILE): FORCE
 	$(VW) -f $(MODELFILE) $(TRAINFILE)
 
 t $(TRAINFILE): $(MASTERDATA) $(TOVW)
-	$(TOVW) $(MASTERDATA) > $(TRAINFILE)
+	$(TOVW) $(MASTERDATA) | sort-by-abs > $(TRAINFILE)
 
 c chart: $(DWCSV)
 	date-weight.r $(DWCSV) $(DWPNG)
 
 conv: $(TRAINFILE)
-	$(SHUFFLE) $(TRAINFILE) | $(VW) 2>&1 | vw-convergence
+	$(VW) $(TRAINFILE) 2>&1 | vw-convergence
 
 clean:
 	/bin/rm -f $(MODELFILE) *.cache* *.tmp*

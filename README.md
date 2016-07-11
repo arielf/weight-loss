@@ -110,7 +110,7 @@ Then I wrote [a script](./lifestyle-csv2vw) to convert this file to [vowpal-wabb
 I was not dieting at that time. Just collecting data.
 
 The machine learning process error convergence after partly sorting
-the lines descending, by delta (to reduce noise) looks like this:
+the lines descending, by delta to smooth it out, looks like this:
 
 ![error convergence (after partial descending sort by delta)](vw-convergence.png  "loss convergence in 4 data passes")
 

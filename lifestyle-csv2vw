@@ -13,7 +13,7 @@ while(<>) {
 
     # Only generate a training set if everything is defined and
     # we have a prior day weight to compare to
-    if ($weight =~ /\d/ &&
+    if ((defined $weight) && $weight =~ /\d/ &&
             defined $prev_weight && $prev_weight =~ /\d/ &&
                 length($food) > 10) {
 

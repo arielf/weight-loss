@@ -7,7 +7,7 @@
 Date,MorningWeight,YesterdayFactors
 2012-06-01,186.8,
 2012-06-10,185.0,
-2012-06-11,182.6,salad sleep bacon cheese tea halfnhalf icecream
+2012-06-11,182.6,salad sleep bacon cheese tea halfnhalf
 2012-06-12,181.0,sleep egg
 2012-06-13,183.6,mottsfruitsnack:2 pizza:5 bread:2 date:3 dietsnapple splenda milk nosleep
 2012-06-14,183.6,coffeecandy:5 egg mayo cheese:4 rice meat bread:0 peanut:5
@@ -16,14 +16,14 @@ Date,MorningWeight,YesterdayFactors
 2012-06-17,182.6,grape:6 meat pistachio:5 peanut:5 cheese sorbet:5
 2012-06-18,182.4,bread:0 peanut:5 sorbet:3 pizza cheese cherry:1 soup:3
 2012-06-19,182.4,cherry:5 knish:5 cheese meat pistachio:4 peanut:5
-2012-06-20,183.0,cheese:3 sorbet:3 granolabar peanut:8 pistachio:3 snapple:2 sugaryogurt musaka:3
+2012-06-20,183.0,sorbet:3 granolabar peanut:8 pistachio:3 snapple:2 sugaryogurt
 2012-06-21,183.0,cheese salad peanut:5 beans:10 soup dietsnapple:2 meat salmon artichokepie:2 cucumber
 2012-06-22,182.0,cheese salad peanut:5 meatball:3 egg crab cherry:2 pistachio:3 atkinsbar tea milk bread:0 water
 2012-06-23,182.8,bread:2 sorbet coffeecandy:3 peanut:5 snapple:2
 2012-06-24,182.4,pizza:3 peanut:5 sorbet sugaryogurt:2 tea milk cheese:2
 2012-06-25,182.2,sugaryogurt:2 peanut:5 pistachio:5 egg tomato:2 salad tea milk
 2012-06-26,182.4,snapple meat rice:2 salad cheeseburger bread peanut:5 pistachio:5 nuggets:4 ketchup:2
-2012-06-27,183.0,meat:4 indian mango rice snapple:2 potato pistachio:3 cheese atkinsbar peanut:5 salad:2 chocolate:3
+2012-06-27,183.0,indian mango rice snapple:2 potato pistachio:3 cheese atkinsbar peanut:5 chocolate:3
 2012-06-28,183.0,tea splenda water meat:2 beans salad:2 dietsnapple pepper rice sugarlesscandy atkinsbar nectarine:0.7 peanut:3
 2012-06-29,183.6,tea milk splenda sugaryogurt peanut:5 pizza:0.5 coffeecandy:1 chicken:.5 trailmix ketchup:2
 # Break, vacation in NYC, didn't keep track
@@ -34,13 +34,13 @@ Date,MorningWeight,YesterdayFactors
 2012-07-12,180.8,chicken beef beans salad dietsnapple milk:2 cocoa splenda:3 pistachio peanut cheese egg oliveoil mayo
 2012-07-13,180.8,milk:2 cocoa splenda:2 peanut cheese coffeecandy:3 chicken parmagian apple meatball sorbet stayhome
 2012-07-14,181.4,hotdog bread:2 dietsnapple redpepper:5 tomato:1 milk:2 cocoa splenda:2 cheese nectarine apple
-2012-07-15,182.4,shrimp caramelizedwalnut friedrice sorbet:5 peanut cheese pistachio:3 meatball:3
+2012-07-15,182.4,caramelizedwalnut friedrice sorbet:5 peanut pistachio:3 meatball:3
 2012-07-16,182.2,frenchtoast:3 sugaryogurt peanut:4 tea apple pistachio coffeecandy:4
 2012-07-17,182.0,beef chicken salad:2 lettuce greenbean egg mayo olive oliveoil avocado pistachio peanut milk:2 cocoa splenda mottsfruitsnack icecream:0.3
 2012-07-18,181.8,gioza tempura sushi breadedchicken dietsnapple milk cocoa splenda soup
 2012-07-19,181.0,hotdog:2 mayo chilli beans salad coleslaw dietsnapple:2 milk cocoa splenda icecream peanut atkinsbar egg oliveoil olive avocado
 2012-07-20,181.2,chicken veggieburger mayo salad thaisoup sorbet:.2 milk:2 cocoa splenda dietsnapple indian potato beans watermelon:0.3 avocado 100caloriebar trailmix peanut stayhome
-2012-07-21,182.0,chicken salad caramelizedwalnut peanut olive soup grape carrot beans:2 tomato milk cocoa splenda beet chocolate coconut mayo avocado oliveoil coffeecandy pistachio:5
+2012-07-21,182.0,caramelizedwalnut peanut soup grape carrot tomato milk cocoa splenda beet chocolate coffeecandy pistachio:5
 2012-07-22,181.4,salad icecream egg oliveoil soup:2 peanut milk chocolate coconut
 2012-07-23,180.8,tea milk splenda sugaryogurt:2 melon atkinsbar peanut pistachio smallbun cheese mayo ham
 2012-07-24,180.8,salad olive chicken shrimp butter bread:0.5 milk cocoa dietsnapple splenda peanut sugaryogurt meatball cheese ham sorbet:0.2
@@ -56,11 +56,11 @@ Date,MorningWeight,YesterdayFactors
 2012-08-03,180.8,milk splenda peanut sorbet stayhome
 2012-08-04,181.8,pizza:3 beans carrot whitenectarine cheese caramelizedwalnut peanut pistachio tofee coffeecandy milk cocoa splenda teriaki chicken salmon soup pasta dietsnapple bread
 2012-08-05,181.4,milk meatball salad tofee coffeecandy egg oliveoil avocado peanut cheese apple milk olives mayo
-2012-08-06,182.0,salad coconut chocolate frappuccino:0.2 milk peanut pistachio coconutbar cheese
-2012-08-07,183.4,indian potato breaded chicken rice apple milk cocoa splenda dietsnapple dietcoke:0.3 pistachio:5 peanut:4 coffeecandy tofee:4 chocolate coconut driedapple
+2012-08-06,182.0,coconut chocolate frappuccino:0.2 milk peanut pistachio coconutbar
+2012-08-07,183.4,indian potato breaded chicken rice apple milk cocoa splenda dietcoke:0.3 pistachio:5 peanut:4 coffeecandy tofee:4 chocolate coconut driedapple
 2012-08-08,183.6,milk:2 cocoa splenda dietsnapple dietcoke icecream frappuccino:0.2 peanut tofee nectarine salad mayo beacon
 2012-08-09,182.4,milk cocoa splenda dietsnapple salad egg mayo beef tilapia peanut atkinsbar corn:0.2 cheese sleep exercise:0.45 strawberry
-2012-08-10,183.0,milk frappuccino:0.2 chickennuggets tofee:4 kettlecorn cheese salad whitenectarine
+2012-08-10,183.0,milk frappuccino:0.2 chickennuggets tofee:4 kettlecorn
 2012-08-11,183.6,breadedshrimp bagel thinkthinbar dietsnapple:2 dietcoke
 2012-08-12,183.8,brownrice milk shrimp whitenectarine cheese atkinsbar bread chicken chocolate coconut peanut grape sugaryogurt:2 
 2012-08-13,184.2,schnitzel:3 pizza:2 whitenectarine:2 milk cocoa splenda dietsnapple salad icecream sugaryogurt peanut lycorice danish:3
@@ -89,7 +89,7 @@ Date,MorningWeight,YesterdayFactors
 2012-09-05,,
 2012-09-07,180.0,stayhome
 2012-09-08,181.0,bread:6 peanut milk cheese
-2012-09-09,181.0,sleep stayhome salad bacon hotdog nathans milk frappuccino:0.2 peanuts cheese
+2012-09-09,180.2,sleep stayhome salad bacon hotdog milk frappuccino:0.2 peanuts cheese
 2012-09-10,,
 2012-09-11,181.2,
 2012-09-12,180.8,
@@ -125,7 +125,7 @@ Date,MorningWeight,YesterdayFactors
 2012-10-12,,
 2012-10-13,183.6,
 2012-10-14,184.0,nosleep bread bagel:2
-2012-10-15,182.6,salad sleep bacon cheese tea milk splenda icecream
+2012-10-15,182.6,salad sleep bacon tea splenda icecream
 2012-10-16,184.5,bread pizza bagel danish
 2012-10-17,183.5,egg egg oliveoil olives
 2012-10-18,182.2,earthbalance egg havarti oliveoil bacon olives
