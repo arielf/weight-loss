@@ -42,6 +42,8 @@ In the following I'll describe the thought process, other people ideas,  and the
 
 The below is what worked, and I strongly believe is good for me and possibly for others. Your situation may be different. Listen to your own body.
 
+JK :-) Let's promote truth for a change. To channel Galileo in the face of the inquisition: evolution has been hard at work for about 2 billion years shaping the chemistry of all eukaryotes, and mammals. The Krebs cycle, Glucose metabolism, insulin spikes, glycogen in the liver, Carnitine, Lipase, are as real for you just as they are for me. We may be vastly different in our genes and traits, but we are not different in our most fundamental chemistry.
+
 
 ## Salient facts & initial observations
 
