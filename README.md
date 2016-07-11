@@ -94,20 +94,22 @@ The (optional) numerical-weight following `:`, expresses higher/lower quantities
  
     #
     # vim: textwidth=0 nowrap
-    # Diet data file: 2012-06 and on
+    # Diet data file
     #
     # 'sleep' is at least 8-hours of sleep.
-    # Increase weights for more hours of sleep or larger quantities of food.
+    #
+    # Important: decrease weights for more hours of sleep or larger quantities of food.
+    # Decreasing a weight makes a feature _more_ important ("less causes more" effect principle)
     #
     Date,MorningWeight,YesterdayFactors
     2012-06-10,185.0,
     2012-06-11,182.6,salad sleep bacon cheese tea halfnhalf icecream
     2012-06-12,181.0,sleep egg
-    2012-06-13,183.6,mottsfruitsnack:2 pizza:5 bread:2 date:3 dietsnapple splenda milk nosleep
-    2012-06-14,183.6,coffeecandy:5 egg mayo cheese:4 rice meat bread:0 peanut:5
-    2012-06-15,183.4,meat sugarlesscandy salad cherry:4 bread:0 dietsnapple:2 egg mayo oliveoil
-    2012-06-16,183.6,caprise bread grape:10 pasadena sugaryogurt dietsnapple:2 peanut:5 hotdog
-    2012-06-17,182.6,grape:6 meat pistachio:5 peanut:5 cheese sorbet:5 orangejuice:2
+    2012-06-13,183.6,mottsfruitsnack:2 pizza:0.5 bread:0.5 date:3 dietsnapple splenda milk nosleep
+    2012-06-14,183.6,coffeecandy:2 egg mayo cheese:2 rice meat bread:0.5 peanut:0.4
+    2012-06-15,183.4,meat sugarlesscandy salad cherry:4 bread:0 dietsnapple:0.5 egg mayo oliveoil
+    2012-06-16,183.6,caprise bread grape:0.2 pasadena sugaryogurt dietsnapple:0.5 peanut:0.4 hotdog
+    2012-06-17,182.6,grape meat pistachio:5 peanut:5 cheese sorbet:5 orangejuice:2
     # and so on ...
 
 
@@ -226,9 +228,11 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 
 
 - [The Eating Academy | Peter Attia, M.D.](http://eatingacademy.com/)
+- [Why We Get Fat: And What to Do About It by Gary Taubes](http://www.amazon.com/gp/product/0307272702)
+- [Summary of Good Calories, Bad Calories - Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
 
 
-And watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
+Watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
 - [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
 
