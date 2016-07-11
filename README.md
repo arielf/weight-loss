@@ -59,7 +59,7 @@ Does a US typical lifestyle has anything to do with this epidemic? After reading
  - Fast food is highly available and very cheap
  - Most food we buy and eat is heavily processed -- [Food, Inc. (documentary)](http://www.takepart.com/foodinc/film)
  - "No Fat" and "Low Fat" labels are everywhere on supermarket shelves
- - Many foods are enriched and sweetened with corn-syrup -- [Sugar Coated (documentary)](http://sugarcoateddoc.com/)
+ - Many foods are enriched and sweetened with high-fructose corn-syrup -- [Sugar Coated (documentary)](http://sugarcoateddoc.com/)
 
 As in many other instances, I realized I need to think for myself. Ignore all "expert" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic & data I can collect myself and trust.
 
