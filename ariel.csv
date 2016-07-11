@@ -23,13 +23,13 @@ Date,MorningWeight,YesterdayFactors
 2012-06-12,181.0,sleep:0.5 egg avocado
 2012-06-13,183.6,mottsfruitsnack pizza bread date:1.5 dietsnapple splenda milk nosleep:0.1
 2012-06-14,183.6,coffeecandy egg mayo cheese:0.7 rice meat bread:0 peanut
-2012-06-15,183.4,meat sugarlesscandy salad cherry:0.7 bread:0 dietsnapple egg mayo oliveoil cheese yogurt peanut
-2012-06-16,183.6,bread grape:10 pasadena sugaryogurt dietsnapple peanut ketchup orangejuice
+2012-06-15,183.4,meat sugarlesscandy salad cherry:0.7 bread:0 dietsnapple egg mayo oliveoil cheese peanut
+2012-06-16,183.6,bread grape:10 sugaryogurt dietsnapple peanut ketchup orangejuice
 2012-06-17,182.6,grape:6 meat pistachio peanut cheese sorbet
 2012-06-18,182.4,bread:0 peanut sorbet pizza cheese cherry:1 soup
 2012-06-19,182.4,cherry knish cheese meat pistachio:0.7 peanut
 2012-06-20,183.0,sorbet granolabar peanut:8 pistachio snapple sugaryogurt
-2012-06-21,182.6,cheese salad peanut beans:0.2 soup dietsnapple meat salmon artichokepie cucumber
+2012-06-21,182.6,cheese salad peanut beans:0.2 soup dietsnapple meat salmon artichokepie
 2012-06-22,182.0,cheese salad peanut:0.5 meatball egg crab cherry pistachio atkinsbar tea milk
 2012-06-23,182.8,bread sorbet coffeecandy peanut:0.5 snapple
 2012-06-24,182.4,pizza:0.8 peanut:0.5 sorbet sugaryogurt tea milk cheese
@@ -42,7 +42,7 @@ Date,MorningWeight,YesterdayFactors
 2012-07-08,181.8,
 2012-07-09,182.2,apple bun:0.5 corn pistachio peanut:0.7 ketchup quinoa peas milk tea splenda nosleep:0.5 melon bread:0.4 watermelon:0.7
 2012-07-10,181.2,salmon chicken salad dietsnapple:1 snapple plum mottsfruitsnack:1 cheese sugaryogurt egg oliveoil mayo
-2012-07-11,181.8,pizza:0.7 dietsnapple icecream-sandwich pistachio milk splenda cocoa
+2012-07-11,181.8,pizza:0.7 dietsnapple icecreamsandwich pistachio milk splenda cocoa
 2012-07-12,180.8,chicken beef beans salad dietsnapple milk cocoa splenda pistachio peanut cheese egg oliveoil mayo
 2012-07-13,180.8,milk cocoa splenda peanut cheese coffeecandy chicken parmagian apple meatball sorbet stayhome
 2012-07-14,181.4,hotdog bread dietsnapple redpepper:0.5 milk cocoa splenda cheese nectarine apple
@@ -59,7 +59,7 @@ Date,MorningWeight,YesterdayFactors
 2012-07-25,180.6,beef chicken salad cheese milk cocoa splenda dietsnapple sugaryogurt beans broccoli peanut mottsfruitsnack
 2012-07-26,180.6,chicken bbqsauce beef coleslaw egg pistachio milk cocoa splenda salad mayo gummybears coffeecandy:0.5 apple:.4 dietsnapple
 2012-07-27,181.0,cheeseburger bread grilledonion fries apple coffeecandy sorbet cheese
-2012-07-28,181.0,peanut yogurt granola cookie:0.7 bread salad soup dietsnaple splenda milk cocoa
+2012-07-28,181.0,peanut granola cookie:0.7 bread salad soup dietsnaple splenda milk cocoa
 2012-07-29,181.4,salad bacon bread croissant icecreamsandwich sorbet chicken bbqsauce cheese whitenectarine peanut milk frappuccino splenda
 2012-07-30,181.2,milk splenda whitenectarine egg pistachio peanut sugaryogurt
 2012-07-31,181.4,chicken beef salad peach plum fries cetchup peanut pistachio cornbread shrimp
@@ -123,7 +123,7 @@ Date,MorningWeight,YesterdayFactors
 2012-09-28,182.4,sprouts salad
 2012-09-29,181.6,sleep avocado cheese wine salad thinpretzel
 2012-09-30,183,nosleep bread clementine quesadilla corn
-2012-10-01,182.2,salad egg peanut pundant tofee chocolate stayhome milk splenda mayo challa wine
+2012-10-01,182.2,salad egg peanut tofee chocolate stayhome milk splenda mayo wine
 2012-10-02,183.0,wine cookie:0.5 pita hummus peanut meat bread bagel
 2012-10-03,,
 2012-10-04,,
@@ -140,7 +140,7 @@ Date,MorningWeight,YesterdayFactors
 2012-10-15,182.6,salad sleep bacon tea splenda icecream
 2012-10-16,184.5,bread pizza bagel danish
 2012-10-17,183.5,egg egg oliveoil olives:0.5
-2012-10-18,182.2,earthbalance egg havarti oliveoil bacon olives
+2012-10-18,182.2,earthbalance:0.7 egg havarti oliveoil bacon olives
 2012-10-19,,
 2012-10-20,,
 
