@@ -38,19 +38,25 @@ The chart was generated from the data file `weight.2015.csv` by the script `date
 
 In the following I'll describe the thought process, other people ideas,  and the software I used to lead me in the right direction.
 
+#### Disclaimer:
+
+The below is what worked, and I strongly believe is good for me and possibly for others. Your situation may be different. Listen to your own body.
+
+
 ## Salient facts & initial observations
 
 - I used to be a pretty thin person. My 1st DMV card below, says 143 lb.
 - Unfortunately, since moving to the US, I've been gaining more and
   more weight. I peaked in 2015, over 50 lbs higher.
 - The US is a country where obesity is an epidemic.
+- Poorer demographics in the US have higher levels of obesity.
 
 ![First DMV photo and weight (with full clothing)](1992-ariel-dmv.png "143 pounds, sometimes in the 90's")
 
 
 Does a US typical lifestyle has anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
 
- - Fast food is the default food
+ - Fast food is highly available and very cheap
  - Most food we buy and eat is heavily processed -- [Food, Inc. (documentary)](http://www.takepart.com/foodinc/film)
  - "No Fat" and "Low Fat" labels are everywhere on supermarket shelves
  - Many foods are enriched and sweetened with corn-syrup -- [Sugar Coated (documentary)](http://sugarcoateddoc.com/)
