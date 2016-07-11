@@ -119,7 +119,7 @@ Here's how a typical result of running `make` looks like.
 
     FeatureName       HashVal   ...   Weight RelScore
     nosleep            143407   ...  +0.6654 90.29%
-    watermelon         149311   ...  +0.4636 62.91%
+    melon              234655   ...  +0.4636 62.91%
     sugarlemonade      203375   ...  +0.3975 53.94%
     trailmix           174671   ...  +0.3362 45.63%
     bread              135055   ...  +0.3345 45.40%
