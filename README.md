@@ -13,7 +13,7 @@ In the following I'll describe the thought process, other people ideas,  and the
 
 #### Disclaimer:
 
-The below is what worked, and I strongly believe is good for me and possibly for others. Your situation may be different. Listen to your own body.
+The below is what worked for me. Your situation may be different. Listen to your own body.
 
 OK, with that behind us, let's now channel Galileo in the face of the inquisition: evolution has been hard at work for about 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, Glucose metabolism, insulin spikes, glycogen in the liver, Carnitine, Lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be that different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and its reverse.
 
