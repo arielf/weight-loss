@@ -1,7 +1,7 @@
 Discovering ketosis: _how to effectively lose weight_
 =====================================================
 
- *Here is a chart of my weight vs. time in the past 16 months or so:*
+### _Here is a chart of my weight vs. time in the past 16 months or so:_
 
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
@@ -15,7 +15,7 @@ In the following I'll describe the thought process, other people ideas,  and the
 
 The below is what worked, and I strongly believe is good for me and possibly for others. Your situation may be different. Listen to your own body.
 
-JK :-) Let's promote truth for a change. To channel Galileo in the face of the inquisition: evolution has been hard at work for about 2 billion years shaping the chemistry of all eukaryotes, and mammals. The Krebs cycle, Glucose metabolism, insulin spikes, glycogen in the liver, Carnitine, Lipase, are as real for you just as they are for me. We may be vastly different in our genes and traits, but we are not different in our most fundamental chemistry.
+OK, with that behind us, let's now channel Galileo in the face of the inquisition: evolution has been hard at work for about 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, Glucose metabolism, insulin spikes, glycogen in the liver, Carnitine, Lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be that different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and its reverse.
 
 
 ## Salient facts & initial observations
