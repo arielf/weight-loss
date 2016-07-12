@@ -183,7 +183,7 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 
 - High fat: I have switched from milk to half-and-half. It has less carbs (lactose) and more fat; plus, it tastes better.  Eat avocados, olive oil, mayo, coconut oil, nuts.  I never worry about *natural* fat, I eat as much as want of it. This is what makes it much easier to avoid carbs. When I stuff myself with fat I feel much less hungry and miss the carbs less. The body is very good at figuring this out "I have too much fat in the blood, so let's increase the amount of enzymes which break-up fat" and this makes me lose weight in the long run.  Most importantly, I avoid products labeled "low fat" or "fat free". The food industry usually replaces fat with sugar (so it tastes better, otherwise it tastes awful). You'll often hear about bad vs good fat. My take: as long as it is natural, it is ok. The worst trans-fat is fat that's artificially hydrogenated, to increase shelf-life, by the food industry. The less saturated fat is, the better. Mono-saturated (plant) liquid oil is the best, then come the poly-unsaturated fats, and finally near saturated (but not fully saturated) fats that come from animals. My buttery-spread spectrum is:  *Margarine: no; Butter: ok; Earth Balance: no problem*. Even saturated fat gets broken and depleted when the body is in ketosis.
 
-- A bit of exercise.  Of course more is better, but for many this may prove difficult. I don't excercise too much. I just bike to work and back about 20 min each way, meaning 40 min/day, 5 out of 7 days/week. Walking the dog (but walk faster), or Zumba dance to music. The trick is to find something that you don't find hard to do. Or find company to do it together. Then do a little bit of it every day.
+- A bit of exercise.  Of course, more is better, but for many this may prove difficult. I don't excercise too much. I just bike to work and back about 20 min each way, meaning 40 min/day, 5 out of 7 days/week. Walking the dog (but walk faster), or Zumba dance to music. The trick is to find something that you don't find hard to do. Or find company to do it together. Then do a little bit of it every day. I'm not 100% sure excercise is absolutely essential to losing weight, but I believe it helps accelerate the process.
 
 - Longer fasting periods: sleep longer, stop eating as early as possible before going to sleep and start eating as late as possible after sleeping. Skip breakfast, after some time you won't feel hungry in the morning anymore.  After long periods of fasting, the body chemistry adjusts: I need more ATP, but I don't have glucose in the blood, and the glycogen in the liver is all fully consumed (takes about 1-2 days of low or no carbs) so there's no other option but to start and break-up stored fat. This elevates the enzymes that help with breaking up fat and the Krebs cycle reverses direction in the paths where it matters.
 
@@ -206,6 +206,12 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 - [Why We Get Fat: And What to Do About It / Gary Taubes](http://www.amazon.com/gp/product/0307272702)
 - [Summary of Good Calories, Bad Calories / Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
 - [The Obesity Code: Unlocking the Secrets of Weight Loss / Jason Fung](https://www.amazon.com/Obesity-Code-Unlocking-Secrets-Weight-ebook/dp/B01C6D0LCK/)
+
+#### Documentaries:
+
+- [Food, Inc. (2008)](https://www.netflix.com/title/70108783)
+-  [Sugar Coated (2015)](https://www.netflix.com/title/80100595)
+
 
 Watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
