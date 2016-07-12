@@ -1,4 +1,4 @@
-# Discovering ketosis: *how to effectively lose weight*
+# *Discovering ketosis: how to effectively lose weight*
 
 <p>
  *Here is a chart of my weight vs. time in the past 16 months or so:*
