@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Weight-loss by arielf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Weight-loss</h1>
+      <h2 class="project-tagline">How to effectively lose weight</h2>
+      <a href="https://github.com/arielf/weight-loss" class="btn">View on GitHub</a>
+      <a href="https://github.com/arielf/weight-loss/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/arielf/weight-loss/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="discovering-ketosis-how-to-effectively-lose-weight" class="anchor" href="#discovering-ketosis-how-to-effectively-lose-weight" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Discovering ketosis: <em>how to effectively lose weight</em>
+</h1>
+
+<p><em>Here is a chart of my weight vs. time in the past 16 months or so</em></p>
+
+<p><img src="weight.2015.png" alt="weight vs. time in the past 16 months or so" title="weight loss progress"></p>
+
+<p>The chart was generated from the data file <a href="weight.2015.csv"><code>weight.2015.csv</code></a> by the script <a href="date-weight.r"><code>date-weight.r</code></a> in this git repository.  It requires <a href="http://r-project.org"><code>R</code></a> and <code>ggplot2</code>.</p>
+
+<p>In the following I'll describe the thought process, other people ideas,  and the software I used to lead me in the right direction.</p>
+
+<h4>
+<a id="disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disclaimer:</h4>
+
+<p>The below is what worked, and I strongly believe is good for me and possibly for others. Your situation may be different. Listen to your own body.</p>
+
+<p>JK :-) Let's promote truth for a change. To channel Galileo in the face of the inquisition: evolution has been hard at work for about 2 billion years shaping the chemistry of all eukaryotes, and mammals. The Krebs cycle, Glucose metabolism, insulin spikes, glycogen in the liver, Carnitine, Lipase, are as real for you just as they are for me. We may be vastly different in our genes and traits, but we are not different in our most fundamental chemistry.</p>
+
+<h2>
+<a id="salient-facts--initial-observations" class="anchor" href="#salient-facts--initial-observations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Salient facts &amp; initial observations</h2>
+
+<ul>
+<li>I used to be a pretty thin person. My 1st DMV card below, says 143 lb.</li>
+<li>Unfortunately, since moving to the US, I've been gaining more and
+more weight. I peaked in 2015, over 50 lbs higher.</li>
+<li>The US is a country where obesity is an epidemic.</li>
+<li>Poorer demographics in the US have higher levels of obesity.</li>
+</ul>
+
+<p><img src="1992-ariel-dmv.png" alt="First DMV photo and weight (with full clothing)" title="143 pounds, sometimes in the 90's"></p>
+
+<p>Does a US typical lifestyle has anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:</p>
+
+<ul>
+<li>Fast food is highly available and very cheap</li>
+<li>Most food we buy and eat is heavily processed -- <a href="http://www.takepart.com/foodinc/film">Food, Inc. (documentary)</a>
+</li>
+<li>"No Fat" and "Low Fat" labels are everywhere on supermarket shelves</li>
+<li>Many foods are enriched and sweetened with high-fructose corn-syrup -- <a href="http://sugarcoateddoc.com/">Sugar Coated (documentary)</a>
+</li>
+</ul>
+
+<p>As in many other instances, I realized I need to think for myself. Ignore all "expert" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic &amp; data I can collect myself and trust.</p>
+
+<p>Once I did, the results followed.</p>
+
+<h2>
+<a id="what-didnt-work" class="anchor" href="#what-didnt-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What didn't work</h2>
+
+<p>In the past, I tried several times to change my diet. After reading one of Atkins' books, I realized, checked, and accepted the fact that excess carbs are a major factor in gaining weight. But that realization alone has not led to success.</p>
+
+<p>My will power, apparently, was insufficient. I had too much love of pizza and bread.  I would reduce my carb consumption, lose a few pounds (typically ~5 pounds), and then break-down, go back to consuming excess carbs, and gain all these pounds back, and then some. My longest diet stretch lasted just a few months.</p>
+
+<p>It was obvious that something was missing in my method. I just had to find it. Obviously, I could increase my physical activity: say start training for a mini-marathon, but that's not what I felt comfortable with.</p>
+
+<p>I realized early on that I need to adopt a lifesyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable so it can turn into a painless routine. Something that:</p>
+
+<blockquote>
+<ul>
+<li>I could do for years</li>
+<li>Never feel the urge to break habits</li>
+<li>Is not hard, or unpleasant for me to do</li>
+</ul>
+</blockquote>
+
+<h2>
+<a id="early-insights--eureka-moments" class="anchor" href="#early-insights--eureka-moments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Early insights &amp; eureka moments</h2>
+
+<p>Early in the process I started using machine learning to identify the factors that make me gain or lose weight. I used a simple method: every morning I would weight myself and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much etc.</p>
+
+<p>The format of the data collection file is very simple. A CSV with 3 columns:</p>
+
+<blockquote>
+<p><em>Date</em>, <em>MorningWeight</em>, <em>Yesterday's lifestyle/food/actions</em></p>
+</blockquote>
+
+<p>The last column is a arbitrary-length list of <em><code>word[:weight]</code></em> items.</p>
+
+<p>The (optional) numerical-weight following <code>:</code>, expresses higher/lower quantities. The default weight, when missing is 1:</p>
+
+<pre><code>#
+# vim: textwidth=0 nowrap
+# Diet data file
+#
+# 'sleep' is at least 8-hours of sleep.
+#
+# Important: decrease weights for more hours of sleep or larger quantities of food.
+# Decreasing a weight makes a feature _more_ important ("less causes more" effect principle)
+#
+Date,MorningWeight,YesterdayFactors
+2012-06-10,185.0,
+2012-06-11,182.6,salad sleep bacon cheese tea halfnhalf icecream
+2012-06-12,181.0,sleep egg
+2012-06-13,183.6,mottsfruitsnack:2 pizza:0.5 bread:0.5 date:3 dietsnapple splenda milk nosleep
+2012-06-14,183.6,coffeecandy:2 egg mayo cheese:2 rice meat bread:0.5 peanut:0.4
+2012-06-15,183.4,meat sugarlesscandy salad cherry:4 bread:0 dietsnapple:0.5 egg mayo oliveoil
+2012-06-16,183.6,caprise bread grape:0.2 pasadena sugaryogurt dietsnapple:0.5 peanut:0.4 hotdog
+2012-06-17,182.6,grape meat pistachio:5 peanut:5 cheese sorbet:5 orangejuice:2
+# and so on ...
+</code></pre>
+
+<p>Then I wrote <a href="./lifestyle-csv2vw">a script</a> to convert this file to <a href="https://github.com/JohnLangford/vowpal_wabbit/wiki">vowpal-wabbit</a> training-set regression format. In the converted train-set the label is the change in weight (delta) in the past 24 hours, and the input features are what I've done or ate in the ~24 hours which led to this delta -- a straight copy of the 3rd column.</p>
+
+<p>I was not dieting at that time. Just collecting data.</p>
+
+<p>The machine learning process error convergence after partly sorting the lines descending, by abs(delta) to smooth it out, and 4-passes over the data, looks like this:</p>
+
+<p><img src="vw-convergence.png" alt="error convergence (after partial descending sort by delta)" title="loss convergence in 4 data passes"></p>
+
+<p>You can reproduce my work by building your own data-file, installing vowpal-wabbit, and its utility <a href="https://github.com/JohnLangford/vowpal_wabbit/wiki/using-vw-varinfo"><code>vw-varinfo</code></a>, and running <code>make</code> in this directory.</p>
+
+<p>Here's how a typical result of running <code>make</code> looks like.</p>
+
+<pre><code>FeatureName       HashVal   ...   Weight RelScore
+nosleep            143407   ...  +0.6654 90.29%
+melon              234655   ...  +0.4636 62.91%
+sugarlemonade      203375   ...  +0.3975 53.94%
+trailmix           174671   ...  +0.3362 45.63%
+bread              135055   ...  +0.3345 45.40%
+caramelizedwalnut  148079   ...  +0.3316 44.99%
+bun                  1791   ...  +0.3094 41.98%
+
+... (trimmed for brevity) ...
+
+stayhome           148879   ...  -0.2690 -36.50%
+bacon               64431   ...  -0.2998 -40.69%
+egg                197743   ...  -0.3221 -43.70%
+parmagian          121679   ...  -0.3385 -45.94%
+oliveoil           156831   ...  -0.3754 -50.95%
+halfnhalf          171855   ...  -0.4673 -63.41%
+sleep              127071   ...  -0.7369 -100.00%
+</code></pre>
+
+<p>The positive relative-score values are life-style choices that make you gain weight, while the negative ones make you lose weight. This particular data set is very noisy, since:</p>
+
+<ul>
+<li>The number of original data-points (days) is small</li>
+<li>My scales are not accurate, and a typical daily change in weight is very small</li>
+<li>Items that make you both lose and gain weight, often appear on the same line so they cancel each other and confuse the learning process.</li>
+</ul>
+
+<p>So I focused mostly on the extremes (start and end) of the list as presented above. </p>
+
+<p>Despite the noisy &amp; insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts very obvious, pretty early:</p>
+
+<ul>
+<li>Sleeping longer consistently appeared as #1 factor in losing weight.</li>
+<li>Lack of sleep did the opposite: too little sleep lead to weight gains.</li>
+<li>Carbs make you gain weight. The worst are high-starch and sugary foods.</li>
+<li>Fatty and oily foods do the opposite: they make you lose weight.</li>
+</ul>
+
+<p>The 'stayhome' lifestlye, which fell mostly on weekends, was a red-herring, I simply slept longer when I didn't have to commute to work.</p>
+
+<p>It took me a while to figure out the sleep part. When we sleep we don't eat. It is that simple.</p>
+
+<p>Moreover: we tend to binge and snack while not particularly hungry, but we never do it during sleep.</p>
+
+<p>And our sleeping time is our fasting time.</p>
+
+<p>But it is not enough to fast. We also need to channel our body chemistry to break-up excess stored-fat while we fast.</p>
+
+<h2>
+<a id="further-progress" class="anchor" href="#further-progress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further progress</h2>
+
+<p>You may note that in the top chart there's a notable acceleration in the rate of weight loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the causes of weight gain and loss.</p>
+
+<p>Extending the fasting time was one major accelerator of weight-loss rate. I did that by:</p>
+
+<ul>
+<li>Skipping breakfast and</li>
+<li>Stop eating earlier in the evening before going to bed.</li>
+</ul>
+
+<p>This gave me 14-16 hours of fasting each day. Rather than the more typical 10-12 hours/day of fasting.</p>
+
+<p>The 2nd accelerator was loading up on fat in order to feel full.</p>
+
+<p>The 3rd accelerator was understanding the concepts of <a href="https://en.wikipedia.org/wiki/Glycemic_index">Glycemic index</a> and <a href="https://en.wikipedia.org/wiki/Glycemic_load">Glycemic Load</a>, and shifting whatever I chose to eat towards lower Glycemic loads.</p>
+
+<p>I now feel pretty confident that I can go all the way back to my original weight when I first landed on US soil.</p>
+
+<p>At the present rate, it should take not more than 2 years to completely reverse the damage of the past 20 years. </p>
+
+<p>It is important to stress that I also feel much better the more weight I lose. As a welcome side-effect, all the bordeline-high levels in my blood tests, have moved significantly towards normal averages during the same period when I lost weight.</p>
+
+<p>Beware of doctors <a href="https://www.google.com/search?q=the+truth+about+statins">who push statins</a> instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous.</p>
+
+<p>My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block for many essential by-products. The liver produces as much cholesterol as it needs. It is not our <strong><em>high fat consumption</em></strong>, it is the <strong><em>storage of fat process</em></strong> that makes us unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so our body fat gets converted to energy, we need to give the body fat as an alternative to carbohydrates. When the body has depleted both the blood sugar and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.</p>
+
+<p>When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and their levels become elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight battle.</p>
+
+<p>In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.</p>
+
+<h2>
+<a id="the-bottom-line-recipe---all-you-need-to-succeed" class="anchor" href="#the-bottom-line-recipe---all-you-need-to-succeed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The bottom-line recipe - all you need to succeed:</h2>
+
+<ul>
+<li><p>The hardest part (especially at the beginning) is reducing carbs. The worst carbs are starches (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, other juices, etc). This doesn't mean <strong><em>no</em></strong> carbs. You may afford yourself carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to get you out of ketosis. However, you need to make sure you consume <strong><em>much less carbs</em></strong> and <strong><em>less frequently</em></strong> than before. In particular, you must avoid binges of snacks like chips, pizza, doughnuts, pasta, and bread.</p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Glycemic_index">Look-up Glycemic index</a> and <a href="https://en.wikipedia.org/wiki/Glycemic_load">Glycemic Load</a> on wikipedia. Avoid foods with high glycemic load. This prevents the blood sugar spikes which lead to insulin spikes and tell the body chemical cycles to revert back from ketosis to fat-accumulation.  Have a sweet tooth? Eat an orange instead of drinking orange juice. The two have vastly different glycemic loads and this makes a huge difference. If you must add sweetness to your cup of tea or coffee, use a Splenda (sucralose) tablet (~0.1 gram) rather than a tea-spoon of sugar (several grams). Result: same sweetness effect, but much lower blood-glucose.</p></li>
+<li><p>High fat: I have switched from milk to half-and-half. It has less carbs (lactose) and more fat; plus, it tastes better.  Eat avocados, olive oil, mayo, coconut oil, nuts.  I never worry about <em>natural</em> fat, I eat as much as want of it. This is what makes it much easier to avoid carbs. When I stuff myself with fat I feel much less hungry and miss the carbs less. The body is very good at figuring this out "I have too much fat in the blood, so let's increase the amount of enzymes which break-up fat" and this makes me lose weight in the long run.  Most importantly, I avoid products labeled "low fat" or "fat free". The food industry usually replaces fat with sugar (so it tastes better, otherwise it tastes awful). You'll often hear about bad vs good fat. My take: as long as it is natural, it is ok. The worst trans-fat is fat that's artificially hydrogenated, to increase shelf-life, by the food industry. The less saturated fat is, the better. Mono-saturated (plant) liquid oil is the best, then come the poly-unsaturated fats, and finally near saturated (but not fully saturated) fats that come from animals. My buttery-spread spectrum is:  <em>Margarine: no; Butter: ok; Earth Balance: no problem</em>. Even saturated fat gets broken and depleted when the body is in ketosis.</p></li>
+<li><p>A bit of exercise.  Of course more is better, but for many this may prove difficult. I don't excercise too much. I just bike to work and back about 20 min each way, meaning 40 min/day, 5 out of 7 days/week. Walking the dog (but walk faster), or Zumba dance to music. The trick is to find something that you don't find hard to do. Or find company to do it together. Then do a little bit of it every day.</p></li>
+<li><p>Longer fasting periods: sleep longer, stop eating as early as possible before going to sleep and start eating as late as possible after sleeping. Skip breakfast, after some time you won't feel hungry in the morning anymore.  After long periods of fasting, the body chemistry adjusts: I need more ATP, but I don't have glucose in the blood, and the glycogen in the liver is all fully consumed (takes about 1-2 days of low or no carbs) so there's no other option but to start and break-up stored fat. This elevates the enzymes that help with breaking up fat and the Krebs cycle reverses direction in the paths where it matters.</p></li>
+<li><p>Eat eggs.  They are a wonderful combo of fat and protein with no carbs at all.  I read an interview with a Japanese woman who reached 124 years and one of her secrets was to eat an egg daily.  My favorite food is a scrambled egg with grilled onions (onions are a bit high on carbs, but too tasty to give up) and olives.</p></li>
+<li><p>Eat slower, chew longer... don't swallow just yet! Humans, just like dogs, tend to swallow too soon. Stop eating when you feel full. This comes from another recent interview with a 102 year-old man listing his secrets.</p></li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="further-reading" class="anchor" href="#further-reading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further reading:</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Citric_acid_cycle">The Krebs (aka Citric acid) cycle</a></li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Sugar_crash">Spikes of Insulin and their effects</a> -- what the body does when it has excess of sugar vs excess of fat.</li>
+<li><a href="https://en.wikipedia.org/wiki/Glycemic_index">Glycemic Index</a></li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Glycemic_load">Glycemic Load</a> -- a better metric for weight-loss than Glycemic Index.</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Glycogen">Glycogen and its storage in the liver</a></p></li>
+<li><p><a href="http://eatingacademy.com/">The Eating Academy / Peter Attia, M.D.</a></p></li>
+<li><a href="http://www.amazon.com/gp/product/0307272702">Why We Get Fat: And What to Do About It / Gary Taubes</a></li>
+<li><a href="https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/">Summary of Good Calories, Bad Calories / Gary Taub by Lower Thought</a></li>
+<li><a href="https://www.amazon.com/Obesity-Code-Unlocking-Secrets-Weight-ebook/dp/B01C6D0LCK/">The Obesity Code: Unlocking the Secrets of Weight Loss / Jason Fung</a></li>
+</ul>
+
+<p>Watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):</p>
+
+<ul>
+<li>
+<a href="https://vimeo.com/147795263">James McCarter: The Effects of a Year in Ketosis</a> </li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/arielf/weight-loss">Weight-loss</a> is maintained by <a href="https://github.com/arielf">arielf</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
