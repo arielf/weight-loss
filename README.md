@@ -140,9 +140,7 @@ It took me a while to figure out the sleep part. When we sleep we don't eat. It 
 
 Moreover: we tend to binge and snack while not particularly hungry, but we never do it during sleep.
 
-And our sleeping time is our fasting time.
-
-But it is not enough to fast. We also need to channel our body chemistry to break-up excess stored-fat while we fast.
+Our sleeping time is our longest fasting time.
 
 
 ## Further progress
@@ -160,13 +158,15 @@ The 2nd accelerator was loading up on fat in order to feel full.
 
 The 3rd accelerator was understanding the concepts of [Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load), and shifting whatever I chose to eat towards lower Glycemic loads.
 
-I now feel pretty confident that I can go all the way back to my original weight when I first landed on US soil.
+I now believe that I can go all the way back to my original weight when I first landed on US soil.
 
-At the present rate, it should take not more than 2 years to completely reverse the damage of the past 20 years. 
+If I can keep the present rate, it should take 1-2 years to completely reverse the damage of the past 20 years. 
 
 It is important to stress that I also feel much better the more weight I lose. As a welcome side-effect, all the bordeline-high levels in my blood tests, have moved significantly towards normal averages during the same period when I lost weight.
 
-Beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. Doubt anyone who tells you you need to reduce fat. Run away if they tell you "high cholesterol" is dangerous.
+### What was my data and clear improvement in health saying?
+
+Looking at my data, and reading more, convinced me that I should beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. I started doubting anyone who told me I need to reduce fat. I run away if anyone now tells me "high cholesterol" is dangerous.
 
 My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol is an essential building block for many essential by-products. The liver produces as much cholesterol as it needs. It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us unhealthy.  An enzyme called Lipase breaks-up fat. To raise the levels of Lipase so our body fat gets converted to energy, we need to give the body fat as an alternative to carbohydrates. When the body has depleted both the blood sugar and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
 
@@ -175,7 +175,7 @@ When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize and
 In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.
 
 
-## The bottom-line recipe - all you need to succeed:
+## My bottom-line recipe:
 
 - The hardest part (especially at the beginning) is reducing carbs. The worst carbs are starches (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, other juices, etc). This doesn't mean ***no*** carbs. You may afford yourself carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to get you out of ketosis. However, you need to make sure you consume ***much less carbs*** and ***less frequently*** than before. In particular, you must avoid binges of snacks like chips, pizza, doughnuts, pasta, and bread.
 
@@ -206,6 +206,8 @@ In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking a
 - [Why We Get Fat: And What to Do About It / Gary Taubes](http://www.amazon.com/gp/product/0307272702)
 - [Summary of Good Calories, Bad Calories / Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
 - [The Obesity Code: Unlocking the Secrets of Weight Loss / Jason Fung](https://www.amazon.com/Obesity-Code-Unlocking-Secrets-Weight-ebook/dp/B01C6D0LCK/)
+- [The best summary about statins I've seen](http://www.newswithviews.com/Howenstine/james23.htm)
+- [High cholesterol doesn't cause heart disease](http://www.telegraph.co.uk/science/2016/06/12/high-cholesterol-does-not-cause-heart-disease-new-research-finds/)
 
 #### Documentaries:
 
