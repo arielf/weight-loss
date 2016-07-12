@@ -1,4 +1,4 @@
-# Discovering ketosis:<br>How to effectively (and easily)<br> lose weight
+# Discovering ketosis:<br>*How to effectively lose weight*
 
 
 
@@ -6,33 +6,7 @@
 
 ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
-The chart was generated from the data file `weight.2015.csv` by the script `date-weight.r` in this git repository.  It requires `R` and `ggplot2`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The chart was generated from the data file [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and `ggplot2`.
 
 
 
