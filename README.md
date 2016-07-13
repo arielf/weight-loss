@@ -117,7 +117,7 @@ Type `make` in this directory, and some magic happens. Here's how a typical resu
     stayhome           148879   ...  -0.2690 -36.50%
     bacon               64431   ...  -0.2998 -40.69%
     egg                197743   ...  -0.3221 -43.70%
-    parmisan            80079   ...  -0.3385 -45.94%
+    parmesan             3119   ...  -0.3385 -45.94%
     oliveoil           156831   ...  -0.3754 -50.95%
     halfnhalf          171855   ...  -0.4673 -63.41%
     sleep              127071   ...  -0.7369 -100.00%
