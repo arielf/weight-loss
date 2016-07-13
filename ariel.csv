@@ -2,17 +2,28 @@
 # vim: textwidth=0 nowrap
 # Diet data file: 2012-06 and on
 #
-# 'sleep' means at least 8 hours of sleep.
+# 'sleep' (one unit) means _at least_ 8 hours of sleep.
+#
+# 'sleep' means at least 8-hours of sleep.
+# Don't add 'sleep' unless you slept more than 8 hours.
+# If you slept less than 8 hours, use 'nosleep' instead.
 #
 # To emphasize any factor, i.e. make it more important/pronounced,
 # in the importance order you need to _decrease_ its weight.
 #
 # This is due to the "less quantity drives more effect" principle
-# when calculating "importance" (effect on the target feature).
+# when calculating _importance_ (effect on the target feature).
 #
-# e.g, if you slept a lot more than normal one day, you may want to do:
-#       sleep:0.5
-# Which (unintuitively) means _double_ the sleep time, rather than halve it.
+# e.g, if you avoid carbs, and one day you eat just one
+# slice of bread, say 0.5 of a normal portion, you could do:
+#
+#       bread:0.5
+#
+# Which (perhaps unintuitively) means double, the importance
+# of the eating bread effect, rather than halve it.
+#
+# IOW: if you eat "more of X", then every unit/gram of X
+# has relatively less effect given the weight-gain is the same.
 #
 # The default factor weight (when missing) is 1.0
 #

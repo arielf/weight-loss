@@ -68,12 +68,16 @@ The (optional) numerical-weight following `:`, expresses higher/lower quantities
  
     #
     # vim: textwidth=0 nowrap
-    # Diet data file
+    # Diet/Lifestyle data file
     #
-    # 'sleep' is at least 8-hours of sleep.
+    # 'sleep' means at least 8-hours of sleep.
+    # Don't add 'sleep' unless you slept more than 8 hours.
+    # If you slept less than 8 hours, use 'nosleep' instead.
     #
-    # Important: decrease weights for more hours of sleep or larger quantities of food.
-    # Decreasing a weight makes a feature _more_ important (by the "less causes more" effect principle)
+    # Important: increase weights for more hours of sleep or larger quantities of food.
+    #
+    # Decreasing a weight makes a feature _more_ important (by the "less causes more"
+    # effect principle) - this may be unintuitive.
     #
     Date,MorningWeight,YesterdayFactors
     2012-06-10,185.0,
