@@ -10,6 +10,12 @@
 #	- Weight yourself once a day
 #	- Record what you do/eat daily
 #
+# How to run this code:
+#	- Install vowpal-wabbit & its utility utl/vw-varinfo
+#	- Clone this repo: https://github.com/arielf/weight-loss
+#	- Place your data in <username>.csv
+#	- Type 'make'
+#
 PATH := $(HOME)/bin:/bin:/usr/bin:.
 NAME := $(shell ./username)
 
