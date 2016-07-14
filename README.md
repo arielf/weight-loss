@@ -216,6 +216,7 @@ The above is a very simplified and hopefuly easy to digest version, of what some
 - [The Obesity Code: Unlocking the Secrets of Weight Loss / Jason Fung](https://www.amazon.com/Obesity-Code-Unlocking-Secrets-Weight-ebook/dp/B01C6D0LCK/)
 - [The best summary about statins I've seen](http://www.newswithviews.com/Howenstine/james23.htm)
 - [High cholesterol doesn't cause heart disease](http://www.telegraph.co.uk/science/2016/06/12/high-cholesterol-does-not-cause-heart-disease-new-research-finds/)
+- [Dr. Mark Hyman take on a good diet (a bit different than mine)](http://drhyman.com/blog/2014/08/18/one-test-doctor-isnt-save-life/)
 
 #### Documentaries:
 
