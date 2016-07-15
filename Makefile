@@ -63,13 +63,13 @@ all:: score
 s score: $(TRAINFILE)
 	vw-varinfo $(VW_ARGS) $(TRAINFILE)
 
-m $(MODELFILE): FORCE
+m model $(MODELFILE): Makefile $(TRAINFILE)
 	$(VW) -f $(MODELFILE) $(TRAINFILE)
 
-t $(TRAINFILE): $(MASTERDATA) $(TOVW)
+t train $(TRAINFILE): Makefile $(MASTERDATA) $(TOVW)
 	$(TOVW) $(MASTERDATA) | sort-by-abs > $(TRAINFILE)
 
-c chart: $(DWCSV)
+c chart $(DWPNG): date-weight.r $(DWCSV)
 	date-weight.r $(DWCSV) $(DWPNG)
 
 conv: $(TRAINFILE)
@@ -78,5 +78,9 @@ conv: $(TRAINFILE)
 clean:
 	/bin/rm -f $(MODELFILE) *.cache* *.tmp*
 
-FORCE:
+# Give a more friendly error if original data doesn't exist
+$(MASTERDATA):
+	@echo "=== Sorry: you must provide your data in '$(MASTERDATA)'"
+	@exit 1
+
 
