@@ -1,16 +1,10 @@
 #!/usr/bin/Rscript --vanilla
-
-# -- where to look for R libraries
-# .libPaths(c('~/local/lib/R',
-#             '/usr/lib/R/library',
-#             '/usr/lib/R/site-library'
-# ))
-
+#
+# Generate weight gain/loss factor chart
+#
 eprintf <- function(...) cat(sprintf(...), sep='', file=stderr())
 
 suppressPackageStartupMessages(library(ggplot2))
-# for date_breaks()
-suppressPackageStartupMessages(library(scales))
 
 # --- styles
 ratio = 1.61803398875
@@ -32,7 +26,6 @@ y.axis.theme  = element_text(family="FreeSans", face="bold",
                             size=FONTSIZE-2, colour=MyGray)
 legend.theme  = element_text(family="FreeSans", face="bold.italic",
                             size=FONTSIZE-1, colour="black")
-
 
 Params <- list()
 process.args <- function() {

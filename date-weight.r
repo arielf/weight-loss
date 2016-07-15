@@ -1,11 +1,7 @@
 #!/usr/bin/Rscript --vanilla
-
-# -- where to look for R libraries
-.libPaths(c('~/local/lib/R',
-             '/usr/lib/R/library',
-             '/usr/lib/R/site-library'
-))
-
+#
+# Generate date vs. weight chart
+#
 eprintf <- function(...) cat(sprintf(...), sep='', file=stderr())
 
 suppressPackageStartupMessages(library(ggplot2))
