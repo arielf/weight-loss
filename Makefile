@@ -61,7 +61,9 @@ DWPNG := weight.png
 all:: score
 
 s score: $(TRAINFILE)
-	vw-varinfo $(VW_ARGS) $(TRAINFILE)
+	vw-varinfo $(VW_ARGS) $(TRAINFILE) | tee scores.txt
+	@perl -ane '$$F[5] =~ tr/%//d ;print "$$F[0],$$F[5]\n"' scores.txt > scores.csv
+	@score-chart.r scores.csv
 
 m model $(MODELFILE): Makefile $(TRAINFILE)
 	$(VW) -f $(MODELFILE) $(TRAINFILE)
