@@ -73,12 +73,19 @@ Title <- ifelse(length(Params$title),
    'Relative weight-loss factor importance\n(negative means causing weight loss)'
 )
 
+# -- Color weight-gains in red and weigh-losses in green for effect
+#    (this is one uncommon case where a 'positive' quantity is actually undesired/negative)
+MyGreen = '#00cc00'
+MyRed = '#ff0000'
+
 d <- read.csv(CsvFile, h=T, sep=',', colClasses=c('character', 'numeric'))
 N = nrow(d)
 FeatureNo = 1:N
 TextOffset = ifelse(d$RelScore > 0, -2, +2)
 TextJust = d$RelScore > 0
-FillColor = ifelse(d$RelScore > 0, '#ff0000', '#00cc00')
+FillColor = ifelse(d$RelScore > 0, MyRed, MyGreen)
+FeatureLabels = sprintf("%s (%.1f%%)", d$FeatureName, d$RelScore)
+ZeroScore = which(d$RelScore == 0)
 
 g <- ggplot(
         data=d,
@@ -96,10 +103,12 @@ g <- ggplot(
         # colour='grey80'
     ) +
     coord_flip() +
-    geom_text(label=d$FeatureName, size=2.0, angle=0, y=TextOffset, x=FeatureNo, hjust=TextJust) +
+    geom_text(label=FeatureLabels, size=2.0, angle=0, y=TextOffset, x=FeatureNo, hjust=TextJust) +
     ggtitle(Title) +
     ylab('Relative Importance (%pct)') +
     xlab(NULL) +
+    geom_text(label='Weight\nGain', x=ZeroScore-20, y=40, angle=0, colour=MyRed, size=8, family='FreeSans', fontface=4) +
+    geom_text(label='Weight\nLoss', x=ZeroScore+20, y=-40, angle=0, colour=MyGreen, size=8, family='FreeSans', fontface=4) +
     theme(
         plot.title=title.theme,
         axis.title.y=y.title.theme,

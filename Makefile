@@ -63,7 +63,7 @@ all:: score
 s score scores.txt: $(TRAINFILE)
 	vw-varinfo $(VW_ARGS) $(TRAINFILE) | tee scores.txt
 
-sc score-charts scores.png: scores.txt
+sc score-charts scores.png: scores.txt score-chart.r
 	@perl -ane '$$F[5] =~ tr/%//d ;print "$$F[0],$$F[5]\n"' scores.txt > scores.csv
 	@score-chart.r scores.csv && echo "=== done: feature-chart is 'scores.png'"
 
