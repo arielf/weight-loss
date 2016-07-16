@@ -52,6 +52,7 @@ TRAINFILE  = $(NAME).train
 MODELFILE  = $(NAME).model
 DWCSV := weight.2015.csv
 DWPNG := weight.png
+SCPNG := scores.png
 
 .PRECIOUS: Makefile $(MASTERDATA) $(TOVW)
 
@@ -63,26 +64,33 @@ all:: score
 s score scores.txt: $(TRAINFILE)
 	vw-varinfo $(VW_ARGS) $(TRAINFILE) | tee scores.txt
 
-sc score-charts scores.png: scores.txt score-chart.r
-	@perl -ane '$$F[5] =~ tr/%//d ;print "$$F[0],$$F[5]\n"' scores.txt > scores.csv
-	@score-chart.r scores.csv && echo "=== done: feature-chart is 'scores.png'"
+c charts: weight-chart score-chart
 
+# -- Weight by date chart
+wc weight-chart $(DWPNG): date-weight.r $(DWCSV)
+	date-weight.r $(DWCSV) $(DWPNG)
+
+# -- Feature importance score chart
+sc score-chart $(SCPNG): scores.txt score-chart.r
+	@perl -ane '$$F[5] =~ tr/%//d ;print "$$F[0],$$F[5]\n"' scores.txt > scores.csv
+	@score-chart.r scores.csv $(SCPNG) && echo "=== done: feature-chart is '$(SCPNG)'"
+
+# -- model
 m model $(MODELFILE): Makefile $(TRAINFILE)
 	$(VW) -f $(MODELFILE) $(TRAINFILE)
 
+# -- train-set generation
 t train $(TRAINFILE): Makefile $(MASTERDATA) $(TOVW)
 	$(TOVW) $(MASTERDATA) | sort-by-abs > $(TRAINFILE)
 
-c chart $(DWPNG): date-weight.r $(DWCSV)
-	date-weight.r $(DWCSV) $(DWPNG)
-
+# -- convergence chart
 conv: $(TRAINFILE)
 	$(VW) $(TRAINFILE) 2>&1 | vw-convergence
 
 clean:
 	/bin/rm -f $(MODELFILE) *.cache* *.tmp*
 
-# Give a more friendly error if original data doesn't exist
+# -- more friendly error if original data doesn't exist
 $(MASTERDATA):
 	@echo "=== Sorry: you must provide your data in '$(MASTERDATA)'"
 	@exit 1
