@@ -2,9 +2,9 @@
 #
 # Generate weight gain/loss factor chart
 #
-eprintf <- function(...) cat(sprintf(...), sep='', file=stderr())
+library(ggplot2)
 
-suppressPackageStartupMessages(library(ggplot2))
+eprintf <- function(...) cat(sprintf(...), sep='', file=stderr())
 
 # --- styles
 ratio = 1.61803398875
@@ -70,7 +70,7 @@ PngFile <- ifelse(
 
 Title <- ifelse(length(Params$title),
     Params$title,
-   'Relative weight-loss factor importance\n(negative means causing weight loss)'
+   'Relative weight-loss factor importance\n(negative/green means causing weight-loss\npositive/red means causing weight-gain)'
 )
 
 # -- Color weight-gains in red and weigh-losses in green for effect

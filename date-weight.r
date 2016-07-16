@@ -4,9 +4,8 @@
 #
 eprintf <- function(...) cat(sprintf(...), sep='', file=stderr())
 
-suppressPackageStartupMessages(library(ggplot2))
-# for date_breaks()
-suppressPackageStartupMessages(library(scales))
+library(ggplot2)
+library(scales)     # for date_breaks()
 
 MaxMonths=20
 MaxDays=ceiling(MaxMonths*30.4375)
@@ -76,11 +75,10 @@ PngFile <- ifelse(
 
 Title <- ifelse(length(Params$title),
                 Params$title,
-                'weight by date (2015-2016)'
+                'weight by date'
 )
 
 Xlab <- Params$xlab
-
 Ylab <- ifelse(length(Params$ylab),
 			Params$ylab,
 			'Lb'
@@ -94,14 +92,14 @@ if (N > MaxDays) {
     d <- d[(N-MaxDays):N, ]
 }
 
-Pounds <- d$COUNT/1e3
-
-# g <- ggplot(data=d, aes(x=as.Date(Date), y=Pounds)) +
 g <- ggplot(data=d, aes(x=as.POSIXct(Date), y=Pounds)) +
         scale_y_continuous(breaks=150:195) +
         scale_x_datetime(breaks = date_breaks("2 months"),
                          labels = date_format("%Y\n%b")) +
-                         # labels = date_format("%b\n%Y")) +
+        geom_line(aes(y=Pounds), size=0.3, col='#0077ff') +
+        geom_point(aes(y=Pounds), pch=20, size=0.8) +
+        ggtitle(Title) +
+        ylab(Ylab) + xlab(Xlab) +
         theme(
             plot.title=title.theme,
             axis.title.y=y.title.theme,
@@ -109,13 +107,6 @@ g <- ggplot(data=d, aes(x=as.POSIXct(Date), y=Pounds)) +
             axis.text.x=x.axis.theme,
             axis.text.y=y.axis.theme
         )
-
-g <- g +
-    geom_line(aes(y=Pounds), size=0.3, col='#0077ff') +
-    geom_point(aes(y=Pounds), pch=20, size=0.8) +
-    # geom_smooth(method='loess', span=0.9) +
-    ggtitle(Title) +
-    ylab(Ylab) + xlab(Xlab)
 
 ggsave(g, file=PngFile, width=W, height=H, dpi=DPI)
 
