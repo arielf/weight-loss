@@ -14,6 +14,9 @@ while (<>) {
     next if (/^[#A-Za-z]/);
 
     chomp;
+    # Windows line endings, just in case...
+    tr/\015//d;
+
     my ($date, $weight, @factors) = split($SepPat);
 
     next unless ((defined $date) and $date =~ /^\d/);
