@@ -34,7 +34,12 @@ esac
 #
 # -- Use already written make/rules to generate the image
 #
-NAME=$(basename $(/bin/tempfile -p _z))
+NAME=$(basename $(/bin/tempfile -p _zZ))
+
+#
+# -- delayed cleanup of the $NAME directory
+#
+find . -type d -name '_zZ*' -mmin +60 | xargs -r /bin/rm -rf &
 
 mkdir $NAME
 /bin/mv $data_file $NAME/data.csv
@@ -43,11 +48,6 @@ cd $NAME
 link_up Makefile sort-by-abs lifestyle-csv2vw score-chart.r vw vw-varinfo
 
 make NAME=data score-chart
-
-#
-# -- delayed cleanup of the $NAME directory
-#
-# (sleep 30 && cd .. && rm -rf $NAME) &
 
 echo $NAME/data.scores.png
 
