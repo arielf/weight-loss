@@ -4,7 +4,6 @@
 #
 # 'sleep' (one unit) means _at least_ 8 hours of sleep.
 #
-# 'sleep' means at least 8-hours of sleep.
 # Don't add 'sleep' unless you slept more than 8 hours.
 # If you slept less than 8 hours, use 'nosleep' instead.
 #
