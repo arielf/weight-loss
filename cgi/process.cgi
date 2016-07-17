@@ -69,6 +69,8 @@ sub data2chart($) {
     my ($data_file) = @_;
     my $output = `../data2image "$data_file"`;
     my ($tmp_dir) = ($output =~ m{^(_z[^/]+)/data.scores.png$}m);
+    cgi_die("Something failed - Sorry\n")
+        unless (defined $tmp_dir);
     $tmp_dir;
 }
 
