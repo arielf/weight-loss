@@ -4,21 +4,23 @@
 #
 my $prev_weight;
 
+my $SepPat = qr{[,\s]+};
+
 my $header = <>;
 while(<>) {
     next if (/^#/);
 
     chomp;
-    my ($date, $weight, $food) = split(',');
+    my ($date, $weight, @factors) = split(/[,\s]+/);
 
     # Only generate a training set if everything is defined and
     # we have a prior day weight to compare to
     if ((defined $weight) && $weight =~ /\d/ &&
             defined $prev_weight && $prev_weight =~ /\d/ &&
-                length($food) > 10) {
+                scalar(@factors) > 0) {
 
         my $gain = sprintf('%.2f', $weight - $prev_weight);
-        print "$gain | $food\n";
+        print "$gain | @factors\n";
     }
     $prev_weight = $weight;
 }

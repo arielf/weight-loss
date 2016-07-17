@@ -29,129 +29,129 @@
 #
 Date,MorningWeight,YesterdayFactors
 2012-06-01,186.8,
-2012-06-10,185.8,
-2012-06-11,182.6,salad sleep:0.2 bacon cheese tea halfnhalf:1.5
-2012-06-12,181.0,sleep:0.5 egg avocado
-2012-06-13,183.6,pizza bread date:1.5 dietsnapple splenda milk nosleep:0.2
-2012-06-14,183.7,coffeecandy cheese rice meat peanut bread
-2012-06-15,183.4,meat sugarlesscandy salad cherry:0.7 dietsnapple egg mayo oliveoil cheese peanut
+2012-06-10,185.9,
+2012-06-11,182.6,salad sleep:0.15 cheese egg halfnhalf:1.5
+2012-06-12,181.0,sleep:0.5 tea avocado
+2012-06-13,183.6,pizza bread date:1.5 dietsnapple splenda bagel nosleep:0.2
+2012-06-14,183.7,coffeecandy cheese rice carrot peanut bread
+2012-06-15,183.4,carrot salad cherry:0.7 dietsnapple tea potato oliveoil cheese peanut
 2012-06-16,183.8,bread grape:10 sugaryogurt dietsnapple peanut ketchup
-2012-06-17,182.6,meat pistachio peanut cheese
+2012-06-17,182.6,carrot pistachio peanut cheese
 2012-06-18,182.4,bread:0 peanut pizza cheese cherry soup
-2012-06-19,182.4,cherry knish cheese meat pistachio:0.7 peanut
+2012-06-19,182.4,cherry knish cheese carrot pistachio:0.7 peanut
 2012-06-20,183.0,sorbet granolabar peanut:8 pistachio snapple sugaryogurt
-2012-06-21,182.6,cheese salad peanut beans:0.2 soup dietsnapple meat salmon artichokepie
-2012-06-22,182.0,cheese salad peanut:0.5 meatball egg crab cherry pistachio atkinsbar tea milk
+2012-06-21,182.6,cheese salad peanut beans:0.2 soup dietsnapple carrot salmon artichokepie
+2012-06-22,182.0,cheese salad peanut:0.5 meatball tea crab cherry pistachio atkinsbar egg bagel
 2012-06-23,182.8,bread sorbet coffeecandy peanut:0.5 snapple
-2012-06-24,182.4,peanut:0.5 sugaryogurt tea milk cheese
-2012-06-25,182.2,sugaryogurt peanut:0.5 pistachio:0.5 egg salad tea milk
+2012-06-24,182.4,peanut:0.5 sugaryogurt egg bagel cheese
+2012-06-25,182.2,sugaryogurt peanut:0.5 pistachio:0.5 tea salad egg bagel
 2012-06-26,182.4,snapple rice salad cheeseburger bread peanut:0.5 pistachio:0.5 nuggets:0.4 ketchup
-2012-06-27,183.0,indian mango rice snapple potato pistachio:0.7 cheese atkinsbar peanut:0.5 chocolate
-2012-06-28,183.0,tea splenda meat beans salad dietsnapple rice sugarlesscandy atkinsbar nectarine:0.7 peanut
-2012-06-29,183.7,tea milk splenda sugaryogurt peanut:0.5 pizza:0.5 coffeecandy breadedchicken trailmix ketchup
+2012-06-27,183.0,indian mango rice snapple danish pistachio:0.7 cheese atkinsbar peanut:0.5 chocolate
+2012-06-28,183.0,egg splenda carrot beans salad dietsnapple rice atkinsbar nectarine:0.7 peanut
+2012-06-29,183.7,egg bagel splenda sugaryogurt peanut:0.5 pizza:0.5 coffeecandy breadedchicken trailmix ketchup
 # Break, vacation in NYC, didn't keep track
 2012-07-08,181.8,
-2012-07-09,182.2,apple bun:0.5 pistachio peanut:0.7 ketchup quinoa peas milk tea splenda nosleep:0.5 melon bread:0.4 watermelon:0.7
-2012-07-10,181.2,salmon chicken salad dietsnapple:1 snapple plum mottsfruitsnack cheese sugaryogurt egg oliveoil
-2012-07-11,181.8,pizza:0.7 dietsnapple icecreamsandwich pistachio milk splenda cocoa
-2012-07-12,180.8,chicken beef beans salad dietsnapple milk cocoa splenda pistachio peanut cheese egg oliveoil mayo
-2012-07-13,180.8,milk cocoa splenda peanut cheese coffeecandy chicken parmesan apple meatball sorbet stayhome
-2012-07-14,181.4,bread dietsnapple milk cocoa splenda cheese nectarine apple
+2012-07-09,182.2,bun pistachio peanut:0.7 ketchup quinoa peas bagel egg splenda nosleep:0.5 melon bread:0.4 watermelon:0.7
+2012-07-10,181.2,salmon chicken salad dietsnapple:1 snapple plum mottsfruitsnack cheese sugaryogurt tea oliveoil
+2012-07-11,181.8,pizza:0.7 dietsnapple icecream pistachio bagel splenda cocoa
+2012-07-12,180.8,chicken milk beans salad dietsnapple bagel cocoa splenda pistachio peanut cheese tea oliveoil potato
+2012-07-13,180.8,bagel cocoa splenda peanut cheese coffeecandy chicken olives apple meatball sorbet stayhome
+2012-07-14,181.4,bread dietsnapple bagel cocoa splenda cheese nectarine apple
 2012-07-15,182.4,nosleep:0.5 caramelizedwalnut friedrice sorbet:0.5 peanut pistachio meatball
-2012-07-16,182.2,frenchtoast sugaryogurt peanut:0.7 tea apple pistachio coffeecandy:0.7
-2012-07-17,182.0,beef chicken salad egg mayo oliveoil avocado pistachio peanut milk cocoa splenda mottsfruitsnack icecream:0.3
-2012-07-18,181.8,gioza tempura sushi chicken dietsnapple milk cocoa splenda soup
-2012-07-19,181.0,hotdog mayo chilli beans salad coleslaw dietsnapple milk cocoa splenda icecream peanut atkinsbar egg oliveoil olives avocado
-2012-07-20,181.2,breadedchicken veggieburger salad thaisoup sorbet:.2 milk cocoa splenda dietsnapple indian potato beans melon avocado trailmix peanut stayhome
-2012-07-21,182.0,caramelizedwalnut peanut soup grape carrot milk cocoa splenda beet chocolate coffeecandy pistachio:0.5
-2012-07-22,181.4,salad icecream egg oliveoil soup peanut milk chocolate coconut
-2012-07-23,180.8,tea milk splenda sugaryogurt watermelon atkinsbar peanut pistachio cheese mayo ham
-2012-07-24,180.8,salad chicken butter bread:0.5 milk cocoa dietsnapple splenda peanut sugaryogurt meatball cheese ham sorbet:0.2
-2012-07-25,180.6,beef chicken salad cheese milk cocoa splenda dietsnapple sugaryogurt beans peanut mottsfruitsnack
-2012-07-26,180.6,chicken bbqsauce beef coleslaw egg pistachio milk cocoa splenda salad gummybears coffeecandy:0.5 apple:.4 dietsnapple
+2012-07-16,182.2,frenchtoast sugaryogurt peanut:0.7 egg apple pistachio coffeecandy:0.7
+2012-07-17,182.0,milk chicken salad tea potato oliveoil avocado pistachio peanut bagel cocoa splenda mottsfruitsnack icecreamsandwich:0.3
+2012-07-18,181.8,gioza tempura sushi chicken dietsnapple bagel cocoa splenda soup
+2012-07-19,181.0,hotdog potato beans salad coleslaw dietsnapple bagel cocoa splenda icecreamsandwich peanut atkinsbar tea oliveoil parmesan avocado
+2012-07-20,181.2,breadedchicken veggieburger salad thaisoup sorbet:.2 bagel cocoa splenda dietsnapple indian danish beans melon avocado trailmix peanut stayhome
+2012-07-21,182.0,caramelizedwalnut peanut soup grape meat bagel cocoa splenda beet chocolate coffeecandy pistachio:0.5
+2012-07-22,181.4,salad icecreamsandwich tea oliveoil soup peanut bagel chocolate coconut
+2012-07-23,180.8,egg bagel splenda sugaryogurt watermelon atkinsbar peanut pistachio cheese potato fajita
+2012-07-24,180.8,salad chicken butter bread:0.5 bagel cocoa dietsnapple splenda peanut sugaryogurt meatball cheese fajita sorbet:0.2
+2012-07-25,180.6,milk chicken salad cheese bagel cocoa splenda dietsnapple sugaryogurt beans peanut mottsfruitsnack
+2012-07-26,180.6,chicken bbqsauce milk coleslaw tea pistachio bagel cocoa splenda salad gummybears coffeecandy:0.5 apple:.4 dietsnapple
 2012-07-27,181.0,cheeseburger bread grilledonion fries apple coffeecandy sorbet cheese
-2012-07-28,181.0,peanut granola cookie:0.7 bread salad soup dietsnaple splenda milk cocoa
-2012-07-29,181.4,salad bacon bread croissant icecreamsandwich sorbet breadedchicken bbqsauce cheese whitenectarine peanut milk frappuccino splenda
-2012-07-30,181.2,milk splenda whitenectarine egg pistachio peanut sugaryogurt
-2012-07-31,181.4,breadedchicken beef salad peach plum fries ketchup peanut pistachio cornbread
-2012-08-01,181.6,pizza peanut milk splenda
-2012-08-02,181.2,chicken beef salad cheese milk splenda cocoa
-2012-08-03,180.8,milk splenda peanut sorbet stayhome
-2012-08-04,181.8,pizza beans carrot whitenectarine cheese caramelizedwalnut peanut pistachio tofee coffeecandy milk cocoa splenda chicken salmon soup pasta dietsnapple bread
-2012-08-05,181.4,milk meatball salad coffeecandy egg oliveoil avocado peanut cheese apple milk olives mayo
-2012-08-06,182.0,coconut chocolate nosleep frappuccino:0.2 milk peanut pistachio coconutbar
-2012-08-07,183.4,indian potato breadedchicken rice apple milk cocoa splenda dietcoke:0.3 pistachio:0.5 peanut:0.7 coffeecandy tofee:0.7 chocolate coconut driedapple
-2012-08-08,183.6,milk cocoa splenda dietsnapple dietcoke icecream frappuccino:0.2 peanut tofee nectarine salad
-2012-08-09,182.4,milk cocoa splenda dietsnapple salad egg mayo beef tilapia peanut atkinsbar cheese sleep:0.4 exercise:0.45 strawberry
-2012-08-10,183.0,milk frappuccino:0.2 nuggets tofee:0.7 kettlecorn
-2012-08-11,183.6,breadedshrimp bagel thinkthinbar dietsnapple dietcoke
-2012-08-12,183.8,brownrice milk shrimp whitenectarine cheese atkinsbar breadedchicken chocolate coconut peanut grape sugaryogurt 
-2012-08-13,184.2,schnitzel pizza milk cocoa splenda dietsnapple salad icecream sugaryogurt peanut danish
-2012-08-14,183.4,pizza salad cocoa milk dietsnapple splenda sugaryogurt cheese oliveoil
-2012-08-15,182.4,milk cocoa bread cheese oliveoil frappuccino:0.2 stayhome sorbet dietsnapple sleep
-2012-08-17,181.4,sleep stayhome peanut milk tea whitenectarine smallveggiewraps:0.7
+2012-07-28,181.0,peanut granola cookie:0.7 bread salad soup dietsnaple splenda bagel cocoa
+2012-07-29,181.4,salad bacon bread croissant icecream sorbet breadedchicken bbqsauce cheese whitenectarine peanut bagel frappuccino splenda
+2012-07-30,181.2,bagel splenda whitenectarine tea pistachio peanut sugaryogurt
+2012-07-31,181.4,breadedchicken milk salad peach plum fries ketchup peanut pistachio cornbread
+2012-08-01,181.6,pizza peanut bagel splenda
+2012-08-02,181.2,chicken milk salad cheese bagel splenda cocoa
+2012-08-03,180.8,bagel splenda peanut sorbet stayhome
+2012-08-04,181.8,pizza beans meat whitenectarine cheese caramelizedwalnut peanut pistachio tofee coffeecandy bagel cocoa splenda chicken salmon soup pasta dietsnapple bread
+2012-08-05,181.4,bagel meatball salad coffeecandy tea oliveoil avocado peanut cheese apple bagel parmesan potato
+2012-08-06,182.0,coconut chocolate nosleep frappuccino:0.2 bagel peanut pistachio coconutbar
+2012-08-07,183.4,indian danish breadedchicken rice apple bagel cocoa splenda dietcoke:0.3 pistachio:0.5 peanut:0.7 coffeecandy tofee:0.7 chocolate coconut driedapple
+2012-08-08,183.6,bagel cocoa splenda dietsnapple dietcoke icecreamsandwich frappuccino:0.2 peanut tofee nectarine salad
+2012-08-09,182.4,bagel cocoa splenda dietsnapple salad tea potato milk tilapia peanut atkinsbar cheese sleep:0.3 exercise:0.45 strawberry
+2012-08-10,183.0,bagel frappuccino:0.2 nuggets tofee:0.7 kettlecorn
+2012-08-11,183.6,breadedshrimp beef thinkthinbar dietsnapple dietcoke
+2012-08-12,183.8,brownrice bagel shrimp whitenectarine cheese atkinsbar breadedchicken chocolate coconut peanut grape sugaryogurt 
+2012-08-13,184.2,schnitzel pizza bagel cocoa splenda dietsnapple salad icecreamsandwich sugaryogurt peanut mayo
+2012-08-14,183.4,pizza salad cocoa bagel dietsnapple splenda sugaryogurt cheese oliveoil
+2012-08-15,182.4,bagel cocoa bread cheese oliveoil frappuccino:0.2 stayhome sorbet dietsnapple sleep:0.5
+2012-08-17,181.4,sleep stayhome peanut bagel egg whitenectarine smallveggiewraps:0.7
 2012-08-18,181.4,pizza beans peanut dietsnapple salad
-2012-08-19,181.2,sleep stayhome watermelon melon meatball salad whitenectarine milk
+2012-08-19,181.0,sleep stayhome watermelon melon meatball salad whitenectarine bagel
 2012-08-20,181.4,
-2012-08-21,182.0,sushi breadedchicken milk cocoa dietsnapple pistachio peanut apple atkinsbar cheese
-2012-08-22,182.0,salad cheese peanuts dietsnapple pistachio milk frappuccino nectarine fajita eggpie sausage
-2012-08-23,181.6,falafel:7 pita egg milk frappuccino:0.2 pistachio nectarine sugaryogurt stayhome
-2012-08-24,182.0,bread dietsnapple milk cocoa splenda kettlecorn whitenectarine
+2012-08-21,182.0,sushi breadedchicken bagel cocoa dietsnapple pistachio peanut apple atkinsbar cheese
+2012-08-22,182.0,salad cheese peanuts dietsnapple pistachio bagel frappuccino nectarine ham eggpie sausage
+2012-08-23,181.6,falafel:7 pita tea bagel frappuccino:0.2 pistachio nectarine sugaryogurt stayhome
+2012-08-24,182.0,bread dietsnapple bagel cocoa splenda kettlecorn whitenectarine
 2012-08-25,182.6,cheeseburger frenchfries ketchup sorbet peanut salad coffeecandy kettlecorn mottsfruitsnack
-2012-08-26,183.0,frappuccino milk pizza:0.8 kettlecorn coffeecandy cheese bagel
-2012-08-27,182.0,stayhome sleep:0.7 peanut salad whitenectarine milk frappuccino
-2012-08-28,182.4,nosleep couscous pita chicken salad milk splenda cocoa dietsnapple
-2012-08-29,181.4,sleep nectarine milk cocoa carrot cheese peanut
-2012-08-30,180.8,nectarine milk cocoa beef salad cauliflower greenbeans chocolate rizo sleep:0.8
-2012-08-31,180.4,sleep
-2012-09-01,180.9,bread:0.7 milk cocoa splenda peanut sugaryogurt dietsnapple nectarine cheese coffeecandy:6
-2012-09-02,180.0,sleep stayhome cheese milk egg avocado icecream
-2012-09-03,181.2,peanut hotdog bun:0.5 melon cheese sugarlemonade sugaryogurt pasta
+2012-08-26,183.0,frappuccino bagel pizza:0.8 kettlecorn coffeecandy cheese beef
+2012-08-27,182.0,stayhome sleep:0.7 peanut salad whitenectarine bagel frappuccino
+2012-08-28,182.4,nosleep couscous pita chicken salad bagel splenda cocoa dietsnapple
+2012-08-29,181.4,sleep nectarine bagel cocoa meat cheese peanut
+2012-08-30,180.8,nectarine bagel cocoa milk salad greenbeans chocolate rizo sleep:0.7
+2012-08-31,180.0,sleep:0.6
+2012-09-01,180.9,bread:0.7 bagel cocoa splenda peanut sugaryogurt dietsnapple nectarine cheese coffeecandy:6
+2012-09-02,180.0,sleep stayhome cheese bagel tea avocado icecreamsandwich
+2012-09-03,181.2,peanut bun melon cheese sugarlemonade sugaryogurt pasta
 2012-09-04,,
 2012-09-05,,
 2012-09-05,,
 2012-09-07,180.0,stayhome
-2012-09-08,181.0,bread:2 peanut milk cheese
-2012-09-09,180.2,sleep stayhome salad bacon hotdog milk frappuccino peanuts cheese
+2012-09-08,181.0,bread:2 peanut bagel cheese
+2012-09-09,180.2,sleep stayhome salad bacon bagel frappuccino peanuts cheese
 2012-09-10,,
 2012-09-11,181.2,
 2012-09-12,180.8,
 2012-09-13,180.8,
-2012-09-14,180.4,stayhome salad pistachio milk tea clementine coffeecandy
-2012-09-15,181.4,falafel giro clementine:0.5 pistachio dietsnapple milk cocoa frenchfries breadedshrimp icecream coffeecandy
+2012-09-14,180.4,stayhome salad pistachio bagel egg clementine coffeecandy
+2012-09-15,181.4,falafel giro clementine:0.5 pistachio dietsnapple bagel cocoa frenchfries breadedshrimp icecreamsandwich coffeecandy
 2012-09-16,181.4,
 2012-09-17,182.0,salad gefiltefish chicken wine beet kettlecorn bread
 2012-09-18,182.2,kettlecorn cheese wine chicken bread
 2012-09-19,182.2,sushi gyoza sweetjapanese cheese wine chicken dietsnapple
 2012-09-20,182.0,indian turmeric rice chicken fried spinach wine dietsnapple pomegranate sugaryogurt
-2012-09-21,181.4,stayhome sleep musaka cheese coffeecandy clementine milk tea pistachio nectarine:0.5 date
-2012-09-22,182.8,rogalach:0.7 nathans:0.7 hummusroll bread salad tomatosoup cocoa milk splenda dietsnapple
-2012-09-23,183.4,bread brownie hummus pita potato
-2012-09-24,182.4,chicken parmesan wine peanut sugaryogurt fish stayhome
-2012-09-25,181.2,sleep falafel chicken beef salad parmesan dietsnapple mottsfruitsnack
+2012-09-21,181.4,stayhome musaka cheese coffeecandy clementine bagel egg pistachio nectarine:0.5 date
+2012-09-22,182.8,rogalach:0.7 nathans:0.7 hummusroll bread salad tomatosoup cocoa bagel splenda dietsnapple
+2012-09-23,183.4,bread brownie hummus pita danish
+2012-09-24,182.4,chicken olives wine peanut sugaryogurt fish stayhome
+2012-09-25,181.0,sleep falafel chicken milk salad olives dietsnapple mottsfruitsnack
 2012-09-26,183.6,mottsfruitsnack:2 pizza bread nosleep:0.5
-2012-09-27,182.6,sleep egg cocoa milk splenda dietsnapple
+2012-09-27,182.5,sleep tea cocoa bagel splenda dietsnapple
 2012-09-28,182.4,salad
 2012-09-29,181.6,sleep avocado cheese wine salad thinpretzel
 2012-09-30,183,nosleep bread clementine quesadilla corn
-2012-10-01,182.2,salad egg peanut chocolate stayhome milk splenda mayo wine
-2012-10-02,183.0,wine cookie:0.5 pita hummus peanut bread bagel
+2012-10-01,182.2,salad tea peanut chocolate stayhome bagel splenda potato wine
+2012-10-02,183.0,wine cookie:0.5 pita hummus peanut bread beef
 2012-10-03,,
 2012-10-04,,
 2012-10-05,,
 2012-10-06,182.4,
 2012-10-07,181.8,sleep wine cheese
-2012-10-08,,nectarine cheese pistachio coffeecandy splenda milk frappuccino sugaryogurt thinpretzel clementine creamcheese
+2012-10-08,,nectarine cheese pistachio coffeecandy splenda bagel frappuccino sugaryogurt thinpretzel clementine creamcheese
 2012-10-09,183.8,bread pizza
 2012-10-10,183.2,
 2012-10-11,183.6,nosleep rice pistachio peanut greenbeans bread cheese
 2012-10-12,,
 2012-10-13,183.6,
-2012-10-14,184.2,nosleep bread bagel
-2012-10-15,182.6,salad sleep bacon tea splenda icecream
-2012-10-16,184.7,bread pizza bagel danish
-2012-10-17,183.5,egg egg oliveoil olives:0.5
-2012-10-18,182.2,earthbalance:0.7 egg havarti oliveoil bacon olives
+2012-10-14,184.2,nosleep bread beef
+2012-10-15,182.6,salad sleep bacon egg splenda icecreamsandwich
+2012-10-16,184.7,bread pizza beef mayo
+2012-10-17,183.5,tea egg oliveoil parmesan:0.5
+2012-10-18,182.2,earthbalance:0.7 tea havarti oliveoil bacon parmesan
 2012-10-19,,
 2012-10-20,,
 
