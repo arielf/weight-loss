@@ -17,7 +17,7 @@
 #	- Type 'make'
 #
 PATH := $(HOME)/bin:/bin:/usr/bin:.
-NAME := $(shell ./username)
+NAME = $(shell ./username)
 
 #
 # How much to "overfit" the raw data
@@ -51,8 +51,8 @@ MASTERDATA = $(NAME).csv
 TRAINFILE  = $(NAME).train
 MODELFILE  = $(NAME).model
 DWCSV := weight.2015.csv
-DWPNG := weight.png
-SCPNG := scores.png
+DWPNG := $(NAME).weight.png
+SCPNG := $(NAME).scores.png
 
 .PRECIOUS: Makefile $(MASTERDATA) $(TOVW)
 

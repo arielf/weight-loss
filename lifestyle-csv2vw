@@ -4,11 +4,11 @@
 #
 use Scalar::Util qw(looks_like_number);
 
+my $SepPat = qr{(?:\s*,\s*|\s+)};
+my $Interactive = -t STDOUT;
+
 my $prev_weight;
 
-my $SepPat = qr{(?:\s*,\s*|\s+)};
-
-my $header = <>;
 while (<>) {
     # Skip comments or header-line
     next if (/^[#A-Za-z]/);
@@ -22,7 +22,9 @@ while (<>) {
     # we have a prior day weight to compare to
     unless ((defined $weight) and looks_like_number($weight)) {
         $weight = '' unless (defined $weight);
-        warn "$ARGV:$. weight: '$weight' is not a number - line ignored\n";
+        if ($Interactive) {
+            warn "$ARGV:$. weight: '$weight' is not a number - line ignored\n";
+        }
         undef $prev_weight;
         next;
     }
