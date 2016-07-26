@@ -175,13 +175,19 @@ It is important to stress that I also *feel much better the more weight I lose*.
 
 Looking at my data, and reading more, convinced me that I should beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. I started doubting anyone who told me I need to *reduce* fat. I run away if anyone now tells me "high cholesterol" in the diet is dangerous.
 
-My data has taught me that the body is an amazing machine. It is extremely adaptive. Cholesterol, by the way, is an essential building block for many essential body by-products. The liver produces as much cholesterol as it needs. It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us unhealthy.  An enzyme called *Lipase* helps breaking-up fat. To raise the levels of Lipase -- so our body fat gets converted to energy -- we need to give the body fat as an *alternative* to carbohydrates. When the body has depleted both the blood sugar, and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.
+My data has taught me that the body is an amazing machine. It is extremely adaptive.
 
-When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize, and their levels become elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight battle.
+Cholesterol, by the way, is an essential building block for many essential body by-products. The liver produces as much cholesterol as we need.
 
-In ketosis, our night sleep (fasting time) becomes our ally.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.
+It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us acummulate fat in the tissues and become unhealthy.
 
-The above is a very simplified and hopefuly easy to digest version, of what some diet books try to explain in hundreds of pages.
+An enzyme called *Lipase* helps breaking-up fat. To raise the levels of Lipase -- so our body fat gets consumed -- we need to give the body fat as an *alternative* to carbohydrates. When the body has depleted both the blood sugar, and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.  We replace one fuel with another.
+
+When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize, and their levels is elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight-loss battle.
+
+In ketosis, our night sleep (fasting time) becomes our friend.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.
+
+The above is a very simplified, and hopefuly easy to digest version, of what some diet books try to explain in hundreds of pages.
 
 ## My bottom-line recipe:
 
