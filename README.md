@@ -237,7 +237,7 @@ Watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye o
 
 - [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
 
-#### Acknowledgements
+## Acknowledgements
 
 Big thanks to the following people for contributing to this project in myriad ways,
 comments, references, corrections, etc.
