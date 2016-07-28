@@ -181,9 +181,9 @@ Cholesterol, by the way, is an essential building block for many essential body 
 
 It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us acummulate fat in the tissues and become unhealthy.
 
-An enzyme called *Lipase* helps breaking-up fat. To raise the levels of Lipase -- so our body fat gets consumed -- we need to give the body fat as an *alternative* to carbohydrates. When the body has depleted both the blood sugar, and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to adapt and compensate.  The source of energy (ATP synthesis) is switched from carbs to fats by producing more fat-breaking agents.  We replace one fuel with another.
+An enzyme called *Lipase* helps breaking-up fat. Raise the levels of Lipase and our body fat gets consumed faster. To get there, we need to give the body fat as an *alternative* to carbohydrates. When the body has depleted both the blood sugar, and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to *adapt and compensate*.  The source of energy (ATP synthesis) switches from carbs to fats by producing more fat-breaking agents.  The body has simply replaced one fuel with another.
 
-When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize, and their levels is elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight-loss battle.
+When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize, and their levels are elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight-loss battle.
 
 In ketosis, our night sleep (fasting time) becomes our friend.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.
 
@@ -191,7 +191,7 @@ The above is a very simplified, and hopefuly easy to digest version, of what som
 
 ## My bottom-line recipe:
 
-- The hardest part (especially at the beginning) is reducing carbs. The worst are starch rich foods (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, no-pulp juices, etc). This doesn't mean ***no*** carbs. You may afford yourself carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to get you completely out of ketosis. However, you need to make sure you consume ***much less carbs*** and ***less frequently*** than before. In particular, you must avoid binges of snacks like chips, pizza, doughnuts, pasta, and bread, or drinking sugar-heavy drinks.
+- The hardest part (especially at the beginning) is reducing carbs. The worst are starch rich foods (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, no-pulp juices, etc). This doesn't mean ***no*** carbs. You may afford yourself carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to reverse the steady-state.  However, you need to make sure you consume ***much less carbs*** and ***less frequently*** than before. In particular, you must avoid binging on snacks like chips, pizza, doughnuts, pasta, and bread, or drinking sugar-heavy drinks.
 
 - [Look-up Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load) on wikipedia. ***Avoid foods with high glycemic load***. This prevents the blood sugar spikes which lead to insulin spikes and tell the body chemical cycles to revert back from ketosis to fat-accumulation.  Have a sweet tooth? Eat an orange instead of drinking orange juice. The two have vastly different glycemic loads and this makes a huge difference. If you must add sweetness to your cup of tea or coffee, use a [Splenda (sucralose+dextrose) tablet](https://en.wikipedia.org/wiki/Splenda), or [a Stevia drop/tablet](https://en.wikipedia.org/wiki/Stevia) which typically weight just ~0.1 gram, rather than a tea-spoon of sugar (~4.2g, about 40x more). Result: similar sweetness effect, but much lower Glycemic load and resulting levels of blood-glucose.
 
@@ -216,7 +216,8 @@ The above is a very simplified, and hopefuly easy to digest version, of what som
 - [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
 
-- [The Eating Academy / Peter Attia, M.D.](http://eatingacademy.com/)
+[//]: # (- [The Eating Academy / Peter Attia, M.D.](http://eatingacademy.com/))
+
 - [Why We Get Fat: And What to Do About It / Gary Taubes](http://www.amazon.com/gp/product/0307272702)
 - [Summary of Good Calories, Bad Calories / Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
 - [The Obesity Code: Unlocking the Secrets of Weight Loss / Jason Fung](https://www.amazon.com/Obesity-Code-Unlocking-Secrets-Weight-ebook/dp/B01C6D0LCK/)
@@ -234,5 +235,11 @@ Watch this nice 7:41 minute video of James McCarter in Quantified Self (an eye o
 
 - [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
 
+#### Acknowledgements
+
+Big thanks to the following people for contributing to this project in myriad ways,
+comments, references, corrections, etc.
+
+_Anat Faigon, Ingrid Kane, Hans Lee, Steve Malmskog, Eyal Friedman, Shiri Shoham, Gabi Harel, Shingi, Noa_
 
 
