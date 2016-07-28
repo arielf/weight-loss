@@ -216,9 +216,9 @@ The above is a very simplified, and hopefuly easy to digest version, of what som
 - [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
 
 
-[//] # (
-- [The Eating Academy / Peter Attia, M.D.](http://eatingacademy.com/))
-)
+<!--
+- [The Eating Academy / Peter Attia, M.D.](http://eatingacademy.com/)
+-->
 
 - [Why We Get Fat: And What to Do About It / Gary Taubes](http://www.amazon.com/gp/product/0307272702)
 - [Summary of Good Calories, Bad Calories / Gary Taub by Lower Thought](https://lowerthought.wordpress.com/complete-notes-to-good-calories-bad-calories/)
