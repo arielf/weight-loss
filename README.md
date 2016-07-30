@@ -120,7 +120,7 @@ Here's how a typical result looks like.
 
 The positive (top) relative-score values are life-style choices that make you ***gain weight***, while the negative ones (bottom) make you ***lose weight***.
 
-##### And here's the same data in graphical form (click image to enlarge):
+##### And here's the same data in graphical form:
 
 <a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
 
@@ -136,8 +136,8 @@ Despite the noisy & insufficient data, and the inaccuracies in weighting, the ma
 
 - Sleeping longer consistently appeared as *the* #1 factor in losing weight.
 - Lack of sleep did the opposite: too little sleep lead to weight gains.
-- Carbs made me gain weight. The worst are high-starch and sugary foods.
-- Fatty and oily foods do the opposite: they made me lose weight.
+- Carbs made me gain weight. The worst were high-starch and sugary foods.
+- Fatty and oily foods did the opposite: they made me lose weight.
 
 The 'stayhome' lifestlye, which fell mostly on weekends, is a red-herring, I simply slept longer when I didn't have to commute to work.
 
@@ -150,7 +150,7 @@ Our sleeping time is our longest daily fasting time.
 
 ## Further progress
 
-You may note that in the top chart there's a notable acceleration in the rate of weight-loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the problem.
+You may note that in the top (date vs. weight) chart there's a notable acceleration in the rate of weight-loss.  The cause was deeper insights and better ability to sustain the diet the more I understood the problem.
 
 ***Extending the fasting time*** was one major accelerator of weight-loss rate. I did that by:
 
