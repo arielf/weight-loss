@@ -56,9 +56,9 @@ I realized early on that I need to adopt a lifesyle that not just reduces carbs,
 
 ## Early insights & eureka moments
 
-Early in the process I started using [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to identify the factors that make me gain or lose weight. I used a simple method: every morning I would weight myself, and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much, etc.
+Early in the process I started using [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to identify the factors that made me gain or lose weight. I used a simple method: every morning I would weight myself, and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much, etc.
 
-The format of the data file is very simple. A CSV with 3 columns:
+The format of the data file is simple. A CSV with 3 columns:
 
 > *Date*, *MorningWeight*, *Yesterday's lifestyle/food/actions*
 
@@ -67,17 +67,7 @@ The last column is a arbitrary-length list of *`word[:weight]`* items.
 The (optional) numerical-weight following `:`, expresses higher/lower quantities. The default weight, when missing is 1:
  
     #
-    # vim: textwidth=0 nowrap
-    # Diet/Lifestyle data file
-    #
-    # 'sleep' means at least 8-hours of sleep.
-    # Don't add 'sleep' unless you slept more than 8 hours.
-    # If you slept less than 8 hours, use 'nosleep' instead.
-    #
-    # Important: increase weights for more hours of sleep or larger quantities of food.
-    #
-    # Decreasing a weight makes a feature _more_ important (by the "less causes more"
-    # effect principle) - this may be unintuitive.
+    # -- This are comment lines (ignored)
     #
     Date,MorningWeight,YesterdayFactors
     2012-06-10,185.0,
@@ -99,9 +89,11 @@ The machine learning process error-convergence after partly sorting the lines de
 
 ![error convergence (after partial descending sort by delta)](vw-convergence.png  "loss convergence in 4 data passes")
 
-You can reproduce my work by building your own data-file, installing vowpal-wabbit, and its utility [`vw-varinfo`](https://github.com/JohnLangford/vowpal_wabbit/wiki/using-vw-varinfo), and running `make` in this directory.
+You can reproduce my work by compiling your own data-file, installing vowpal-wabbit, and its utility [`vw-varinfo`](https://github.com/JohnLangford/vowpal_wabbit/wiki/using-vw-varinfo), and running `make` in this directory.
 
-Type `make` in this directory, and some magic happens. Here's how a typical result looks like.
+When you type `make` in this directory -- some magic happens.
+
+Here's how a typical result looks like.
 
     $ make
 
@@ -126,7 +118,13 @@ Type `make` in this directory, and some magic happens. Here's how a typical resu
     halfnhalf          171855   ...  -0.4673 -63.41%
     sleep              127071   ...  -0.7369 -100.00%
 
-The positive (top) relative-score values are life-style choices that make you ***gain weight***, while the negative ones (bottom) make you ***lose weight***. This particular data set is pretty noisy, since:
+The positive (top) relative-score values are life-style choices that make you ***gain weight***, while the negative ones (bottom) make you ***lose weight***.
+
+##### And here's the same data in graphical form (click image to enlarge):
+
+<a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
+
+This particular data set is pretty noisy, since:
 
 - The number of original data-points (days) is small
 - My scales are not accurate, and a typical daily change in weight is very small
@@ -136,10 +134,10 @@ So I focused mostly on the extremes (start and end) of the list as presented abo
 
 Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts very obvious, pretty early:
 
-- Sleeping longer consistently appeared as #1 factor in losing weight.
+- Sleeping longer consistently appeared as *the* #1 factor in losing weight.
 - Lack of sleep did the opposite: too little sleep lead to weight gains.
-- Carbs make you gain weight. The worst are high-starch and sugary foods.
-- Fatty and oily foods do the opposite: they make you lose weight.
+- Carbs made me gain weight. The worst are high-starch and sugary foods.
+- Fatty and oily foods do the opposite: they made me lose weight.
 
 The 'stayhome' lifestlye, which fell mostly on weekends, is a red-herring, I simply slept longer when I didn't have to commute to work.
 
