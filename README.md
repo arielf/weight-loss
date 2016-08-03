@@ -15,7 +15,7 @@ In the following I'll describe the thought process, some other people ideas,  an
 
 The below is what worked for me. Your situation may be different. Listen to your own body.
 
-OK, with that behind us, let's now channel [Galileo in the face of the inquisition](https://en.wikipedia.org/wiki/Galileo_affair): evolution has been hard at work for about 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and its reverse.
+OK, with that behind us, let's now channel [Galileo in the face of the inquisition](https://en.wikipedia.org/wiki/Galileo_affair): evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and its reverse.
 
 
 ## Salient facts & initial observations
@@ -167,29 +167,29 @@ I now believe that I can go all the way back to my original weight when I first 
 
 If I can keep the present rate, it should take 1-2 years to completely reverse the damage of the past ~20 years. 
 
-It is important to stress that I also *feel much better the more weight I lose*. As a welcome side-effect, all the bordeline-to-high levels in my blood tests, have moved significantly towards normal averages, during the period I lost weight.
+It is important to stress that I also *feel much better the more weight I lose*. As a welcome side-effect, the few borderline/high levels in my blood tests, have moved significantly towards normal averages, during the period I lost weight.
 
 ### What was my data and clear improvement in health saying?
 
 Looking at my data, and reading more, convinced me that I should beware of doctors [who push statins](https://www.google.com/search?q=the+truth+about+statins) instead of suggesting a better diet. I started doubting anyone who told me I need to *reduce* fat. I run away if anyone now tells me "high cholesterol" in the diet is dangerous.
 
-My data has taught me that the body is an amazing machine. It is extremely adaptive.
-
 Cholesterol, by the way, is an essential building block for many essential body by-products. The liver produces as much cholesterol as we need.
+
+Our body is an amazing machine. Billions of years of evolution have made it extremely *adaptive*.
 
 It is not our ***high fat consumption***, it is the ***storage of fat process*** that makes us acummulate fat in the tissues and become unhealthy.
 
-An enzyme called *Lipase* helps breaking-up fat. Raise the levels of Lipase and our body fat gets consumed faster. To get there, we need to give the body fat as an *alternative* to carbohydrates. When the body has depleted both the blood sugar, and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to *adapt and compensate*.  The source of energy (ATP synthesis) switches from carbs to fats by producing more fat-breaking agents.  The body has simply replaced one fuel with another.
+An enzyme called *Lipase* breaks-up fat. Raise the levels of Lipase and our body fat gets consumed faster. To get there, we need to give the body fat as an *alternative* to carbohydrates.  When the body has depleted both the blood sugar, and the glycogen (hydrated sugar) buffer in the liver, it has no other choice but to *adapt and compensate*.  Our source of energy -- [ATP synthesis](https://en.wikipedia.org/wiki/Adenosine_triphosphate) -- switches from carbs to fats by producing more fat-breaking agents.  The body is a "Flex Fuel" kind of machine, that has simply replaced one fuel (carbs) with another (fat).
 
-When Lipase (and all other enzymes in the fat-to-ATP chemical path) mobilize, and their levels are elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight-loss battle.
+When Lipase, and all other agents in the fat-to-ATP chemical path, aka [Beta oxidation](https://en.wikipedia.org/wiki/Beta_oxidation) mobilize, and their levels are elevated, we reach a new steady state (called ketosis) and that's when we start winning the weight-loss battle.
 
 In ketosis, our night sleep (fasting time) becomes our friend.  The fat-breaking agents keep working while we sleep, breaking-up the stored fat.  This leads to weight-loss, and a healthier state.
 
-The above is a very simplified, and hopefuly easy to digest version, of what some diet books try to explain in hundreds of pages.
+The above is a very simplified, and hopefuly easy to digest, version of what some diet books try to explain in hundreds of pages.
 
 ## My bottom-line recipe:
 
-- The hardest part (especially at the beginning) is reducing carbs. The worst are starch rich foods (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, no-pulp juices, etc). This doesn't mean ***no*** carbs. You may afford yourself carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to reverse the steady-state.  However, you need to make sure you consume ***much less carbs*** and ***less frequently*** than before. In particular, you must avoid binging on snacks like chips, pizza, doughnuts, pasta, and bread, or drinking sugar-heavy drinks.
+- The hardest part (especially at the beginning) is reducing carbs. The worst are starch rich foods (pizza, pasta, bread etc.), then processed foods with high sugar content (sweet sodas, no-pulp juices, etc). This doesn't mean ***no*** carbs. You may afford yourself carbs from time to time (say a pizza once a week). As it turns out, an occasional lapse isn't enough to reverse the steady-state.  However, you need to make sure you consume ***much less carbs*** and ***less frequently*** than before. In particular, you must avoid binging on snacks like chips, pizza, doughnuts, pasta, and bread, or drinking sugar-rich drinks.
 
 - [Look-up Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load) on wikipedia. ***Avoid foods with high glycemic load***. This prevents the blood sugar spikes which lead to insulin spikes and tell the body chemical cycles to revert back from ketosis to fat-accumulation.  Have a sweet tooth? Eat an orange instead of drinking orange juice. The two have vastly different glycemic loads and this makes a huge difference. If you must add sweetness to your cup of tea or coffee, use a [Splenda (sucralose+dextrose) tablet](https://en.wikipedia.org/wiki/Splenda), or [a Stevia drop/tablet](https://en.wikipedia.org/wiki/Stevia) which typically weight just ~0.1 gram, rather than a tea-spoon of sugar (~4.2g, about 40x more). Result: similar sweetness effect, but much lower Glycemic load and resulting levels of blood-glucose.
 
