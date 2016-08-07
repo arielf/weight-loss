@@ -56,9 +56,9 @@ I realized early on that I need to adopt a lifesyle that not just reduces carbs,
 
 ## Early insights & eureka moments
 
-Early in the process I started using [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to identify the factors that made me gain or lose weight. I used a simple method: every morning I would weight myself, and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much, etc.
+Early in the process I figured I could use [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to identify the factors that made me gain or lose weight. I used a simple method: every morning I would weight myself, and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much, etc.
 
-The format of the data file is simple. A CSV with 3 columns:
+The file I kept was fairly simple. A CSV with 3 columns:
 
 > *Date*, *MorningWeight*, *Yesterday's lifestyle/food/actions*
 
@@ -67,7 +67,7 @@ The last column is a arbitrary-length list of *`word[:weight]`* items.
 The (optional) numerical-weight following `:`, expresses higher/lower quantities. The default weight, when missing is 1:
  
     #
-    # -- This are comment lines (ignored)
+    # -- Comment lines (ignored)
     #
     Date,MorningWeight,YesterdayFactors
     2012-06-10,185.0,
@@ -124,10 +124,11 @@ The positive (top) relative-score values are life-style choices that make you **
 
 <a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
 
-This particular data set is pretty noisy, since:
+Working with this particular data set, was pretty challenging, since:
 
 - The number of original data-points (days) is small
-- My scales are not accurate, and a typical daily change in weight is very small
+- Typical daily changes in weight are very small, often ~0.1 lb.
+- My scales are not accurate: you may note that my data has 0.2 pound resolution. This is not ideal. Getting scales with 0.1 pound resolution is highly recommended.
 - Items that make you lose and gain weight, often appear together on the same line so they cancel each other. This confuses the automatic learning process.
 
 So I focused mostly on the extremes (start and end) of the list as presented above.
@@ -137,7 +138,7 @@ Despite the noisy & insufficient data, and the inaccuracies in weighting, the ma
 - Sleeping longer consistently appeared as *the* #1 factor in losing weight.
 - Lack of sleep did the opposite: too little sleep lead to weight gains.
 - Carbs made me gain weight. The worst were high-starch and sugary foods.
-- Fatty and oily foods did the opposite: they made me lose weight.
+- Fatty and oily foods did the opposite: they were positively correlated with weight-loss.
 
 The 'stayhome' lifestlye, which fell mostly on weekends, is a red-herring, I simply slept longer when I didn't have to commute to work.
 

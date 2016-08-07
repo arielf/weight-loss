@@ -95,4 +95,7 @@ $(MASTERDATA):
 	@echo "=== Sorry: you must provide your data in '$(MASTERDATA)'"
 	@exit 1
 
+# commit and push
+cp:
+	git commit . && git push
 
