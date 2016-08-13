@@ -85,7 +85,7 @@ Then I wrote [a script](lifestyle-csv2vw) to convert this file to [vowpal-wabbit
 
 I was not dieting at that time. Just collecting data.
 
-The machine learning process error-convergence after partly sorting the lines descending, by `abs(delta)` to smooth it out, and 4-passes over the data, looks like this:
+The machine learning process error-convergence after partly sorting the lines descending, by `abs(delta)` to smooth it out and try to amplify very weak signals from the data, and 4-passes over the data, looks like this:
 
 ![error convergence (after partial descending sort by delta)](vw-convergence.png  "loss convergence in 4 data passes")
 
@@ -124,15 +124,15 @@ The positive (top) relative-score values are life-style choices that make you **
 
 <a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
 
-Big disclaimer: please don't read too much into the particulars. Working with this particular data set, was pretty challenging, since:
+Big disclaimer: please don't read too much into the particulars of this data. Working with this particular data set, was pretty challenging, since:
 
 - The number of original data-points (days) is too small to establish enough significance.
-- Typical daily changes in weight are very small, often ~0.1 lb.
+- Typical daily changes in body weight are very small, often ~0.1 lb.
 - My scales are not accurate: you may note that my data has 0.2 pound resolution. This is not ideal. Getting scales with 0.1 pound resolution is highly recommended.
 - You may also note that the loss-convergence chart hits a hard floor at ~0.2 even when you do multiple-passes over the data (overfit the training-set) for a similar reason.
 - Items that make you lose and gain weight, often appear together on the same line so they cancel each other. This throws the automatic learning process off-course.
 
-So I focused mostly on the extremes (start and end) of the list as presented above and just used the hints as general guidance for further study, experimentation, and action.
+So I focused mostly on the extremes (start and end) of the list as presented above, and just used the hints as general guidance for further study, experimentation, and action.
 
 Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts obvious, pretty early:
 
@@ -149,6 +149,8 @@ Moreover: we tend to binge and snack while not particularly hungry, but we never
 
 Our sleeping time is our longest daily fasting time.
 
+Please note that my explanations of the effects may not in fact be accurate or deeply scientific.
+The goal of all this was incremental discovery: experiment, check effect, rinse, repeat.
 
 ## Further progress
 
@@ -165,7 +167,7 @@ The 2nd accelerator was ***loading up on fat*** in order to feel full.
 
 The 3rd accelerator was understanding the concepts of [Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [***Glycemic Load***](https://en.wikipedia.org/wiki/Glycemic_load), and shifting whatever I chose to eat towards ***lower Glycemic loads***.
 
-I now believe that I can go all the way back to my original weight when I first landed on US soil.
+I now believe and hope that I can go all the way back to my original weight when I first landed on US soil.
 
 If I can keep the present rate, it should take 1-2 years to completely reverse the damage of the past ~20 years. 
 
