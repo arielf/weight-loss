@@ -124,23 +124,23 @@ The positive (top) relative-score values are life-style choices that make you **
 
 <a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
 
-Working with this particular data set, was pretty challenging, since:
+Big disclaimer: please don't read too much into the particulars. Working with this particular data set, was pretty challenging, since:
 
-- The number of original data-points (days) is small
+- The number of original data-points (days) is too small to establish enough significance.
 - Typical daily changes in weight are very small, often ~0.1 lb.
 - My scales are not accurate: you may note that my data has 0.2 pound resolution. This is not ideal. Getting scales with 0.1 pound resolution is highly recommended.
-- Items that make you lose and gain weight, often appear together on the same line so they cancel each other. This confuses the automatic learning process.
+- Items that make you lose and gain weight, often appear together on the same line so they cancel each other. This throws the automatic learning process off-course.
 
-So I focused mostly on the extremes (start and end) of the list as presented above.
+So I focused mostly on the extremes (start and end) of the list as presented above and just used the hints as general guidance for further study, experimentation, and action.
 
-Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts very obvious, pretty early:
+Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts obvious, pretty early:
 
 - Sleeping longer consistently appeared as *the* #1 factor in losing weight.
 - Lack of sleep did the opposite: too little sleep lead to weight gains.
 - Carbs made me gain weight. The worst were high-starch and sugary foods.
 - Fatty and oily foods did the opposite: they were positively correlated with weight-loss.
 
-The 'stayhome' lifestlye, which fell mostly on weekends, is a red-herring, I simply slept longer when I didn't have to commute to work.
+The 'stayhome' lifestlye, which fell mostly on weekends, may have been a red-herring: I slept longer when I didn't have to commute to work, OTOH: my diet on stay-home days may have been different.
 
 It took me a while to figure out the sleep part. *When we sleep we don't eat*. It is that simple.
 
