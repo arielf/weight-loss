@@ -47,7 +47,7 @@ My will power, apparently, was insufficient. I had too much love of pizza and br
 
 It was obvious that something was missing in my method. I just had to find it.  I could increase my physical activity, say start training for a mini-marathon, but that's not something I felt comfortable with.
 
-I realized early on that I need to adopt a lifesyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable so it can turn into a painless routine. Something that:
+I realized early on that I need to adopt a lifestyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable so it can turn into a painless routine. Something that:
 
 > - I could do for years
 > - Never feel the urge to break habits
