@@ -129,6 +129,7 @@ Big disclaimer: please don't read too much into the particulars. Working with th
 - The number of original data-points (days) is too small to establish enough significance.
 - Typical daily changes in weight are very small, often ~0.1 lb.
 - My scales are not accurate: you may note that my data has 0.2 pound resolution. This is not ideal. Getting scales with 0.1 pound resolution is highly recommended.
+- You may also note that the loss-convergence chart hits a hard floor at ~0.2 even when you do multiple-passes over the data (overfit the training-set) for a similar reason.
 - Items that make you lose and gain weight, often appear together on the same line so they cancel each other. This throws the automatic learning process off-course.
 
 So I focused mostly on the extremes (start and end) of the list as presented above and just used the hints as general guidance for further study, experimentation, and action.
