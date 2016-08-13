@@ -243,4 +243,5 @@ comments, references, corrections, etc.
 
 _Anat Faigon, Ingrid Kane, Hans Lee, Steve Malmskog, Eyal Friedman, Shiri Shoham, Gabi Harel, Shingi, Noa_
 
+_Update: 2016-08-12: this project made [Hacker News](https://news.ycombinator.com/item?id=12279415). Thanks for some great comments by benkuhn, aab0, zzleeper, and others._
 
