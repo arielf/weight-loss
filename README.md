@@ -56,7 +56,7 @@ I realized early on that I need to adopt a lifesyle that not just reduces carbs,
 
 ## Early insights & eureka moments
 
-Early in the process I figured I could use [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to identify the factors that made me gain or lose weight. I used a simple method: every morning I would weight myself, and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much, etc.
+Early in the process I figured I could use [machine learning](https://en.wikipedia.org/wiki/Machine_learning) to identify the factors that made me gain or lose weight. I used a simple method: every morning I would weigh myself, and record both the new weights and whatever I did in the past ~24 hours, not just the food I ate, but also whether I exercised, slept too little or too much, etc.
 
 The file I kept was fairly simple. A CSV with 3 columns:
 
