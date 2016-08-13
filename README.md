@@ -216,6 +216,9 @@ The above is a very simplified, and hopefuly easy to digest, version of what som
 - [Glycemic Index](https://en.wikipedia.org/wiki/Glycemic_index)
 - [Glycemic Load](https://en.wikipedia.org/wiki/Glycemic_load) -- a better metric for weight-loss than Glycemic Index.
 - [Glycogen and its storage in the liver](https://en.wikipedia.org/wiki/Glycogen)
+- [Ketone bodies](https://en.wikipedia.org/wiki/Ketone_bodies)
+- [Ketosis -- not to be confused with keto-acidosis](https://en.wikipedia.org/wiki/Ketosis)
+- [Ketogenic diet](https://en.wikipedia.org/wiki/Ketogenic_diet)
 
 
 <!--
