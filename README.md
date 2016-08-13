@@ -108,7 +108,7 @@ Here's how a typical result looks like.
     caramelizedwalnut  148079   ...  +0.3316 44.99%
     bun                  1791   ...  +0.3094 41.98%
 
-    ... (trimmed for brevity) ...
+    ... (trimmed for brevity. Caveat: data is too noisy anyway) ...
 
     stayhome           148879   ...  -0.2690 -36.50%
     bacon               64431   ...  -0.2998 -40.69%
