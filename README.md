@@ -251,5 +251,6 @@ comments, references, corrections, etc.
 
 _Anat Faigon, Ingrid Kane, Hans Lee, Steve Malmskog, Eyal Friedman, Shiri Shoham, Gabi Harel, Shingi, Noa_
 
-_Update: 2016-08-12: this project made [Hacker News](https://news.ycombinator.com/item?id=12279415). Thanks for some great comments by benkuhn, aab0, zzleeper, and others._
+_Update: 2016-08-12: this project made [Hacker News](https://news.ycombinator.com/item?id=12279415) and reached the top place for a while. Thanks for some great comments by benkuhn, aab0, zzleeper, and others which helped me make it better._
+![image of this project on Hacker News 2016-08-12](hackernews-2016-08-12.png)
 
