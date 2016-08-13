@@ -20,23 +20,14 @@ PATH := $(HOME)/bin:/bin:/usr/bin:.
 NAME = $(shell ./username)
 
 #
-# How much to "overfit" the raw data
-# Data is probably stationary.
-#
-PASSES = 4
-
-#
 # vowpal-wabbit args
 #
 VW_ARGS = \
 	-k \
 	--loss_function squared \
 	--progress 1 \
-	--bootstrap 16 \
 	-l 1.0 \
-	--l2 1.85201e-08 \
-	-c --passes $(PASSES) --holdout_off
-
+	--l2 1.85201e-08
 
 # -- programs
 TOVW := lifestyle-csv2vw
