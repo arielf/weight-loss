@@ -120,7 +120,7 @@ Here's how a typical result looks like.
 
 The positive (top) relative-score values are life-style choices that make you ***gain weight***, while the negative ones (bottom) make you ***lose weight***.
 
-##### And here's the same data in graphical form:
+##### And here's a variable-importance chart made from a similar data-set:
 
 <a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
 
