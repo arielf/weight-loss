@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+$user = $ENV{'USER'} || $ENV{'LOGNAME'} || getlogin || (getpwuid($>))[0];
+
+printf "%s\n", $user;
+

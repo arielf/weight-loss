@@ -1,0 +1,53 @@
+#!/bin/bash -e
+unset PATH
+export PATH="/bin:/usr/bin:$PWD/..:$PWD/../.."
+
+fatal() {
+    echo -- "$@" 1>&2
+    exit 1
+}
+
+usage() {
+    fatal "Usage: $0 <datafile>"
+}
+
+link_up() {
+    for f in "$@"; do
+        for d in .. ../.. ../../..; do
+            if [[ -f "$d/$f" ]]; then
+                if [[ ! -e "$f" ]]; then
+                    ln -s "$d/$f" .
+                fi
+                continue
+            fi
+        done
+    done
+}
+
+case "$#" in
+    (1) data_file="$1"
+        train_file="${data_file}.train"
+        ;;
+    (*) usage ;;
+esac
+
+#
+# -- Use already written make/rules to generate the image
+#
+NAME=$(basename $(/bin/tempfile -p _zZ))
+
+#
+# -- delayed cleanup of the $NAME directory
+#
+find . -type d -name '_zZ*' -mmin +60 | xargs -r /bin/rm -rf &
+
+mkdir $NAME
+/bin/mv $data_file $NAME/data.csv
+cd $NAME
+
+link_up Makefile sort-by-abs lifestyle-csv2vw score-chart.r vw vw-varinfo
+
+make NAME=data score-chart
+
+echo $NAME/data.scores.png
+

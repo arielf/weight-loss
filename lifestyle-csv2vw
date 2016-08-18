@@ -1,0 +1,41 @@
+#!/usr/bin/perl -w
+#
+# Generate a VW training-set from our raw data CSV
+#
+use Scalar::Util qw(looks_like_number);
+
+my $SepPat = qr{(?:\s*,\s*|\s+)};
+my $Interactive = -t STDOUT;
+
+my $prev_weight;
+
+while (<>) {
+    # Skip comments or header-line
+    next if (/^[#A-Za-z]/);
+
+    chomp;
+    # Windows line endings, just in case...
+    tr/\015//d;
+
+    my ($date, $weight, @factors) = split($SepPat);
+
+    next unless ((defined $date) and $date =~ /^\d/);
+
+    # Only generate a training set if everything is defined and
+    # we have a prior day weight to compare to
+    unless ((defined $weight) and looks_like_number($weight)) {
+        $weight = '' unless (defined $weight);
+        if ($Interactive) {
+            warn "$ARGV:$. weight: '$weight' is not a number - line ignored\n";
+        }
+        undef $prev_weight;
+        next;
+    }
+
+    if ((defined $prev_weight) && scalar(@factors) > 0) {
+        my $gain = sprintf('%.2f', $weight - $prev_weight);
+        print "$gain | @factors\n";
+    }
+    $prev_weight = $weight;
+}
+
