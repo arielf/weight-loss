@@ -205,7 +205,7 @@ The above is a very simplified, and hopefuly easy to digest, version of what som
 
 - ***Longer fasting periods:*** This is the #1 contributor to weight-loss. sleep longer, stop eating as early as possible before going to sleep and start eating as late as possible after sleeping. *Skip breakfast*, after some time you won't feel hungry in the morning anymore.  After long periods of fasting, the body chemistry adjusts: I need more ATP, but I don't have glucose in the blood, and the glycogen in the liver is all fully consumed (takes about 1-2 days of low or no carbs) so there's no other option, but to start breaking-up stored fat. This elevates the enzymes that help with breaking up fat and the Krebs cycle reverses direction in the critical paths. Instead of transforming excess-carbs into stored fat, it breaks-up the fat for energy.
 
-- Eat eggs.  They are a wonderful combo of fat and protein with no carbs at all.  I read an interview with a Japanese woman who reached 124 years and one of her secrets was to eat an egg daily.  My favorite food is a scrambled egg with grilled onions (onions are a bit high on carbs, but too tasty to give up) and olives.
+- Eat eggs.  They are a wonderful combo of fat and protein with no carbs at all.  I read an interview with a Japanese woman who reached 114 years and one of her secrets was to eat an egg daily.  My favorite food is a scrambled egg with grilled onions (onions are a bit high on carbs, but too tasty to give up) and olives.
 
 - Eat slower, and chew longer... don't swallow just yet! Humans, just like dogs, tend to swallow too soon. Stop eating when you feel full. There's about 20 min delay before your brain registers that you are full so don't over-eat.
 

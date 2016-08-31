@@ -90,3 +90,10 @@ $(MASTERDATA):
 cp:
 	git commit . && git push
 
+# sync gh-pages with master & push
+gh:
+	git checkout gh-pages && \
+	git merge master && \
+	git push && \
+	git checkout master
+
