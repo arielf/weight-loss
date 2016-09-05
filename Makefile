@@ -11,7 +11,7 @@
 #	- Record what you do/eat daily
 #
 # How to run this code:
-#	- Install vowpal-wabbit & its utility utl/vw-varinfo
+#	- Install vowpal-wabbit (vw)
 #	- Clone this repo: https://github.com/arielf/weight-loss
 #	- Place your data in <username>.csv
 #	- Type 'make'
@@ -32,6 +32,7 @@ VW_ARGS = \
 # -- programs
 TOVW := lifestyle-csv2vw
 VW := vw $(VW_ARGS)
+VARINFO := vw-varinfo2
 SORTABS := sort-by-abs
 
 # SHUFFLE := shuf
@@ -53,7 +54,7 @@ SCPNG := $(NAME).scores.png
 all:: score
 
 s score scores.txt: $(TRAINFILE)
-	vw-varinfo $(VW_ARGS) $(TRAINFILE) | tee scores.txt
+	$(VARINFO) $(VW_ARGS) $(TRAINFILE) | tee scores.txt
 
 c charts: weight-chart score-chart
 
