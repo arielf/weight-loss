@@ -260,7 +260,7 @@ def is_vw_arg(arg):
     global VW
     if arg == VW:
         return True
-    if re.search(r'/vw[-_.0-9]*$', arg):
+    if re.search(r'(?:^|/)vw[-_.0-9]*$', arg):
         VW = arg
         return True
     return False
@@ -354,8 +354,8 @@ def get_vw_cmd(args):
     d("vw_cmd is: %s" % vw_args)
     vw_exe = vw_args[0]
     if which(vw_exe) == None:
-        fatal("Sorry: can't find vw (vowpal wabbit executable) in $PATH\n"
-              "PATH=%s" % os.environ["PATH"])
+        fatal("Sorry: can't find %s (vowpal wabbit executable) in $PATH\n"
+              "PATH=%s" % (vw_exe, os.environ["PATH"]))
 
     return vw_args
 
