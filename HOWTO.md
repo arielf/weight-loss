@@ -42,7 +42,7 @@ For instructions how to set up a VM on Windows, follow these youtube videos:
 One you have Ubuntu on Windows you just install all the prerequisites. e.g. in a terminal:
 
 >	sudo apt-get install make
->	sudo apt-get install r-base r-recommended r-cran-ggplot2
+>	sudo apt-get install r-base r-cran-ggplot2
 >	sudo apt-get install vowpal-wabbit
 >	sudo apt-get install git
 >	# etc... (hope I didn't miss much)
