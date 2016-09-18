@@ -16,7 +16,7 @@
 #	- Place your data in <username>.csv
 #	- Type 'make'
 #
-PATH := $(HOME)/bin:/bin:/usr/bin:.
+PATH := $(PATH)::.
 NAME = $(shell ./username)
 
 #

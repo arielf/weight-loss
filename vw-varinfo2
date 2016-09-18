@@ -78,6 +78,28 @@ def usage(msg):
     sys.exit(1)
 
 
+def which(program):
+    """
+    Find a program in $PATH
+    If found, return its full path, otherwise return None
+    """
+    def is_exe(fpath):
+        return os.path.isfile(fpath) and os.access(fpath, os.X_OK)
+
+    fpath, fname = os.path.split(program)
+    if fpath:
+        if is_exe(program):
+            return program
+    else:
+        for path in os.environ["PATH"].split(os.pathsep):
+            path = path.strip('"')
+            exe_file = os.path.join(path, program)
+            if is_exe(exe_file):
+                return exe_file
+
+    return None
+
+
 def all_features_dicts():
     """
     Returns two dict of all features in a structured way:
@@ -330,6 +352,10 @@ def get_vw_cmd(args):
         vw_args.append(arg);
 
     d("vw_cmd is: %s" % vw_args)
+    vw_exe = vw_args[0]
+    if which(vw_exe) == None:
+        fatal("Sorry: can't find vw (vowpal wabbit executable) in $PATH\n"
+              "PATH=%s" % os.environ["PATH"])
 
     return vw_args
 
