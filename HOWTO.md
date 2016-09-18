@@ -15,7 +15,7 @@ This code depends on:
 
 #### Linux: Ubuntu, Mint, or any Debian derivative 
 
->    sudo apt-get install make vowpal-wabbit r-base r-cran-ggplot2 git
+>    sudo apt-get install make vowpal-wabbit r-base r-base-core r-cran-ggplot2 git
 
 #### Other Linux systems
 
@@ -37,7 +37,7 @@ For instructions how to set up a VM on Windows, follow these youtube videos:
 
 One you have Ubuntu on Windows you just install all the prerequisites. e.g. in a terminal:
 
->    sudo apt-get install make r-base r-cran-ggplot2 vowpal-wabbit git
+>    sudo apt-get install make r-base r-base-core r-cran-ggplot2 vowpal-wabbit git
 
 Then, using git, you clone the repository:
 
