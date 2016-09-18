@@ -15,11 +15,11 @@ This code depends on:
 
 #### Linux: Ubuntu, Mint, or any Debian derivative 
 
->	sudo apt-get install make
->	sudo apt-get install vowpal-wabbit
->	sudo apt-get install r-base
-> 	sudo apt-get install r-cran-ggplot2
->	sudo apt-get install git
+>    sudo apt-get install make
+>    sudo apt-get install vowpal-wabbit
+>    sudo apt-get install r-base
+>    sudo apt-get install r-cran-ggplot2
+>    sudo apt-get install git
 
 #### Other Linux systems
 
@@ -41,23 +41,23 @@ For instructions how to set up a VM on Windows, follow these youtube videos:
 
 One you have Ubuntu on Windows you just install all the prerequisites. e.g. in a terminal:
 
->	sudo apt-get install make
->	sudo apt-get install r-base r-cran-ggplot2
->	sudo apt-get install vowpal-wabbit
->	sudo apt-get install git
->	# etc... (hope I didn't miss much)
+>    sudo apt-get install make
+>    sudo apt-get install r-base r-cran-ggplot2
+>    sudo apt-get install vowpal-wabbit
+>    sudo apt-get install git
+>    # etc... (hope I didn't miss much)
 
 Then, using git, you clone the repository:
 
->	git clone https://github.com/arielf/weight-loss
+>    git clone https://github.com/arielf/weight-loss
 
 Change directory to it:
 
->	cd weight-loss
+>    cd weight-loss
 
 And finally type:
 
->	make
+>    make
 
 inside it, to run everything from start to finish.
 
@@ -66,13 +66,13 @@ inside it, to run everything from start to finish.
 
 When you're done installing prereqs, run make:
 
->	make
+>    make
 
 It should produce a file `scores.txt` with your weight-loss scores.  To get a chart of the scores run:
 
->	make sc
+>    make sc
 
 or
 
->	make score-chart
+>    make score-chart
 
