@@ -89,7 +89,7 @@ The machine learning process error-convergence after partly sorting the lines de
 
 ![error convergence (after partial descending sort by delta)](vw-convergence.png  "loss convergence in 4 data passes")
 
-You can reproduce my work by compiling your own data-file, installing vowpal-wabbit, and its utility [`vw-varinfo`](https://github.com/JohnLangford/vowpal_wabbit/wiki/using-vw-varinfo), and running `make` in this directory.
+You can reproduce my work by compiling your own data-file, installing all prerequisites, and running `make` in this directory.  I wrote a [HOWTO file with more detailed instructions](HOWTO.md). Please open an issue, if anything doesn't work for you.
 
 When you type `make` in this directory -- some magic happens.
 
