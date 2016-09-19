@@ -39,24 +39,20 @@ One you have Ubuntu on Windows you just install all the prerequisites. e.g. in a
 
 >    sudo apt-get install make r-base r-base-core r-cran-ggplot2 vowpal-wabbit git
 
-Then, using git, you clone the repository:
-
->    git clone https://github.com/arielf/weight-loss
-
-Change directory to it:
-
->    cd weight-loss
-
-And finally type:
-
->    make
-
 inside it, to run everything from start to finish.
 
 
 ### Running the code
 
-When you're done installing prereqs, run make:
+Using git, you clone this repository:
+
+>    git clone https://github.com/arielf/weight-loss
+
+And change directory to it:
+
+>    cd weight-loss
+
+Finally type:
 
 >    make
 
