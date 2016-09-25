@@ -74,41 +74,46 @@ Title <- ifelse(length(Params$title),
 )
 
 # -- Color weight-gains in red and weigh-losses in green for effect
-#    (this is one uncommon case where a 'positive' quantity is actually undesired/negative)
+#    (this is one uncommon case where a 'positive' quantity is
+#     actually undesired/negative)
 MyGreen = '#00cc00'
 MyRed = '#ff0000'
 
 d <- read.csv(CsvFile, h=T, sep=',', colClasses=c('character', 'numeric'))
-N = nrow(d)
-FeatureNo = 1:N
-TextOffset = ifelse(d$RelScore > 0, -2, +2)
-TextJust = d$RelScore > 0
-FillColor = ifelse(d$RelScore > 0, MyRed, MyGreen)
-FeatureLabels = sprintf("%s (%.1f%%)", d$FeatureName, d$RelScore)
+
+N <- nrow(d)
 ZeroScore = which(d$RelScore == 0)
+
+d <- transform(d,
+    FeatureNo = 1:N,
+    TextOffset = (ifelse(d$RelScore > 0, -2, +2)),
+    TextJust = d$RelScore > 0,
+    FillColor = (ifelse(d$RelScore > 0, MyRed, MyGreen)),
+    FeatureLabels = sprintf("%s (%.1f%%)", d$FeatureName, d$RelScore)
+)
+
 
 g <- ggplot(
         data=d,
         aes(
             x=FeatureNo,
-            y=RelScore,
+            y=RelScore
         ),
         xlim(-100, 100)
     ) +
     geom_bar(
-        stat="identity",
-        position="identity",
+        stat='identity',
+        position='identity',
         width=0.8,
-        fill=FillColor,
-        # colour='grey80'
+        fill=d$FillColor,
     ) +
     coord_flip() +
-    geom_text(label=FeatureLabels, size=2.0, angle=0, y=TextOffset, x=FeatureNo, hjust=TextJust) +
+    geom_text(label=d$FeatureLabels,
+                y=d$TextOffset, x=d$FeatureNo,
+                size=2.0, angle=0, hjust=d$TextJust) +
     ggtitle(Title) +
     ylab('Relative Importance (%pct)') +
     xlab(NULL) +
-    geom_text(label='Weight\nGain', x=ZeroScore-20, y=40, angle=0, colour=MyRed, size=8, family='FreeSans', fontface=4) +
-    geom_text(label='Weight\nLoss', x=ZeroScore+20, y=-40, angle=0, colour=MyGreen, size=8, family='FreeSans', fontface=4) +
     theme(
         plot.title=title.theme,
         axis.title.y=y.title.theme,
@@ -116,6 +121,16 @@ g <- ggplot(
         axis.text.x=x.axis.theme,
         axis.text.y=element_blank()
     )
+
+# -- no longer works in the latest version of ggplot() 2016-09
+# g + geom_text(label='Weight\nGain',
+#                x=ZeroScore-20, y=40,
+#                angle=0, colour=MyRed, size=8,
+#                family='FreeSans', fontface=4)
+# g + geom_text(label='Weight\nLoss',
+#                x=ZeroScore+20, y=-40,
+#                angle=0, colour=MyGreen, size=8,
+#                family='FreeSans', fontface=4)
 
 ggsave(g, file=PngFile, width=W, height=H, dpi=DPI)
 

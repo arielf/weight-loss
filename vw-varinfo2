@@ -401,7 +401,7 @@ def summarize():
 
     # Print a header
     print("%-16s\t%10s\t%s\t%s\t%s\t%s" %
-         ('FeatureName', 'HashVal', 'MinVal', 'MaxVal', 'Weight', '%Weight'))
+         ('FeatureName', 'HashVal', 'MinVal', 'MaxVal', 'Weight', 'RelScore'))
 
     # TODO: implement multi-class
     # multi-class needs per-class internal data-structs
