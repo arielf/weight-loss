@@ -14,17 +14,21 @@ DPI = 200
 FONTSIZE = 8
 MyGray = 'grey50'
 
-title.theme   = element_text(family="FreeSans", face="bold.italic",
+# --- Favorite fonts
+Family='FreeSans'
+Face='bold.italic'
+
+title.theme   = element_text(family=Family, face=Face,
                             size=FONTSIZE)
-x.title.theme = element_text(family="FreeSans", face="bold.italic",
+x.title.theme = element_text(family=Family, face=Face,
                             size=FONTSIZE-1, vjust=-0.1)
-y.title.theme = element_text(family="FreeSans", face="bold.italic",
+y.title.theme = element_text(family=Family, face=Face,
                            size=FONTSIZE-1, angle=90, vjust=0.2)
-x.axis.theme  = element_text(family="FreeSans", face="bold",
+x.axis.theme  = element_text(family=Family, face="bold",
                             size=FONTSIZE-2, colour=MyGray)
-y.axis.theme  = element_text(family="FreeSans", face="bold",
+y.axis.theme  = element_text(family=Family, face="bold",
                             size=FONTSIZE-2, colour=MyGray)
-legend.theme  = element_text(family="FreeSans", face="bold.italic",
+legend.theme  = element_text(family=Family, face=Face,
                             size=FONTSIZE-1, colour="black")
 
 Params <- list()
@@ -107,17 +111,19 @@ g <- ggplot(
         width=0.8,
         fill=d$FillColor,
     ) +
-    coord_flip() +
     geom_text(label=d$FeatureLabels,
                 y=d$TextOffset, x=d$FeatureNo,
                 size=2.0, angle=0, hjust=d$TextJust) +
     ggtitle(Title) +
     ylab('Relative Importance (%pct)') +
     xlab(NULL) +
-    annotate("text", x=CrossIdx+20, y=+40, label='Weight\nGain',
-                angle=0, colour=MyRed, size=9, fontface=4) +
-    annotate("text", x=CrossIdx-20, y=-40, label='Weight\nLoss',
-                angle=0, colour=MyGreen, size=9, fontface=4) +
+    annotate("text", x=CrossIdx+20, y=+35, label='Weight\nGain',
+                angle=0, colour=MyRed, size=9,
+                family=Family, fontface=Face) +
+    annotate("text", x=CrossIdx-20, y=-35, label='Weight\nLoss',
+                angle=0, colour=MyGreen, size=9,
+                family=Family, fontface=Face) +
+    coord_flip() +
     theme(
         plot.title=title.theme,
         axis.title.y=y.title.theme,
