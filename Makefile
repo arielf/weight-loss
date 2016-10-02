@@ -60,13 +60,14 @@ c charts: weight-chart score-chart
 
 # -- Weight by date chart
 wc weight-chart $(DWPNG): date-weight.r $(DWCSV)
-	date-weight.r $(DWCSV) $(DWPNG)
+	Rscript --vanilla date-weight.r $(DWCSV) $(DWPNG)
+	@echo "=== done: date-weight chart saved in: '$(DWPNG)'"
 
 # -- Feature importance score chart
 sc score-chart $(SCPNG): scores.txt score-chart.r
 	@perl -ane '$$F[5] =~ tr/%//d ;print "$$F[0],$$F[5]\n"' scores.txt > scores.csv
 	@Rscript --vanilla score-chart.r scores.csv $(SCPNG)
-	@echo "=== done: feature-chart saved in: '$(SCPNG)'"
+	@echo "=== done: weight-loss factors chart saved in: '$(SCPNG)'"
 
 # -- model
 m model $(MODELFILE): Makefile $(TRAINFILE)
