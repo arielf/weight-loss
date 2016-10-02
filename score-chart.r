@@ -82,7 +82,7 @@ MyRed = '#ff0000'
 d <- read.csv(CsvFile, h=T, sep=',', colClasses=c('character', 'numeric'))
 
 N <- nrow(d)
-ZeroScore = which(d$RelScore == 0)
+CrossIdx = which.min(abs(d$RelScore))
 
 d <- transform(d,
     FeatureNo = 1:N,
@@ -114,6 +114,10 @@ g <- ggplot(
     ggtitle(Title) +
     ylab('Relative Importance (%pct)') +
     xlab(NULL) +
+    annotate("text", x=CrossIdx+20, y=+40, label='Weight\nGain',
+                angle=0, colour=MyRed, size=9, fontface=4) +
+    annotate("text", x=CrossIdx-20, y=-40, label='Weight\nLoss',
+                angle=0, colour=MyGreen, size=9, fontface=4) +
     theme(
         plot.title=title.theme,
         axis.title.y=y.title.theme,
@@ -121,16 +125,6 @@ g <- ggplot(
         axis.text.x=x.axis.theme,
         axis.text.y=element_blank()
     )
-
-# -- no longer works in the latest version of ggplot() 2016-09
-# g + geom_text(label='Weight\nGain',
-#                x=ZeroScore-20, y=40,
-#                angle=0, colour=MyRed, size=8,
-#                family='FreeSans', fontface=4)
-# g + geom_text(label='Weight\nLoss',
-#                x=ZeroScore+20, y=-40,
-#                angle=0, colour=MyGreen, size=8,
-#                family='FreeSans', fontface=4)
 
 ggsave(g, file=PngFile, width=W, height=H, dpi=DPI)
 
