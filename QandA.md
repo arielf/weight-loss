@@ -1,8 +1,8 @@
-# Frequently asked Questions, Answers and Comments
+# Frequently asked Questions, Answers, & Comments
 
 ------------------
 
-#### I'm not a coder, this is too difficult to use
+#### I'm not a coder, this is too difficult for me to use; can you help?
 
 > I hear you. One reason I put this on github is so others can take it further: write a web or mail service on top, or even a smart-phone app.
 >
