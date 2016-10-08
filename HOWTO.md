@@ -1,6 +1,7 @@
-## How to run this code
+# How to run this code
 
-### Prerequisites:
+------------------
+## Prerequisites:
 
 This code depends on:
 
@@ -11,7 +12,8 @@ This code depends on:
 >- git (to clone this repository)
 >- bash, perl, and python (these are usually preinstalled and available on all Linux and MacOs systems)
 
-### Installation of prerequisites:
+------------------
+## Installation of prerequisites:
 
 #### Linux: Ubuntu, Mint, or any Debian derivative 
 
@@ -42,7 +44,8 @@ One you have Ubuntu on Windows you just install all the prerequisites. e.g. in a
 inside it, to run everything from start to finish.
 
 
-### Running the code
+------------------
+## Running the code
 
 Using git, you clone this repository:
 
@@ -56,7 +59,9 @@ Finally type:
 
 >    make
 
-It should produce a file `scores.txt` with your weight-loss scores.  To get a chart of the scores run:
+It should produce a file `scores.txt` with your weight-loss scores.
+
+To get a chart of the scores:
 
 >    make sc
 

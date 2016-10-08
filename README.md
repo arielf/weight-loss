@@ -247,7 +247,14 @@ A nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for
 
 - [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
 
+#### Questions, Answers, Comments
 
+[Some questions and comments I got and tried to answer](QandA.md)
+
+#### More friendly interface
+
+[Shyal Beardsley](http://shyal.com) has built a starter front-end for this:  Check it out at ***[weightbrains.com](http://weightbrains.com)***
+(prototype, work in progress)
 
 ## Acknowledgements
 
