@@ -1,4 +1,4 @@
-# Frequently asked questions and Answers
+# Frequently asked Questions, Answers and Comments
 
 ------------------
 
