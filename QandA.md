@@ -32,7 +32,7 @@
 
 #### Doesn't dehydration and depleting Glycogen in the liver explain most of this weight loss?
 
-> For the 1st 24 hours of a diet, possibly yes.  However, I can't attribute over 20 Lb loss over 1 year to just water loss.
+> For the 1st 24 hours of a diet, and about 1 Lb of loss (approx. weight of total body glycogen) yes.  However, I can't attribute over 20 Lb loss over 1 year to just water loss.
 
 #### Doesn't caloric restriction explain all of this weight loss?
 
