@@ -6,10 +6,13 @@
 
 > I hear you. One reason I put this on github is so others can take it further: write a web or mail service on top, or even a smart-phone app.
 >
-> Since publishing I've become aware of one site using this work as a back-end. Please note this is early work in progress:
+> Since publishing I've become aware of one site using this work as a back-end. Please note this is very early, experimental, work in progress:
 >
 >    ***[weightbrains.com](http://weightbrains.com)***
 >
+> It would be cool to see more people taking this work further.
+>
+
 
 #### This is an example of how to not do scientific research!
 

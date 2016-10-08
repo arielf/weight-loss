@@ -253,8 +253,8 @@ A nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for
 
 #### More friendly interface
 
-[Shyal Beardsley](http://shyal.com) has built a starter front-end for this:  Check it out at ***[weightbrains.com](http://weightbrains.com)***
-(prototype, work in progress)
+[Shyal Beardsley](http://shyal.com) has built a starter front-end for this: ***[weightbrains.com](http://weightbrains.com)***
+(Note and fair warning: this is a prototype, experimental, work in progress)
 
 ## Acknowledgements
 
