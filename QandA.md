@@ -49,3 +49,27 @@
 > More data, and data from many people is always welcome!
 >
 
+#### Can you tell the story of how it went viral, and how does it feel to go Viral?
+
+>
+> From my PoV, it was an accidental success.
+>
+> I was trying to lose weight, and since I'm into ML, I found it natural to us some machine learning to guide me. Indeed it helped.
+>
+> When I told this to a colleague of mine, she suggested I really have to share this more widely. So I dusted it up a it, cleaned the code to make it a bit more usable by others, wrote a few pages of background and put it on github.
+>
+> On github it sat for a few months with zero forks, stars, totally ignored by the world.
+>
+> Then some guy named Dmitry noticed it and posted a link to hacker news (at Ycombinator)...
+>
+> The reaction was overwhelming.
+>
+> Some minutes later, I get an email from someone else I don't know via github, saying "Congratulations, you've just made it to the top of HN..."
+>
+> It was a Friday evening. That's weekend I couldn't sleep. My mailbox was exploding too. It went viral over the interwebs. Hundreds of comments, thousands of stars on the github repository, many forks, people offering me jobs, invites to present at conferences, you name it.
+>
+>  It quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
+>
+> At moment like this, one wishes they had two copies of oneself. I have another life too.
+>
+
