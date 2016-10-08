@@ -27,12 +27,12 @@
 
 #### Isn't factor X missing (e.g. Coffee)?
 
-> Yes, many things are missing.  I encourage you to use your own data, and what you personally feel is most important.
+> Yes, many additional factors are missing.  I encourage you to use your own data, and what you personally feel is most important.
 
 
 #### Doesn't dehydration and depleting Glycogen in the liver explain most of this weight loss?
 
-> No.  I can't attribute over 20 Lb loss over 1 year to water loss.
+> For the 1st 24 hours of a diet, possibly yes.  However, I can't attribute over 20 Lb loss over 1 year to just water loss.
 
 #### Doesn't caloric restriction explain all of this weight loss?
 
