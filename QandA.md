@@ -44,7 +44,9 @@
 
 #### Machine learning: aren't you over-fitting the data?
 
-> Possibly, although I tried many combinations, data-subsets, shufflings, bootstrapping, and while the small details varied, the main conclusions were very consistent: Longer sleep, Low carb, high fat, were leading me to losing weight.
+> Possibly, as the number of days in the data (about 40) is small and may even have some errors in it.
+>
+> OTOH: I tried many combinations, data-subsets, shufflings, bootstrapping, and while the small details varied, the main conclusions were very consistent: Longer sleep, Low carb, high fat, were leading me to losing weight.
 >
 > More data, and data from many people is always welcome!
 >
