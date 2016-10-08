@@ -36,13 +36,13 @@
 
 #### Doesn't caloric restriction explain all of this weight loss?
 
-> This may be true.  I haven't counted calories and a more thorogh experiment should add all the data it can use.
+> This may be true.  I haven't counted calories and a more thorough experiment should add all the data it can use.
 >
 > However, I tried multiple times to restrict my diet and was not successful.  What led to success in my case is a combination of physiological and psychological factors. Most importantly, the realization that by trying a LCHF (Low Carb, High Fat) diet, I can sustain a diet regime (possibly calorie restricted, I don't know) that lead to a clear and sustainable weight loss.
 >
 > The story is about the discovery process of what worked for me in the end.
 
-#### Machine learning: aren't you overfitting the data?
+#### Machine learning: aren't you over-fitting the data?
 
 > Possibly, although I tried many combinations, data-subsets, shufflings, bootstrapping, and while the small details varied, the main conclusions were very consistent: Longer sleep, Low carb, high fat, were leading me to losing weight.
 >
@@ -60,7 +60,7 @@
 >
 > On github it sat for a few months with zero forks, stars, totally ignored by the world.
 >
-> Then some guy named Dmitry noticed it and posted a link to hacker news (at Ycombinator)...
+> Then some guy named Dmitri noticed it and posted a link to hacker news (at Ycombinator)...
 >
 > The reaction was overwhelming.
 >
