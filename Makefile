@@ -26,6 +26,7 @@ VW_ARGS = \
 	-k \
 	--loss_function squared \
 	--progress 1 \
+	--bootstrap 7 \
 	-l 1.0 \
 	--l2 1.85201e-08
 
@@ -34,6 +35,9 @@ TOVW := lifestyle-csv2vw
 VW := vw $(VW_ARGS)
 VARINFO := vw-varinfo2
 SORTABS := sort-by-abs
+
+# Aggregate consecutive daily-data up to this number of days
+NDAYS := 3
 
 # SHUFFLE := shuf
 # unsort --seed $(SEED)
@@ -75,7 +79,7 @@ m model $(MODELFILE): Makefile $(TRAINFILE)
 
 # -- train-set generation
 t train $(TRAINFILE): Makefile $(MASTERDATA) $(TOVW)
-	$(TOVW) $(MASTERDATA) | sort-by-abs > $(TRAINFILE)
+	$(TOVW) $(NDAYS) $(MASTERDATA) | sort-by-abs > $(TRAINFILE)
 
 # -- convergence chart
 conv: $(TRAINFILE)
