@@ -157,7 +157,7 @@ def all_features_example():
 
 
 def process_audit_line(line):
-    features = line.split("\t");
+    features = line.split("\t")
     features.pop(0)
     for f in features:
         fields = f.split(':')
@@ -349,7 +349,7 @@ def get_vw_cmd(args):
 
     # TODO: skip leading options that are intended for vw-varinfo itself
     for arg in args:
-        vw_args.append(arg);
+        vw_args.append(arg)
 
     d("vw_cmd is: %s" % vw_args)
     vw_exe = vw_args[0]
