@@ -24,6 +24,7 @@ import argparse
 import string
 import itertools
 import tempfile
+import traceback
 
 Verbose = False
 ARGV0 = os.path.basename(sys.argv[0])
@@ -68,12 +69,14 @@ def usage(msg):
     """Print usage message and exit"""
     if msg:
         v(msg)
-    v("Usage: %s [-v] [<vw>] <vw_args>..." % ARGV0)
+    v("Usage: %s [-v] [<vw>] [<vw_options>] <vw_args>..." % ARGV0)
     v("    Notes:\n"
-      "\tYou may omit the <vw> argument (default is 'vw')\n"
-      "\tYou may use a different <vw> executable as the 1st arg\n"
-      "\t<vw_args> are all the vw arguments, as you would call vw directly\n"
-      "\tIf <vw_args> is just a dataset-file - vw defaults will be used"
+      "\t- You may omit the <vw> argument (default is 'vw')\n"
+      "\t- You may use a different <vw> executable as the 1st arg\n"
+      "\t- <vw_args> are all the vw arguments, as you would call vw directly\n"
+      "\t- If <vw_args> is just a dataset-file - vw defaults will be used\n"
+      "\t- To lose the constant (intercept), use vw's '--noconstant' option\n"
+      "\t  However the constant may be useful to show if there's a bias"
     )
     sys.exit(1)
 
@@ -185,7 +188,7 @@ def vw_audit(vw_cmd, our_input=None):
     Generator for vw audit-lines
     (Each example is mapped to its audit-line)
 
-    vw_cmdline is a list of args to run vw with
+    vw_cmd is a list of args to run vw with (vw command line)
 
     There are two modes of running:
         1) Normal: input provided directly to vw from command line
@@ -194,7 +197,7 @@ def vw_audit(vw_cmd, our_input=None):
     """
     if our_input:
         # Input comes from our_input (string)
-        # which is sent to stdin of the subprocess
+        # which is sent via stdin to the vw subprocess
         vw_proc = subprocess.Popen(
                     vw_cmd,
                     stdout=subprocess.PIPE,
@@ -206,7 +209,7 @@ def vw_audit(vw_cmd, our_input=None):
         vw_proc.stdin.close()
     else:
         # By default, vw reads from a training-set
-        # which is already provided on the command line
+        # which is provided on the command line
         vw_proc = subprocess.Popen(
                     vw_cmd,
                     stdout=subprocess.PIPE,
@@ -225,10 +228,13 @@ def vw_audit(vw_cmd, our_input=None):
             vw_proc.stdout.close()
             vw_proc.wait()
             if vw_proc.returncode:
+                # non-zero exit code, print the full command that
+                # failed to help user reproduce/understand it
                 fatal("vw subprocess failed (status=%s): '%s'" %
                       (vw_proc.returncode, vw_cmd)
                 )
             else:
+                # everything looks cool, support debugging anyway
                 d("%s: %s examples, exit status: %s" %
                     (vw_cmd, example_no, vw_proc.returncode)
                 )
@@ -242,10 +248,12 @@ def vw_audit(vw_cmd, our_input=None):
             yield vw_line
             continue
 
-        # anything we want to do with other lines?
+        # Q: anything we want to do with other lines?
+        # A: for now no, we just read the next line from vw
 
 
 def run_vw(vw_cmd, our_input=None):
+    """Track all variables and their weights via vw --audit lines"""
     audit_lines = vw_audit(vw_cmd, our_input)
     for line in audit_lines:
         process_audit_line(line)
@@ -426,26 +434,32 @@ def main():
 
     global MultiClass, MCLabels
 
-    vw_cmd = get_vw_cmd(sys.argv)
+    try:
+        vw_cmd = get_vw_cmd(sys.argv)
 
-    if is_multiclass(vw_cmd):
-        # multi-class needs per-class internal data-structs
-        MultiClass = True
-        MCLabels = []
+        if is_multiclass(vw_cmd):
+            # multi-class needs per-class internal data-structs
+            MultiClass = True
+            MCLabels = []
 
-    run_vw(vw_cmd)
+        run_vw(vw_cmd)
 
-    # Run second pass:
-    #   with -i ModelName and single example w/ all-features present
-    fix_weights_pass2()
+        # Run second pass:
+        #   with -i ModelName and single example w/ all-features present
+        fix_weights_pass2()
 
-    summarize()
+        summarize()
 
-    if CleanupModel:
-        d("removing tempfile: %s" % ModelName)
-        os.remove(ModelName)
+        if CleanupModel:
+            d("removing tempfile: %s" % ModelName)
+            os.remove(ModelName)
 
+    except Exception as estr:
+        # catch-all to cover all unhandled exceptions
+        fatal("%s\n%s" % (estr, traceback.format_exc()))
+
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
 
