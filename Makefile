@@ -24,11 +24,12 @@ NAME = $(shell ./username)
 #
 VW_ARGS = \
 	-k \
-	--loss_function squared \
+	--loss_function quantile \
 	--progress 1 \
 	--bootstrap 7 \
-	-l 1.0 \
-	--l2 1.85201e-08
+	-l 0.05 \
+	--l2 1.85201e-08 \
+	-c --passes 4
 
 # -- programs
 TOVW := lifestyle-csv2vw
@@ -39,8 +40,18 @@ SORTABS := sort-by-abs
 # Aggregate consecutive daily-data up to this number of days
 NDAYS := 3
 
+# -- Commented out random shuffling methods
+#    now sorting examples by abs(delta).
+#    Overfitting is countered (though not completely avoided) by:
+#	* Aggregating on multiple partly overlapping N-day periods
+#	* Bootstrapping each example (multiple times) via --bootstrap
+#
+# Mutliple orders via shuffling and averaging results should be
+# considered as a future option.
+#
 # SHUFFLE := shuf
-# unsort --seed $(SEED)
+# SHUFFLE := unsort --seed $(SEED)
+#
 
 # -- data files
 MASTERDATA = $(NAME).csv
