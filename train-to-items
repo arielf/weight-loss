@@ -1,0 +1,23 @@
+#!/usr/bin/perl -w
+# vim: ts=4 sw=4 expandtab
+#
+# Convert a train file to a by-element train file
+# so we can get confidence intervals for each element separately
+# by running predict on it.
+#
+my %Items = ();
+
+# Collect items
+while (<>) {
+    s/^.*\|\s*//;
+    while (/(\S+)/g) {
+        my $item = $1;
+        $item =~ s/:.*$//;
+        $Items{$item} = 1;
+    }
+}
+
+for my $item (sort keys %Items) {
+    printf " '%s| %s\n", $item, $item;
+}
+

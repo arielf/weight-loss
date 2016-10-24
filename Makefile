@@ -5,6 +5,7 @@
 # Goal:
 #	- Find out which lifestyle factors affect your weight the most
 #	- Find out which foods make you gain or lose weight
+#	- Find confidence-level (ranges) for each food/lifestyle item
 #
 # Requires you to:
 #	- Weight yourself once a day
@@ -16,11 +17,54 @@
 #	- Place your data in <username>.csv
 #	- Type 'make'
 #
+# Additional 'make' targets (make <target>):
+#
+#    c/charts
+#	Creates optional charts
+#
+#    sc
+#	Creates the per-item scores chart only
+#
+#    m/model
+#	Creates a model file from the daily train-file
+#
+#    t/train
+#	Creates the daily-delta (weight change target) train file
+#
+#    i/items
+#	Creates 'by single-item' train file. This is a "pretend"
+#	data-file as if we only had one-item/day to see what's
+#	its "pretend-isolated" effect assuming everything else is equal.
+#
+#    conf/confidence/r/range
+#	Generates a sorted *.range file, in which each item appears
+#	together with its 'confidence range' [min max]. This can
+#	help you figure out how certain we are for each variable.
+#	e.g. a line like this:
+#		-0.024568 carrot -0.071207 0.026108
+#	means based on the given data, the machine-learning process
+#	estimates carrot makes you lose a bit of weight
+#	(average is a negative: -0.024568) but the confidence
+#	daily range is from -0.071207 (loss) to 0.026108 (gain)
+#	so there's a low confidence in this result.
+#
+#   conv
+#	Generates a convergence chart of the learning process
+#
+#   clean
+#	Cleans-up generated files
+#
 PATH := $(PATH)::.
 NAME = $(shell ./username)
 
+# -- scripts/programs
+VW = vw
+TOVW := lifestyle-csv2vw
+VARINFO := vw-varinfo2
+SORTABS := sort-by-abs
+
 #
-# vowpal-wabbit args
+# vowpal-wabbit training args
 #
 VW_ARGS = \
 	-k \
@@ -31,11 +75,6 @@ VW_ARGS = \
 	--l2 1.85201e-08 \
 	-c --passes 4
 
-# -- programs
-TOVW := lifestyle-csv2vw
-VW := vw $(VW_ARGS)
-VARINFO := vw-varinfo2
-SORTABS := sort-by-abs
 
 # Aggregate consecutive daily-data up to this number of days
 NDAYS := 3
@@ -56,7 +95,9 @@ NDAYS := 3
 # -- data files
 MASTERDATA = $(NAME).csv
 TRAINFILE  = $(NAME).train
+ITEMFILE  = $(NAME).items
 MODELFILE  = $(NAME).model
+RANGEFILE = $(NAME).range
 DWCSV := weight.2015.csv
 DWPNG := $(NAME).weight.png
 SCPNG := $(NAME).scores.png
@@ -86,18 +127,28 @@ sc score-chart $(SCPNG): scores.txt score-chart.r
 
 # -- model
 m model $(MODELFILE): Makefile $(TRAINFILE)
-	$(VW) -f $(MODELFILE) $(TRAINFILE)
+	$(VW) $(VW_ARGS) -f $(MODELFILE) $(TRAINFILE)
 
 # -- train-set generation
 t train $(TRAINFILE): Makefile $(MASTERDATA) $(TOVW)
 	$(TOVW) $(NDAYS) $(MASTERDATA) | sort-by-abs > $(TRAINFILE)
 
+# -- generate 'by single-item' train file
+i items $(ITEMFILE): $(TRAINFILE)
+	train-to-items $(TRAINFILE) > $(ITEMFILE)
+
+# -- Find daily 'range' for 'per-item'
+#    This finds a ~90% confidence interval (leverages vw --bootstrap)
+conf confidence r range $(RANGEFILE): $(MODELFILE) $(ITEMFILE)
+	$(VW) --quiet -t -i $(MODELFILE) \
+		-d $(ITEMFILE) -p /dev/stdout | sort -g > $(RANGEFILE)
+
 # -- convergence chart
 conv: $(TRAINFILE)
-	$(VW) $(TRAINFILE) 2>&1 | vw-convergence
+	$(VW) $(VW_ARGS) $(TRAINFILE) 2>&1 | vw-convergence
 
 clean:
-	/bin/rm -f $(MODELFILE) *.cache* *.tmp*
+	/bin/rm -f $(MODELFILE) $(ITEMFILE) $(RANGEFILE) *.cache* *.tmp*
 
 # -- more friendly error if original data doesn't exist
 $(MASTERDATA):
