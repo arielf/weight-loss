@@ -7,35 +7,84 @@ use Scalar::Util qw(looks_like_number);
 my $SepPat = qr{(?:\s*,\s*|\s+)};
 my $Interactive = -t STDOUT;
 
-my $prev_weight;
+# Default days-window
+my $NDays = 1;
 
-while (<>) {
-    # Skip comments or header-line
-    next if (/^[#A-Za-z]/);
-
-    chomp;
-    # Windows line endings, just in case...
-    tr/\015//d;
-
-    my ($date, $weight, @factors) = split($SepPat);
-
-    next unless ((defined $date) and $date =~ /^\d/);
-
-    # Only generate a training set if everything is defined and
-    # we have a prior day weight to compare to
-    unless ((defined $weight) and looks_like_number($weight)) {
-        $weight = '' unless (defined $weight);
-        if ($Interactive) {
-            warn "$ARGV:$. weight: '$weight' is not a number - line ignored\n";
+sub process_args() {
+    for my $arg (@ARGV) {
+        if (! -f $arg and $arg =~ /^\d$/) {
+            $NDays = $arg;
+        } else {
+            push(@files, $arg);
         }
-        undef $prev_weight;
-        next;
+    }
+    @ARGV = @files;
+}
+
+sub process_input() {
+    my $prev_weight;
+    my @daily = ();
+
+    while (<>) {
+        # Skip comments or header-line
+        next if (/^[#A-Za-z]/);
+
+        chomp;
+        # Windows line endings, just in case...
+        tr/\015//d;
+
+        my ($date, $weight, @factors) = split($SepPat);
+
+        next unless ((defined $date) and $date =~ /^\d/);
+
+        # Only generate a training set if everything is defined and
+        # we have a prior day weight to compare to
+        unless ((defined $weight) and looks_like_number($weight)) {
+            $weight = '' unless (defined $weight);
+            if ($Interactive) {
+                warn "$ARGV:$. weight: '$weight' is not a number - line ignored\n";
+            }
+            undef $prev_weight;
+            next;
+        }
+
+        
+        #
+        # -- collect daily (gain + factors) data points in @daily
+        #
+        if ((defined $prev_weight) && scalar(@factors) > 0) {
+            my $gain = $weight - $prev_weight;
+            my @day_list = ($gain, @factors);
+            push(@daily, \@day_list);
+        }
+        $prev_weight = $weight;
     }
 
-    if ((defined $prev_weight) && scalar(@factors) > 0) {
-        my $gain = sprintf('%.2f', $weight - $prev_weight);
-        print "$gain | @factors\n";
+    #
+    # Output vw training-set
+    #
+    for (my $i = 0; $i < @daily; $i++) {
+        my $start = $i;
+        my $end = $start + $NDays - 1;
+        my $sum_gain = 0.0;
+        my @sum_factors = ();
+        for (my $j = $i; $j <= $end; $j++) {
+            #
+            # -- Aggregate consecutive days gains and factors - up to $NDays
+            #
+            my $day_list = $daily[$i];
+            my @gain_factors = @$day_list;
+            my ($gain, @factors) = @gain_factors;
+            $sum_gain += $gain;
+            push(@sum_factors, @factors);
+            printf "%.2f | @sum_factors\n", $sum_gain;
+        }
     }
-    $prev_weight = $weight;
 }
+
+#
+# -- main
+#
+process_args();
+process_input();
 

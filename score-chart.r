@@ -14,17 +14,21 @@ DPI = 200
 FONTSIZE = 8
 MyGray = 'grey50'
 
-title.theme   = element_text(family="FreeSans", face="bold.italic",
+# --- Favorite fonts
+Family='FreeSans'
+Face='bold.italic'
+
+title.theme   = element_text(family=Family, face=Face,
                             size=FONTSIZE)
-x.title.theme = element_text(family="FreeSans", face="bold.italic",
+x.title.theme = element_text(family=Family, face=Face,
                             size=FONTSIZE-1, vjust=-0.1)
-y.title.theme = element_text(family="FreeSans", face="bold.italic",
+y.title.theme = element_text(family=Family, face=Face,
                            size=FONTSIZE-1, angle=90, vjust=0.2)
-x.axis.theme  = element_text(family="FreeSans", face="bold",
+x.axis.theme  = element_text(family=Family, face="bold",
                             size=FONTSIZE-2, colour=MyGray)
-y.axis.theme  = element_text(family="FreeSans", face="bold",
+y.axis.theme  = element_text(family=Family, face="bold",
                             size=FONTSIZE-2, colour=MyGray)
-legend.theme  = element_text(family="FreeSans", face="bold.italic",
+legend.theme  = element_text(family=Family, face=Face,
                             size=FONTSIZE-1, colour="black")
 
 Params <- list()
@@ -74,41 +78,52 @@ Title <- ifelse(length(Params$title),
 )
 
 # -- Color weight-gains in red and weigh-losses in green for effect
-#    (this is one uncommon case where a 'positive' quantity is actually undesired/negative)
+#    (this is one uncommon case where a 'positive' quantity is
+#     actually undesired/negative)
 MyGreen = '#00cc00'
 MyRed = '#ff0000'
 
 d <- read.csv(CsvFile, h=T, sep=',', colClasses=c('character', 'numeric'))
-N = nrow(d)
-FeatureNo = 1:N
-TextOffset = ifelse(d$RelScore > 0, -2, +2)
-TextJust = d$RelScore > 0
-FillColor = ifelse(d$RelScore > 0, MyRed, MyGreen)
-FeatureLabels = sprintf("%s (%.1f%%)", d$FeatureName, d$RelScore)
-ZeroScore = which(d$RelScore == 0)
+
+N <- nrow(d)
+CrossIdx = which.min(abs(d$RelScore))
+
+d <- transform(d,
+    FeatureNo = 1:N,
+    TextOffset = (ifelse(d$RelScore > 0, -2, +2)),
+    TextJust = d$RelScore > 0,
+    FillColor = (ifelse(d$RelScore > 0, MyRed, MyGreen)),
+    FeatureLabels = sprintf("%s (%.1f%%)", d$FeatureName, d$RelScore)
+)
+
 
 g <- ggplot(
         data=d,
         aes(
             x=FeatureNo,
-            y=RelScore,
+            y=RelScore
         ),
         xlim(-100, 100)
     ) +
     geom_bar(
-        stat="identity",
-        position="identity",
+        stat='identity',
+        position='identity',
         width=0.8,
-        fill=FillColor,
-        # colour='grey80'
+        fill=d$FillColor,
     ) +
-    coord_flip() +
-    geom_text(label=FeatureLabels, size=2.0, angle=0, y=TextOffset, x=FeatureNo, hjust=TextJust) +
+    geom_text(label=d$FeatureLabels,
+                y=d$TextOffset, x=d$FeatureNo,
+                size=2.0, angle=0, hjust=d$TextJust) +
     ggtitle(Title) +
     ylab('Relative Importance (%pct)') +
     xlab(NULL) +
-    geom_text(label='Weight\nGain', x=ZeroScore-20, y=40, angle=0, colour=MyRed, size=8, family='FreeSans', fontface=4) +
-    geom_text(label='Weight\nLoss', x=ZeroScore+20, y=-40, angle=0, colour=MyGreen, size=8, family='FreeSans', fontface=4) +
+    annotate("text", x=CrossIdx+20, y=+35, label='Weight\nGain',
+                angle=0, colour=MyRed, size=9,
+                family=Family, fontface=Face) +
+    annotate("text", x=CrossIdx-20, y=-35, label='Weight\nLoss',
+                angle=0, colour=MyGreen, size=9,
+                family=Family, fontface=Face) +
+    coord_flip() +
     theme(
         plot.title=title.theme,
         axis.title.y=y.title.theme,
