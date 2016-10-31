@@ -63,6 +63,19 @@ TOVW := lifestyle-csv2vw
 VARINFO := vw-varinfo2
 SORTABS := sort-by-abs
 
+# Adjustable parameters: to change call 'make' with NAME=Value:
+# --bootsrap rounds:
+BS = 7
+# --passes:
+P = 4
+# -- learning rate
+L = 0.05
+# L2 regularization
+L2 = 1.85201e-08
+
+# Aggregate consecutive daily-data up to this number of days
+NDAYS = 3
+
 #
 # vowpal-wabbit training args
 #
@@ -70,14 +83,12 @@ VW_ARGS = \
 	-k \
 	--loss_function quantile \
 	--progress 1 \
-	--bootstrap 7 \
-	-l 0.05 \
-	--l2 1.85201e-08 \
-	-c --passes 4
+	--bootstrap $(BS) \
+	-l $(L) \
+	--l2 $(L2) \
+	-c --passes $(P)
 
 
-# Aggregate consecutive daily-data up to this number of days
-NDAYS := 3
 
 # -- Commented out random shuffling methods
 #    now sorting examples by abs(delta).
