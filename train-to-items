@@ -1,22 +1,28 @@
 #!/usr/bin/perl -w
 # vim: ts=4 sw=4 expandtab
 #
-# Convert a train file to a by-element train file
-# so we can get confidence intervals for each element separately
-# by running predict on it.
+# Convert a regular train file (one day, many-items, per line)
+# to a one line per-item train file so we can easily calculate
+# confidence intervals for each element separately by predicting.
 #
 my %Items = ();
 
 # Collect items
 while (<>) {
+    # remove label, leave items (input features) only
     s/^.*\|\s*//;
+    # Loop on all items
     while (/(\S+)/g) {
         my $item = $1;
+        # Remove (optional) weights if any
         $item =~ s/:.*$//;
         $Items{$item} = 1;
     }
 }
 
+#
+# Print items, one per-line (test-file for prediction)
+#
 for my $item (sort keys %Items) {
     printf " '%s| %s\n", $item, $item;
 }
