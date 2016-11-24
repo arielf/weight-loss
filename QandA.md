@@ -86,6 +86,6 @@
 >
 >  There were some follow-ups on Reddit, Quora, and it quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
 >
-> At moment like this, one wishes they had two copies of oneself. I have another life too.
+> In moments like this, one wishes they had two copies of oneself. I have another life too.
 >
 
