@@ -80,11 +80,11 @@
 >
 > The reaction was overwhelming.
 >
-> Some minutes later, I get an email from someone else I don't know, Victor, via github, saying "Congratulations, you've just made it to the top of HN..."
+> Some minutes later, I got an email from someone else I don't know, Victor, via github, saying "Congratulations, you've just made it to the top of HN..."
 >
 > It was a Friday evening. That's weekend I couldn't sleep. My mailbox was exploding too. It went viral over the interwebs. Hundreds of comments, thousands of stars on the github repository, many forks, people offering me jobs, invites to present at conferences, you name it.
 >
->  There were some follow-ups on Reddit, Quora, and it quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
+>  There were some follow-ups on Reddit, Quora, and some other forums, and it quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
 >
 > In moments like this, one wishes they had two copies of oneself. I have another life too.
 >
