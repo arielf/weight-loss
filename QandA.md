@@ -68,7 +68,7 @@
 #### Can you tell the story of how it went viral, and how does it feel to go Viral?
 
 >
-> From my PoV, it was an accidental success.
+> From my PoV, it was totally accidental.
 >
 > I was trying to lose weight, and since I'm into ML, I found it natural to us some machine learning to guide me, especially in the early stages. It helped.
 >
