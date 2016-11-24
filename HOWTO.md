@@ -69,3 +69,24 @@ or
 
 >    make score-chart
 
+------------------
+## Changing `make` parameters
+
+There are a few adjustable variables (which have reasonable defaults) in the
+`Makefile`, and which you may change if interested:
+
+To change these you may call `make` with arguments changing the
+values, e.g:
+
+>     make VarName1=Value1 Varname2=Value2 ...
+
+> The variables and their defaults settings are:
+>
+
+    BS = 7            # -- bootsrapping rounds
+    P = 4             # -- multiple passes over the data
+    L = 0.05          # -- learning rate
+    L2 = 1.85201e-08  # -- L2 regularization
+    NDAYS = 3         # -- Aggregate consecutive daily-data up to NDAYS days
+
+

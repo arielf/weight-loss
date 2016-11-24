@@ -13,9 +13,9 @@ In the following I'll describe the thought process, some other people ideas,  an
 
 #### Disclaimer:
 
-The below is what worked for me. Your situation may be different. Listen to your own body.
+The below is what worked for me. Your situation may be different. Listen to your own body. Also: this wasn't a scientific experiment, or a "study", it was a journey of experimentation and discovery.
 
-OK, with that behind us, let's now channel [Galileo in the face of the inquisition](https://en.wikipedia.org/wiki/Galileo_affair): evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and its reverse.
+OK, with that behind us, I'd like to channel [Galileo in the face of the inquisition](https://en.wikipedia.org/wiki/Galileo_affair): evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up.
 
 
 ## Salient facts & initial observations
@@ -120,26 +120,28 @@ Here's how a typical result looks like.
 
 The positive (top) relative-score values are life-style choices that make you ***gain weight***, while the negative ones (bottom) make you ***lose weight***.
 
+
 ##### And here's a variable-importance chart made from a similar data-set:
 
 <a href="scores.png" target="_blank"><img src="scores.png" width="900"></a>
 
-Big disclaimer: please don't read too much into the particulars of this data. Working with this particular data set, was pretty challenging, since:
+Disclaimer: please don't read too much into the particulars of this data. Working with this particular data set, was pretty challenging, since:
 
-- The number of original data-points (days) is too small to establish enough significance.
+- The number of original data-points (a bit over 100 days) may be too small to establish enough significance.
 - Typical daily changes in body weight are very small, often ~0.1 lb.
 - My scales are not accurate: you may note that my data has 0.2 pound resolution. This is not ideal. Getting scales with 0.1 pound resolution is highly recommended.
 - You may also note that the loss-convergence chart hits a hard floor at ~0.2 even when you do multiple-passes over the data (overfit the training-set) for a similar reason.
 - Items that make you lose and gain weight, often appear together on the same line so they cancel each other. This throws the automatic learning process off-course.
+- There were some misspellings in the original data (I hope I fixed all of these by now)
 
 So I focused mostly on the extremes (start and end) of the list as presented above, and just used the hints as general guidance for further study, experimentation, and action.
 
-Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts obvious, pretty early:
+Despite the noisy & insufficient data, and the inaccuracies in weighting, the machine-learning experiments made 4 facts pretty clear, pretty early:
 
 - Sleeping longer consistently appeared as *the* #1 factor in losing weight.
 - Lack of sleep did the opposite: too little sleep lead to weight gains.
 - Carbs made me gain weight. The worst were high-starch and sugary foods.
-- Fatty and oily foods did the opposite: they were positively correlated with weight-loss.
+- Fatty and oily foods tended to do the opposite: they were positively correlated with weight-loss.
 
 The 'stayhome' lifestlye, which fell mostly on weekends, may have been a red-herring: I slept longer when I didn't have to commute to work, OTOH: my diet on stay-home days may have been different.
 
@@ -201,7 +203,7 @@ The above is a very simplified, and hopefuly easy to digest, version of what som
 
 - High fat: I switched from milk to half-and-half and am considering heavy (and unsweetened) whipped cream. It has less carbs (lactose) and more fat; plus, it tastes better.  Eat avocados, olive oil, mayo, coconut oil, nuts.  I never worry about *natural* fat, I eat as much fat as I want. This is what makes it much easier to avoid carbs. When I stuff myself with fat I feel much less hungry and miss the carbs less. The body is very good at figuring this out: "I have too much fat in the blood, so let's increase the amount of enzymes which break-up fat" and this makes me lose weight in the long run.  Most importantly, I always ***avoid any products labeled "low-fat" or "fat-free"***. The food industry usually replaces fat with sugar, so it tastes better - otherwise it tastes awful. You'll often hear about "bad" vs "good" fat. My take: as long as it is natural, it is ok. The worst trans-fat is fat that's artificially hydrogenated, to increase shelf-life, by the food industry. The less saturated fat is, the better. Mono-saturated (plant) liquid oil is the best, then come the poly-unsaturated fats, and finally near saturated (but not fully saturated) fats that come from animals. My buttery-spread spectrum is:  *Margarine: no; Butter: ok; Earth Balance: no problem*. At any rate, even the most saturated fat, gets broken and depleted by the natural processes in the body.
 
-- A bit of exercise.  Of course, more is better, but for many this may prove difficult. I don't excercise too much. I just bike to work and back about 20 min each way, meaning 40 min/day, 5 out of 7 days/week. You can try walking the dog (but walk faster), or Zumba dance to music. The trick is to find something that you don't find hard to do. Or find company to do it together. Then, do a little bit of it every day.  For the record, I'm not 100% sure excercise is *absolutely essential* to losing weight, but I believe it helps accelerate the process.
+- A bit of exercise.  Of course, more is better, but for many this may prove difficult. I don't excercise too much. I just bike to work and back about 20 min each way, meaning 40 min/day, 5 out of 7 days/week. You can try walking the dog (but walk faster), or Zumba dance to music. The trick is to find something that you don't find hard to do. Or find company to do it together. Then, do a little bit of it every day.
 
 - ***Longer fasting periods:*** This is the #1 contributor to weight-loss. sleep longer, stop eating as early as possible before going to sleep and start eating as late as possible after sleeping. *Skip breakfast*, after some time you won't feel hungry in the morning anymore.  After long periods of fasting, the body chemistry adjusts: I need more ATP, but I don't have glucose in the blood, and the glycogen in the liver is all fully consumed (takes about 1-2 days of low or no carbs) so there's no other option, but to start breaking-up stored fat. This elevates the enzymes that help with breaking up fat and the Krebs cycle reverses direction in the critical paths. Instead of transforming excess-carbs into stored fat, it breaks-up the fat for energy.
 
