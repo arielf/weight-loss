@@ -65,6 +65,37 @@
 >
 > My conclusions were that while some items in the middle fall into the "too little data to conclude from" category, items closer to the top/bottom, as a group, point to sleeping (fasting) longer and substituting carbs for fat, as likely weight-loss factors.
 
+#### What's the story on statins? How is this related to weight-loss?
+
+[Original appeared in the HackerNews thread, some edits applied]
+
+Here's my completely personal experience with statins. I may be wrong, but I'm following my compass and am always open to be proven otherwise.
+
+> Doctor: "Your 'bad cholesterol' is borderline, I want you to start taking "Lipitor"
+
+Observation: when the 'Lipitor' patent expired and it became a cheap generic drug, the suggestion turned into 'Crestor' which I learned has a bit longer effective half-life, and way higher price.
+
+> Me: (while adopting a different diet)
+> "Hmm statins would have taken me _maybe_ 3% lower and here I am 20% lower after a year of a simple, self-studied, diet change.
+> Maybe there are better ways to lower the so called 'bad cholesterol'?
+
+Further study: there's always a new statin the moment patent expires.
+check out the following names on Wikipedia:
+
+    - Compactin
+    - Simvastatin
+    - Fluvastatin
+    - Cerivastatin
+    - Atorvastatin
+    - Rosuvastatin
+
+These are all chemical names, not brand names, the last two on the list are the brands: known as "Lipitor" and "Crestor".
+
+So I don't know. I'm 100% sure all my doctors are well meaning and caring and I have nothing against them, but my confidence in such health suggestions, in research funded by big-pharma, and in the new great-statin of-the-era while america keeps getting obese and less healthy, is, how can I put it? a bit shaken.
+
+Again, just prove me wrong, and I'll change my view.
+
+`
 #### Can you tell the story of how it went viral, and how does it feel to go Viral?
 
 >
