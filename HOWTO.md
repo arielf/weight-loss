@@ -82,7 +82,7 @@ values, like this:
 
 The current variables and their defaults settings are:
 
-    BS = 7            # -- bootsrapping rounds
+    BS = 7            # -- bootstrapping rounds
     P = 4             # -- multiple passes over the data
     L = 0.05          # -- learning rate
     L2 = 1.85201e-08  # -- L2 regularization
