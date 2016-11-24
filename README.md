@@ -167,7 +167,7 @@ You may note that in the top (date vs. weight) chart there's a notable accelerat
 
 This gave me 14-16 hours of fasting each day. Rather than the more typical 10-12 hours/day of fasting.
 
-The 2nd accelerator was ***loading up on fat*** in order to feel full.
+The 2nd accelerator was ***consuming fatty stuff*** (instead of carbs) in order to feel full.
 
 The 3rd accelerator was understanding the concepts of [Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [***Glycemic Load***](https://en.wikipedia.org/wiki/Glycemic_load), and shifting whatever I chose to eat towards ***lower Glycemic loads***.
 
