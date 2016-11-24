@@ -76,12 +76,11 @@ There are a few adjustable variables (which have reasonable defaults) in the
 `Makefile`, and which you may change if interested:
 
 To change these you may call `make` with arguments changing the
-values, e.g:
+values, like this: 
 
->     make VarName1=Value1 Varname2=Value2 ...
+>     make VarName1=Value1 VarName2=Value2 ...
 
-> The variables and their defaults settings are:
->
+The current variables and their defaults settings are:
 
     BS = 7            # -- bootsrapping rounds
     P = 4             # -- multiple passes over the data
