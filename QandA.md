@@ -72,16 +72,16 @@
 
 > [Original appeared in the HackerNews thread, some edits applied]
 >
-> Here's my completely personal experience with statins. I may be wrong, but I'm following my compass and am always open to be proven otherwise.
+> Here's my personal experience with statins. I may be wrong, but I'm following my compass while always open to be proven otherwise.
 >
-> Doctor: "Your 'bad cholesterol' is borderline, I want you to start taking "Lipitor"
+> Doctor: "Your 'bad cholesterol' is borderline, I want you to start taking "Lipitor"...
 
-> Observation: when the 'Lipitor' patent expired and it became a cheap generic drug, the suggestion turned into 'Crestor' which I learned has a bit longer effective half-life, and way higher price.
+> Observation: when the 'Lipitor' patent expired, and it became a cheap generic drug, the suggestion turned into 'Crestor' which I learned has a bit longer effective half-life, and way higher price.
 
 > ***Me: (while adopting a different diet)***
-> *"Hmm statins would have taken me _maybe_ 3% lower and here I am 20% lower after a year of a simple, self-studied, diet change. Maybe there are better ways to lower the so called 'bad cholesterol'?*
+> *"Hmm statins would have taken my cholesterol and triglicerids  _maybe_ 3% lower and here I am 20% lower after a year of a simple, self-studied, diet change. Maybe there are better ways to lower the so called 'bad cholesterol'?*
 
-> Further study: there's always a new statin the moment patent expires.
+> Further study: there's always a new statin the moment the previous patent expires.
 >
 > Check out the following names on Wikipedia:
 >
