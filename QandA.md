@@ -99,7 +99,7 @@
 > Again, just prove me wrong, and I'll change my view.
 
 
-#### Can you tell the story of how it went viral, and how does it feel to go Viral?
+#### Can you tell the story of how, and how does it feel to "Go Viral"?
 
 >
 > From my PoV, it was totally accidental.
