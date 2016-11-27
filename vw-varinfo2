@@ -145,10 +145,10 @@ def all_features_example():
     """Return a equal-weight vw line with all features present"""
     # TODO: implement multi-class: needs per-class internal data-structs
     d1, d2 = all_features_dicts()
-    individual_features = ' | ' + ' '.join(d1.keys())
+    individual_features = ' | ' + ' '.join(list(d1.keys()))
     ns_features = []
     for ns in d2:
-        fnames = d2[ns].keys()
+        fnames = list(d2[ns].keys())
         one_ns_features = " |%s %s" % (ns, ' '.join(fnames))
         ns_features.append(one_ns_features)
 
@@ -212,7 +212,13 @@ def vw_audit(vw_cmd, our_input=None):
             stdin=subprocess.PIPE,
             bufsize=1048576
         )
+        # python3 desn't like this:
+        #   TypeError: a bytes-like object is required, not 'str'
         vw_proc.stdin.write(our_input)
+        # But if I try this, python3 doesn't work at all...
+        #   vw_proc.stdin.write(bytes(our_input, 'utf-8'))
+        # and OTOH python2 doesn't like the 2 args to bytes
+        # vw_proc.stdin.write(our_input.encode('utf-8'))
         vw_proc.stdin.close()
     else:
         # By default, vw reads from a training-set
@@ -225,7 +231,6 @@ def vw_audit(vw_cmd, our_input=None):
             bufsize=1048576
         )
 
-    re_leading_tab = re.compile(r'^\t')
     example_no = 0
 
     while True:
@@ -246,7 +251,8 @@ def vw_audit(vw_cmd, our_input=None):
 
             return
 
-        if re_leading_tab.match(str(vw_line)):
+        # An audit line is recognized by a leading-tab
+        if vw_line[0] == '\t':
             # An audit line (what we're looking for)
             example_no += 1
             d(vw_line)
@@ -263,7 +269,6 @@ def vw_audit(vw_cmd, our_input=None):
 
 def run_vw(vw_cmd, our_input=None):
     """Track all variables and their weights via vw --audit lines"""
-    # audit_lines = vw_audit(vw_cmd, our_input)
     for line in vw_audit(vw_cmd, our_input):
         process_audit_line(line)
 
@@ -394,27 +399,27 @@ def minmax(data):
 
 def summarize():
     """Output summary of variables"""
-    wmin, wmax = minmax(F_WEIGHT.values())
+    wmin, wmax = minmax(list(F_WEIGHT.values()))
     w_absmax = max(abs(wmin), abs(wmax))
 
     # Print a header
-    print("%-16s\t%10s\t%s\t%s\t%s\t%s" %
-          ('FeatureName', 'HashVal', 'MinVal', 'MaxVal', 'Weight', 'RelScore'))
+    print(("%-16s\t%10s\t%s\t%s\t%s\t%s" %
+          ('FeatureName', 'HashVal', 'MinVal', 'MaxVal', 'Weight', 'RelScore')))
 
     # TODO: implement multi-class
     # multi-class needs per-class internal data-structs
 
     # To reverse-order add: 'reverse=True' arg to 'sorted'
     # itemgetter: (0): sort-by-key, (1): sort by value
-    sorted_tuples = sorted(F_WEIGHT.items(), key=itemgetter(1))
+    sorted_tuples = sorted(list(F_WEIGHT.items()), key=itemgetter(1))
     for fname, _ in sorted_tuples:
         fmin = float(F_MIN[fname])
         fmax = float(F_MAX[fname])
         fweight = float(F_WEIGHT[fname])
         fhash = F_HASH[fname]
         relscore = 100.0 * (fweight/w_absmax if w_absmax > 0 else 0.0)
-        print("%-16s\t%10s\t%.2f\t%.2f\t%.2f\t%7.2f" %
-              (fname, fhash, fmin, fmax, fweight, relscore))
+        print(("%-16s\t%10s\t%.2f\t%.2f\t%.2f\t%7.2f" %
+              (fname, fhash, fmin, fmax, fweight, relscore)))
 
 def pass1(vw_cmd):
     """In pass1 we run 'vw' as in the original command"""
