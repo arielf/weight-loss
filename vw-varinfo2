@@ -21,6 +21,7 @@ import os
 import subprocess
 import re
 import itertools
+# import time
 import tempfile
 import traceback
 
@@ -228,8 +229,8 @@ def vw_audit(vw_cmd, our_input=None):
     example_no = 0
 
     while True:
-        vw_line = str(vw_proc.stdout.readline())
-        if vw_line == '':
+        vw_line = vw_proc.stdout.readline()
+        if not vw_line:
             # End of input
             vw_proc.stdout.close()
             vw_proc.wait()
@@ -245,21 +246,25 @@ def vw_audit(vw_cmd, our_input=None):
 
             return
 
-        if re_leading_tab.match(vw_line):
+        if re_leading_tab.match(str(vw_line)):
             # An audit line (what we're looking for)
             example_no += 1
             d(vw_line)
             yield vw_line
             continue
 
+        # print("vw_line=[%s] len=%d not(vw_line)=%s" % (vw_line, len(vw_line), (not vw_line)))
+        # time.sleep(0.0001)
+
         # Q: anything we want to do with other lines?
         # A: for now no, we just read the next line from vw
 
+    return
 
 def run_vw(vw_cmd, our_input=None):
     """Track all variables and their weights via vw --audit lines"""
-    audit_lines = vw_audit(vw_cmd, our_input)
-    for line in audit_lines:
+    # audit_lines = vw_audit(vw_cmd, our_input)
+    for line in vw_audit(vw_cmd, our_input):
         process_audit_line(line)
 
 
@@ -375,35 +380,16 @@ def get_vw_cmd(args):
 def minmax(data):
     """
     Return a pair (min, max) of list arg
-    Credit:
-        https://code.activestate.com/recipes/577916-fast-minmax-function/
-    Computes the min & max values in one-pass using only 1.5 * len(data)
-    comparisons
     """
-    it = iter(data)
-    try:
-        lo = hi = next(it)
-    except StopIteration:
-        raise ValueError('minmax() arg is an empty sequence')
-    for x, y in itertools.izip_longest(it, it, fillvalue=lo):
-        if x > y:
-            x, y = y, x
-        if x < lo:
-            lo = x
-        if y > hi:
-            hi = y
+    lo = 0
+    hi = 0
+    for i in data:
+        if i > hi:
+            hi = i
+        if i < lo:
+            lo = i
+
     return lo, hi
-
-
-def fix_weights_pass2():
-    """
-    Run a 2nd pass with all features and stored model
-    To get the final weights for all features
-    """
-    vw_cmd = [VW, '--quiet', '-t', '-a', '-i', ModelName]
-    if len(VWARGS) > 0:
-        vw_cmd += VWARGS
-    run_vw(vw_cmd, all_features_example())
 
 
 def summarize():
@@ -430,6 +416,23 @@ def summarize():
         print("%-16s\t%10s\t%.2f\t%.2f\t%.2f\t%7.2f" %
               (fname, fhash, fmin, fmax, fweight, relscore))
 
+def pass1(vw_cmd):
+    """In pass1 we run 'vw' as in the original command"""
+    d("Starting PASS 1 ...")
+    run_vw(vw_cmd, None)
+
+def pass2():
+    """
+    Run a 2nd pass with all features and stored model
+    To get the final weights for all features
+    """
+    vw_cmd = [VW, '--quiet', '-t', '-a', '-i', ModelName]
+    if len(VWARGS) > 0:
+        vw_cmd += VWARGS
+    all_features = all_features_example()
+    d("Starting PASS 2 ...")
+    run_vw(vw_cmd, all_features)
+
 
 #
 # -- main
@@ -447,11 +450,12 @@ def main():
             MultiClass = True
             MCLabels = []
 
-        run_vw(vw_cmd)
+        # Run 1st pass to collect data on all features:
+        pass1(vw_cmd)
 
         # Run second pass:
         #   with -i ModelName and single example w/ all-features present
-        fix_weights_pass2()
+        pass2()
 
         summarize()
 
