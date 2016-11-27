@@ -20,11 +20,11 @@ import sys
 import os
 import subprocess
 import re
-import argparse
-import string
 import itertools
 import tempfile
 import traceback
+
+from operator import itemgetter
 
 Verbose = False
 ARGV0 = os.path.basename(sys.argv[0])
@@ -76,8 +76,7 @@ def usage(msg):
       "\t- <vw_args> are all the vw arguments, as you would call vw directly\n"
       "\t- If <vw_args> is just a dataset-file - vw defaults will be used\n"
       "\t- To lose the constant (intercept), use vw's '--noconstant' option\n"
-      "\t  However the constant may be useful to show if there's a bias"
-    )
+      "\t  However the constant may be useful to show if there's a bias")
     sys.exit(1)
 
 
@@ -87,9 +86,10 @@ def which(program):
     If found, return its full path, otherwise return None
     """
     def is_exe(fpath):
+        """Return True if fpath is executable, False otherwise"""
         return os.path.isfile(fpath) and os.access(fpath, os.X_OK)
 
-    fpath, fname = os.path.split(program)
+    fpath, _ = os.path.split(program)
     if fpath:
         if is_exe(program):
             return program
@@ -106,11 +106,8 @@ def which(program):
 def all_features_dicts():
     """
     Returns two dict of all features in a structured way:
-
     1st dict is individual features: scalar keys with a value of 1
-
     2nd dict is for features within name-spaces, key is the name-space
-        
     first dict is:
     {
         # individual (not in a name-space) features:
@@ -130,7 +127,7 @@ def all_features_dicts():
     for k in F_HASH:
         if '^' in k:
             ns, fname = k.split('^', 1)
-            if not ns in d2:
+            if ns not in d2:
                 d2[ns] = {}
             d2[ns][fname] = 1
         else:
@@ -153,18 +150,27 @@ def all_features_example():
         fnames = d2[ns].keys()
         one_ns_features = " |%s %s" % (ns, ' '.join(fnames))
         ns_features.append(one_ns_features)
- 
+
     example = '1' + individual_features + ' '.join(ns_features) + '\n'
     d("all_features_example: %s" % example)
     return example
 
 
 def process_audit_line(line):
+    """
+    Process an audit line coming from 'vw'
+    Track min/max/hash-value/weight for each feature
+    """
     features = line.split("\t")
     features.pop(0)
     for f in features:
         fields = f.split(':')
         fname = fields[0]
+
+        if fname == '':
+            # don't process 'empty' features
+            continue
+
         fhash = int(fields[1])
         fval = float(fields[2])
         fweight = float(fields[-1].split('@')[0])
@@ -172,7 +178,7 @@ def process_audit_line(line):
         F_WEIGHT[fname] = fweight
         F_HASH[fname] = fhash
 
-        if not fname in F_MIN:
+        if fname not in F_MIN:
             # feature seen for 1st time
             F_MIN[fname] = fval
             F_MAX[fname] = fval
@@ -181,7 +187,7 @@ def process_audit_line(line):
             F_MIN[fname] = fval
         if fval > F_MAX[fname]:
             F_MAX[fname] = fval
- 
+
 
 def vw_audit(vw_cmd, our_input=None):
     """
@@ -199,11 +205,11 @@ def vw_audit(vw_cmd, our_input=None):
         # Input comes from our_input (string)
         # which is sent via stdin to the vw subprocess
         vw_proc = subprocess.Popen(
-                    vw_cmd,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.STDOUT,
-                    stdin=subprocess.PIPE,
-                    bufsize=1048576
+            vw_cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            stdin=subprocess.PIPE,
+            bufsize=1048576
         )
         vw_proc.stdin.write(our_input)
         vw_proc.stdin.close()
@@ -211,18 +217,18 @@ def vw_audit(vw_cmd, our_input=None):
         # By default, vw reads from a training-set
         # which is provided on the command line
         vw_proc = subprocess.Popen(
-                    vw_cmd,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.STDOUT,
-                    close_fds=False,
-                    bufsize=1048576
+            vw_cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            close_fds=False,
+            bufsize=1048576
         )
 
     re_leading_tab = re.compile(r'^\t')
     example_no = 0
 
     while True:
-        vw_line = vw_proc.stdout.readline()
+        vw_line = str(vw_proc.stdout.readline())
         if vw_line == '':
             # End of input
             vw_proc.stdout.close()
@@ -231,13 +237,11 @@ def vw_audit(vw_cmd, our_input=None):
                 # non-zero exit code, print the full command that
                 # failed to help user reproduce/understand it
                 fatal("vw subprocess failed (status=%s): '%s'" %
-                      (vw_proc.returncode, vw_cmd)
-                )
+                      (vw_proc.returncode, vw_cmd))
             else:
                 # everything looks cool, support debugging anyway
                 d("%s: %s examples, exit status: %s" %
-                    (vw_cmd, example_no, vw_proc.returncode)
-                )
+                  (vw_cmd, example_no, vw_proc.returncode))
 
             return
 
@@ -319,7 +323,7 @@ def get_vw_cmd(args):
         1) That we have 'vw' at the beginning
         2) That -a is added for auditing
     """
-    global ModelName, CleanupModel, VWARGS, Verbose
+    global ModelName, CleanupModel, Verbose
 
     if len(args) <= 1:
         usage('')
@@ -361,7 +365,7 @@ def get_vw_cmd(args):
 
     d("vw_cmd is: %s" % vw_args)
     vw_exe = vw_args[0]
-    if which(vw_exe) == None:
+    if which(vw_exe) is None:
         fatal("Sorry: can't find %s (vowpal wabbit executable) in $PATH\n"
               "PATH=%s" % (vw_exe, os.environ["PATH"]))
 
@@ -371,9 +375,10 @@ def get_vw_cmd(args):
 def minmax(data):
     """
     Return a pair (min, max) of list arg
-
-    Credit: https://code.activestate.com/recipes/577916-fast-minmax-function/
-    Computes the minimum and maximum values in one-pass using only 1.5*len(data) comparisons
+    Credit:
+        https://code.activestate.com/recipes/577916-fast-minmax-function/
+    Computes the min & max values in one-pass using only 1.5 * len(data)
+    comparisons
     """
     it = iter(data)
     try:
@@ -388,14 +393,13 @@ def minmax(data):
         if y > hi:
             hi = y
     return lo, hi
- 
+
 
 def fix_weights_pass2():
     """
     Run a 2nd pass with all features and stored model
     To get the final weights for all features
     """
-    global Model
     vw_cmd = [VW, '--quiet', '-t', '-a', '-i', ModelName]
     if len(VWARGS) > 0:
         vw_cmd += VWARGS
@@ -409,21 +413,22 @@ def summarize():
 
     # Print a header
     print("%-16s\t%10s\t%s\t%s\t%s\t%s" %
-         ('FeatureName', 'HashVal', 'MinVal', 'MaxVal', 'Weight', 'RelScore'))
+          ('FeatureName', 'HashVal', 'MinVal', 'MaxVal', 'Weight', 'RelScore'))
 
     # TODO: implement multi-class
     # multi-class needs per-class internal data-structs
 
     # To reverse-order add: 'reverse=True' arg to 'sorted'
-    sorted_tuples = sorted(F_WEIGHT.items(), key=lambda(k,v): v)
-    for fname, fval in sorted_tuples:
+    # itemgetter: (0): sort-by-key, (1): sort by value
+    sorted_tuples = sorted(F_WEIGHT.items(), key=itemgetter(1))
+    for fname, _ in sorted_tuples:
         fmin = float(F_MIN[fname])
         fmax = float(F_MAX[fname])
         fweight = float(F_WEIGHT[fname])
         fhash = F_HASH[fname]
         relscore = 100.0 * (fweight/w_absmax if w_absmax > 0 else 0.0)
         print("%-16s\t%10s\t%.2f\t%.2f\t%.2f\t%7.2f" %
-                 (fname, fhash, fmin, fmax, fweight, relscore))
+              (fname, fhash, fmin, fmax, fweight, relscore))
 
 
 #
