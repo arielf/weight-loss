@@ -110,7 +110,7 @@ def all_features_dicts():
     1st dict is individual features: scalar keys with a value of 1
 
     2nd dict is for features within name-spaces, key is the name-space
-        
+
     first dict is:
     {
         # individual (not in a name-space) features:
@@ -153,7 +153,7 @@ def all_features_example():
         fnames = d2[ns].keys()
         one_ns_features = " |%s %s" % (ns, ' '.join(fnames))
         ns_features.append(one_ns_features)
- 
+
     example = '1' + individual_features + ' '.join(ns_features) + '\n'
     d("all_features_example: %s" % example)
     return example
@@ -181,7 +181,7 @@ def process_audit_line(line):
             F_MIN[fname] = fval
         if fval > F_MAX[fname]:
             F_MAX[fname] = fval
- 
+
 
 def vw_audit(vw_cmd, our_input=None):
     """
@@ -241,7 +241,7 @@ def vw_audit(vw_cmd, our_input=None):
 
             return
 
-        if re_leading_tab.match(vw_line):
+        if re_leading_tab.match(vw_line.decode('utf-8')):
             # An audit line (what we're looking for)
             example_no += 1
             d(vw_line)
@@ -388,7 +388,7 @@ def minmax(data):
         if y > hi:
             hi = y
     return lo, hi
- 
+
 
 def fix_weights_pass2():
     """
@@ -415,7 +415,7 @@ def summarize():
     # multi-class needs per-class internal data-structs
 
     # To reverse-order add: 'reverse=True' arg to 'sorted'
-    sorted_tuples = sorted(F_WEIGHT.items(), key=lambda(k,v): v)
+    sorted_tuples = sorted(F_WEIGHT.items(), key=lambda kv: kv[1])
     for fname, fval in sorted_tuples:
         fmin = float(F_MIN[fname])
         fmax = float(F_MAX[fname])
