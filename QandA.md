@@ -36,42 +36,90 @@
 
 #### Doesn't caloric restriction explain all of this weight loss?
 
-> This may be true.  I haven't counted calories and a more thorough experiment should add all the data it can use.
+> This may well be true.  I haven't counted calories and a more thorough experiment should add all the data it can use.
 >
-> However, I tried multiple times to restrict my diet and was not successful.  What led to success in my case is a combination of physiological and psychological factors. Most importantly, the realization that by trying a LCHF (Low Carb, High Fat) diet, I can sustain a diet regime (possibly calorie restricted, I don't know) that lead to a clear and sustainable weight loss.
+> However, I tried multiple times to restrict my diet and was not successful.  So even if "caloric restriction" is the best explanation, it comes short as "the solution".
+>
+> What led to success in my case is a combination of physiological and psychological factors. Most importantly, the realization that by trying a LCHF (Low Carb, High Fat) diet, I can sustain a diet regime (possibly calorie restricted, I don't know) that lead to a clear and sustainable weight loss.
 >
 > The story is about the discovery process of what worked for me in the end.
 
 #### Machine learning: aren't you over-fitting the data?
 
-> Possibly, as the number of days in the data (about 40) is small and may even have some errors in it.
+> Possibly. The number of days in the data (about 120) may be too small, and my scales have low resolution. There may have other data-entry errors in it.
 >
-> OTOH: I tried many combinations, data-subsets, shufflings, bootstrapping, and while the small details varied, the main conclusions were very consistent: Longer sleep, Low carb, high fat, were leading me to losing weight.
+> OTOH: I tried many combinations, data-subsets, shufflings, bootstrapping, and while the details varied, the main conclusions were pretty consistent: longer sleep, Low carb, high fat, were leading me to losing weight.
 >
-> More data, and data from many people is always welcome!
+> More data, and data from many people is always welcome.
 >
 
-#### Can you tell the story of how it went viral, and how does it feel to go Viral?
+#### Machine learning: how much data do I need?
+
+> The more the better. More importantly: higher resolution scales (0.1 lb or less) are especially important.
+>
+> To increase the sample size, the most recent version of the software no longer uses each day as a single data point. It augments it in two ways:
+>   - It applies a variable-length sliding window on 1..N consecutive days over the data to auto-generate additional data-points.
+>   - It applies randomized bootstrapping on each data example. This adds another multiplier towards reducing random noise and variance.
+>
+> You're welcome to play with the Makefile `NDAYS` (max length of consecutive days of the sliding window) and `BS` (number of random bootstrapping rounds multiplier for each data-set example) parameters to see how much results change, and which part remains relatively stable.
+> For example:
+>
+>      make BS=7 NDAYS=5
+>
+> My conclusions were that while some items in the middle fall into the "too little data to conclude from" category, items closer to the top/bottom, as a group, point to sleeping (fasting) longer and substituting carbs for fat, as likely weight-loss factors.
+
+#### What's the story on statins? How is this related to weight-loss?
+
+> [Original appeared in the HackerNews thread, some edits applied]
+>
+> Here's my personal experience with statins. I may be wrong, but I'm following my compass while always open to be proven otherwise.
+>
+> Doctor: "Your 'bad cholesterol' is borderline, I want you to start taking "Lipitor"...
+
+> Observation: when the 'Lipitor' patent expired, and it became a cheap generic drug, the suggestion turned into 'Crestor' which I learned has a bit longer effective half-life, and way higher price.
+
+> ***Me: (while adopting a different diet)***
+> *"Hmm statins would have taken my cholesterol and triglicerids  _maybe_ 3% lower and here I am 20% lower after a year of a simple, self-studied, diet change. Maybe there are better ways to lower the so called 'bad cholesterol'?*
+
+> Further study: there's always a new statin the moment the previous patent expires.
+>
+> Check out the following names on Wikipedia:
+>
+>    - Compactin
+>    - Simvastatin
+>    - Fluvastatin
+>    - Cerivastatin
+>    - Atorvastatin
+>    - Rosuvastatin
+>
+> These are all chemical names, not brand names, the last two on the list are the brands: known as "Lipitor" and "Crestor".
+>
+> So I don't know. I'm 100% sure all my doctors are well meaning and caring and I have nothing against them, but my confidence in such health suggestions, in research funded by big-pharma, and in the new great-statin of-the-era while america keeps getting obese and less healthy, is, how can I put it? a bit shaken.
+>
+> Again, just prove me wrong, and I'll change my view.
+
+
+#### Can you tell the story of how, and how does it feel to "Go Viral"?
 
 >
-> From my PoV, it was an accidental success.
+> From my PoV, it was totally accidental.
 >
-> I was trying to lose weight, and since I'm into ML, I found it natural to us some machine learning to guide me. Indeed it helped.
+> I was trying to lose weight, and since I'm into ML, I found it natural to us some machine learning to guide me, especially in the early stages. It helped.
 >
 > When I told this to a colleague of mine, she suggested I really have to share this more widely. So I dusted it up a it, cleaned the code to make it a bit more usable by others, wrote a few pages of background and put it on github.
 >
 > On github it sat for a few months with zero forks, zero stars, zero watchers, totally ignored by the world :-)
 >
-> Then some guy named Dmitri noticed it, and posted a link to Hacker News (news at Ycombinator.com)...
+> Then some guy named Dmitri noticed it, and posted a link to [Hacker News](http://ycombinator.com/news)
 >
 > The reaction was overwhelming.
 >
-> Some minutes later, I get an email from someone else I don't know, Victor, via github, saying "Congratulations, you've just made it to the top of HN..."
+> Some minutes later, I got an email from someone else I don't know, Victor, via github, saying "Congratulations, you've just made it to the top of HN..."
 >
 > It was a Friday evening. That's weekend I couldn't sleep. My mailbox was exploding too. It went viral over the interwebs. Hundreds of comments, thousands of stars on the github repository, many forks, people offering me jobs, invites to present at conferences, you name it.
 >
->  Follow-ups on Reddit, Quora, and it quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
+>  There were some follow-ups on Reddit, Quora, and some other forums, and it quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
 >
-> At moment like this, one wishes they had two copies of oneself. I have another life too.
+> In moments like this, one wishes they had two copies of oneself. I have another life too.
 >
 
