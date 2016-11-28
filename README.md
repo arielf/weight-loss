@@ -6,14 +6,18 @@ Discovering ketosis: _how to effectively lose weight_
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
 
-The chart was generated from the data file [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and [`ggplot2`](http://ggplot2.org/).
+The chart was generated from a data-set [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and [`ggplot2`](http://ggplot2.org/).
 
 
-In the following I'll describe the thought process, some other people ideas,  and the software I used to lead me in the right direction.
+In the following I'll describe the thought process, some other people ideas, and the code I used to separate signal from noise. This separation was critical to help lead me in the right direction.
+
+This github repository includes my code, [a Q&A section](QandA.md), and links
+for further reading.
+
 
 #### Disclaimers:
 
-The below is what worked for me. Your situation may be different. Listen to your own body.
+The below is what worked for me. Your situation may be different. Listen to your own body. The code here is designed to be used on your own data, not on mine.
 
 Also: this was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery.
 
@@ -269,4 +273,12 @@ _Anat Faigon, Ingrid Kane, Hans Lee, Steve Malmskog, Eyal Friedman, Shiri Shoham
 
 _Update: 2016-08-12: this project made [Hacker News](https://news.ycombinator.com/item?id=12279415) and reached the top place for a while. Thanks for some great comments by benkuhn, aab0, zzleeper, and others which helped me make it better._
 ![image of this project on Hacker News 2016-08-12](hackernews-2016-08-12.png)
+
+
+#### License:
+
+This code and material is released under a [permissive 2-clause BSD licence](Licence.md).
+In two sentences this means that you can do whatever you want with
+it: modify it, share it, even make money with it. But you can't
+claim it as your own, and you have to credit me (the original author).
 
