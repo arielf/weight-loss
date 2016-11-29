@@ -145,10 +145,10 @@ def all_features_example():
     """Return a equal-weight vw line with all features present"""
     # TODO: implement multi-class: needs per-class internal data-structs
     d1, d2 = all_features_dicts()
-    individual_features = ' | ' + ' '.join(list(d1.keys()))
+    individual_features = ' | ' + ' '.join(d1.keys())
     ns_features = []
     for ns in d2:
-        fnames = list(d2[ns].keys())
+        fnames = d2[ns].keys()
         one_ns_features = " |%s %s" % (ns, ' '.join(fnames))
         ns_features.append(one_ns_features)
 
@@ -399,7 +399,7 @@ def minmax(data):
 
 def summarize():
     """Output summary of variables"""
-    wmin, wmax = minmax(list(F_WEIGHT.values()))
+    wmin, wmax = minmax(F_WEIGHT.values())
     w_absmax = max(abs(wmin), abs(wmax))
 
     # Print a header
@@ -411,7 +411,7 @@ def summarize():
 
     # To reverse-order add: 'reverse=True' arg to 'sorted'
     # itemgetter: (0): sort-by-key, (1): sort by value
-    sorted_tuples = sorted(list(F_WEIGHT.items()), key=itemgetter(1))
+    sorted_tuples = sorted(F_WEIGHT.items(), key=itemgetter(1))
     for fname, _ in sorted_tuples:
         fmin = float(F_MIN[fname])
         fmax = float(F_MAX[fname])
