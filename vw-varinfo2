@@ -282,7 +282,7 @@ def is_vw_arg(arg):
     global VW
     if arg == VW:
         return True
-    if re.search(r'(?:^|/)vw[-_.0-9]*$', arg):
+    if re.search(r'(?:^|[\\/])vw[-_.0-9]*(\.exe)?$', arg):
         VW = arg
         return True
     return False
@@ -352,7 +352,10 @@ def get_vw_cmd(args):
         usage('Too few args: %s' % args)
 
     if not is_vw_arg(args[0]):
-        args.insert(0, 'vw')
+        if os.name == 'nt':
+            args.insert(0, 'vw.exe')
+        else:
+            args.insert(0, 'vw')
 
     if not already_has_audit(args):
         args.insert(1, '--audit')
