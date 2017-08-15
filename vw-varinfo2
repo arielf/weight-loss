@@ -242,8 +242,9 @@ def vw_audit(vw_cmd, our_input=None):
             if vw_proc.returncode:
                 # non-zero exit code, print the full command that
                 # failed to help user reproduce/understand it
-                fatal("vw subprocess failed (status=%s): '%s'" %
-                      (vw_proc.returncode, vw_cmd))
+                fatal("vw subprocess failed (status=%s):\n\t%s\n"
+                      "(Run the command above to reproduce the failure)" %
+                      (vw_proc.returncode, ' '.join(vw_cmd)))
             else:
                 # everything looks cool, support debugging anyway
                 d("%s: %s examples, exit status: %s" %
