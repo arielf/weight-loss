@@ -1,18 +1,14 @@
-Discovering ketosis: _how to effectively lose weight_
-=====================================================
+Discovering ketosis: How to effectively lose weight and maintain the loss. A machine learning study (automatic learning process from data).
+=====================================================================================================
 
-### Here is a chart of arielf weight vs. time in 2015 for 16 months or so. 
-
+### This chart is of arielf weight vs. time in 2015 for 16 months or so. 
 #### JFG's experience (LCHF) was and continues to be very similar, it started in 2013 and is sustained until now (2018). 
-
 JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) 
 (2013sep 180lbs)... (2014 to 2018 175-180lbs)):
 
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
-
 The chart was generated from a data-set [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and [`ggplot2`](http://ggplot2.org/).
-
 
 In the following I'll describe the thought process, some other people ideas, and the code I used to separate signal from noise. This separation was critical to help lead me in the right direction.
 
@@ -35,9 +31,6 @@ With these behind us, I'd like to channel [Galileo in the face of the inquisitio
 - Unfortunately, since moving to the US, I've been gaining more and more weight. I peaked in 2015, over 50 lbs higher.
 - The US is a country where obesity is an epidemic.
 - Poorer demographics in the US have higher levels of obesity.
-
-![First DMV photo and weight (with full clothing)](1992-ariel-dmv.png "143 pounds, sometime in the 90's")
-
 
 Does a US typical lifestyle has anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
 
