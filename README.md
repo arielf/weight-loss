@@ -1,11 +1,11 @@
 Discovering ketosis: How to effectively lose weight and maintain the loss. A machine learning study (automatic learning process from data).
 =====================================================================================================
-
-### The chart below uses the arielf data (weight vs. time in 2015)
-
+### The chart below uses the arielf (this github originator) dataset (weight vs. time in 2015)
 #### My (JFG's) experience (LCHF) was and continues to be very similar, it started in 2013 and is sustained until now (2018). 
 JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) 
 (2013sep 180lbs)... (2014 to 2018 175-180lbs)):
+#### Disclaimers:
+The lessons learned below is what worked for me. Your situation may be different. Listen to your own body. The code here is designed to be used on your own data, not on mine. This was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery. However... evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up.
 
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
@@ -15,20 +15,12 @@ In the following I'll describe the thought process, some other people ideas, and
 
 This github repository includes my code, [a Q&A section](QandA.md), and links for further reading.
 
-#### Disclaimers:
-
-The lessons learned below is what worked for me. Your situation may be different. Listen to your own body. The code here is designed to be used on your own data, not on mine.
-
-Also: this was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery.
-
-With these behind us, I'd like to channel [Galileo in the face of the inquisition](https://en.wikipedia.org/wiki/Galileo_affair): evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up.
-
 ## Facts & initial observations
 
 - I used to be a pretty thin person.
 - Unfortunately, since marrying, I've been gaining more and more weight. I peaked in 2013, over 60 lbs higher than my steady-state weight of my twenties.
 - North America is an area where obesity is an epidemic.
-- Poorer demographics in the US have higher levels of obesity.
+- Poorer demographics in America have higher levels of obesity.
 
 Does a US typical lifestyle have anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
 
@@ -54,7 +46,6 @@ I realized early on that I need to adopt a lifestyle that not just reduces carbs
 > - I could do for years
 > - Never feel the urge to break habits
 > - Is not hard, or unpleasant for me to do
-
 
 ## Early insights & eureka moments
 
@@ -243,7 +234,7 @@ The above is a very simplified, and hopefuly easy to digest, version of what som
 #### Documentaries:
 
 - [Food, Inc. (2008)](https://www.netflix.com/title/70108783)
--  [Sugar Coated (2015)](https://www.netflix.com/title/80100595)
+- [Sugar Coated (2015)](https://www.netflix.com/title/80100595)
 
 #### More videos
 
@@ -274,8 +265,5 @@ _Update: 2016-08-12: this project made [Hacker News](https://news.ycombinator.co
 
 Special thanks to John Langford and the many other contributors to [vowpal wabbit](https://en.wikipedia.org/wiki/Vowpal_Wabbit).
 
-
-#### License:
-
+#### License
 This code and additional material are released under a permissive and simple [2-clause BSD licence](Licence.md).  The one sentence summary of this is "as long as you don't sue me and not claim it as your own, you should be ok."
-
