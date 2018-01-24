@@ -1,7 +1,10 @@
 Discovering ketosis: _how to effectively lose weight_
 =====================================================
 
-### _Here is a chart of arielf weight vs. time in 2015 for 16 months or so (my(jfg's) experience was and continues to be very similar in 2013 and sustained until now (jfg weight ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) (2013sep 180lbs)... (2014 to 2018 175-180lbs)):_
+### _Here is a chart of arielf weight vs. time in 2015 for 16 months or so 
+JFG's experience was and continues to be very similar, it started in 2013 and is sustained until now 
+jfg weight ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) 
+(2013sep 180lbs)... (2014 to 2018 175-180lbs)):_
 
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 
