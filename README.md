@@ -1,7 +1,6 @@
 LCHF (Low Carb High Fat) to lose weight. A machine learning study (automatic learning process from data). 
 =========================================================================================================
-#### Credits: This is a fork from the github arielf/weight-loss (I edited his original work to fit my data)
-#### Disclaimers:
+## Disclaimer
 The lessons learned below is what worked for me. Your situation may be different. This code  is designed to be used on your own data. This was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery. However... evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up. Arielf dataset:
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 The weight vs time chart uses the arielf dataset (weight vs. time in 2015). My (JFG's) experience was and continues to be very similar, it started in 2013 and is sustained until now (2018). JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) (2013sep 180lbs)... (2014 to 2018 175-180lbs)). The chart was generated from a data-set [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and [`ggplot2`](http://ggplot2.org/). The code herein is used to separate signal from noise in the data collected. This separation was critical to help lead me in the right direction. This github repository includes the programming code, [a Q&A section](QandA.md), and links for further reading.  These are the lessons learned (see further for a higher resolution picture).
@@ -132,6 +131,8 @@ A nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for
 #### More friendly interface
 [Shyal Beardsley](http://shyal.com) has built a starter front-end for this: ***[weightbrains.com](http://weightbrains.com)***
 (Note and fair warning: this is a prototype, experimental, work in progress)
+
+## Credits: This is a fork from the github arielf/weight-loss (I edited his original work to fit my data)
 ## Acknowledgements
 Big thanks to the following people for contributing to this project in myriad ways,
 comments, references, corrections, etc.
