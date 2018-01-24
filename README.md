@@ -1,8 +1,9 @@
 Discovering ketosis: How to effectively lose weight and maintain the loss. A machine learning study (automatic learning process from data).
 =====================================================================================================
 
-### This chart is of arielf weight vs. time in 2015 for 16 months or so. 
-#### JFG's experience (LCHF) was and continues to be very similar, it started in 2013 and is sustained until now (2018). 
+### The chart below uses the arielf data (weight vs. time in 2015)
+
+#### My (JFG's) experience (LCHF) was and continues to be very similar, it started in 2013 and is sustained until now (2018). 
 JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) 
 (2013sep 180lbs)... (2014 to 2018 175-180lbs)):
 
@@ -12,34 +13,31 @@ The chart was generated from a data-set [`weight.2015.csv`](weight.2015.csv) by 
 
 In the following I'll describe the thought process, some other people ideas, and the code I used to separate signal from noise. This separation was critical to help lead me in the right direction.
 
-This github repository includes my code, [a Q&A section](QandA.md), and links
-for further reading.
-
+This github repository includes my code, [a Q&A section](QandA.md), and links for further reading.
 
 #### Disclaimers:
 
-The below is what worked for me. Your situation may be different. Listen to your own body. The code here is designed to be used on your own data, not on mine.
+The lessons learned below is what worked for me. Your situation may be different. Listen to your own body. The code here is designed to be used on your own data, not on mine.
 
 Also: this was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery.
 
 With these behind us, I'd like to channel [Galileo in the face of the inquisition](https://en.wikipedia.org/wiki/Galileo_affair): evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up.
 
+## Facts & initial observations
 
-## Salient facts & initial observations
-
-- I used to be a pretty thin person. My 1st DMV card below, says 143 lb.
-- Unfortunately, since moving to the US, I've been gaining more and more weight. I peaked in 2015, over 50 lbs higher.
-- The US is a country where obesity is an epidemic.
+- I used to be a pretty thin person.
+- Unfortunately, since marrying, I've been gaining more and more weight. I peaked in 2013, over 60 lbs higher than my steady-state weight of my twenties.
+- North America is an area where obesity is an epidemic.
 - Poorer demographics in the US have higher levels of obesity.
 
-Does a US typical lifestyle has anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
+Does a US typical lifestyle have anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
 
  - Fast food is highly available, and is very cheap compared to most alternatives
  - Most food we buy and eat is heavily processed -- watch [Food, Inc. (documentary)](http://www.takepart.com/foodinc/film)
  - "No Fat" and "Low Fat" labels are everywhere on supermarket shelves
  - Many foods are enriched and sweetened with high-fructose corn-syrup -- watch [Sugar Coated (documentary)](http://sugarcoateddoc.com/)
 
-As in many other instances, I realized I need to think for myself. Ignore all "expert" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic & data I can collect myself and trust.
+As in many other instances, I realized I need to think for myself. Ignore most "experts" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic & data I can collect myself and trust.
 
 Once I did, the results followed.
 
@@ -171,11 +169,13 @@ This gave me 14-16 hours of fasting each day. Rather than the more typical 10-12
 
 The 2nd accelerator was ***consuming fatty stuff*** (instead of carbs) in order to feel full.
 
-The 3rd accelerator was understanding the concepts of [Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and [***Glycemic Load***](https://en.wikipedia.org/wiki/Glycemic_load), and shifting whatever I chose to eat towards ***lower Glycemic loads***.
+The 3rd accelerator was understanding the concepts of [Glycemic index](https://en.wikipedia.org/wiki/Glycemic_index) and 
+[***Glycemic Load***](https://en.wikipedia.org/wiki/Glycemic_load), and shifting whatever I chose to eat towards 
+***lower Glycemic loads***.
 
-I now believe and hope that I can go all the way back to my original weight when I first landed on US soil.
+I now believe and hope that I can maintain my weigth at a healty level between 165 and 175lbs.
 
-If I can keep the present rate, it should take 1-2 years to completely reverse the damage of the past ~20 years. 
+If I can continue at the present rate (it took 1 year to completely reverse the damage of the past ~20 years). 
 
 It is important to stress that I also *feel much better the more weight I lose*. As a welcome side-effect, the few borderline/high levels in my blood tests, have moved significantly towards normal averages, during the period I lost weight.
 
