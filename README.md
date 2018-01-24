@@ -1,51 +1,24 @@
-Discovering ketosis: How to effectively lose weight and maintain the loss. A machine learning study (automatic learning process from data).
+LCHF(Low Carb High Fat) to lose weight. A machine learning study (automatic learning process from data).
 =====================================================================================================
-### The chart below uses the arielf (this github originator) dataset (weight vs. time in 2015)
-#### My (JFG's) experience (LCHF) was and continues to be very similar, it started in 2013 and is sustained until now (2018). 
-JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) 
-(2013sep 180lbs)... (2014 to 2018 175-180lbs)):
 #### Disclaimers:
-The lessons learned below is what worked for me. Your situation may be different. Listen to your own body. The code here is designed to be used on your own data, not on mine. This was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery. However... evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up.
-
+This work is derived (forked) from arielf. The lessons learned below is what worked for me. Your situation may be different. This code  is designed to be used on your own data. This was *not* a scientific experiment, or a "study"; rather, it was a personal journey of experimentation and discovery. However... evolution has been hard at work for over 2 billion years shaping the chemistry of all eukaryotes, multi-cellular life and eventually mammals. The Krebs cycle, glucose metabolism, insulin spikes, glycogen in the liver, carnitine, lipase, are as real for you as they are for me. We may be very different in our genes and traits, some are more insulin resistant, for example, but we cannot be too different in our most fundamental metabolic chemistry. The chemistry which drives fat synthesis and break-up.
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
+
+The weight vs time chart uses the arielf dataset (weight vs. time in 2015). My (JFG's) experience was and continues to be very similar, it started in 2013 and is sustained until now (2018). JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) (2013sep 180lbs)... (2014 to 2018 175-180lbs)):
 
 The chart was generated from a data-set [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and [`ggplot2`](http://ggplot2.org/).
 
-In the following I'll describe the thought process, some other people ideas, and the code I used to separate signal from noise. This separation was critical to help lead me in the right direction.
+The code herein is used to separate signal from noise in the data collected. This separation was critical to help lead me in the right direction. This github repository includes my code, [a Q&A section](QandA.md), and links for further reading.
 
-This github repository includes my code, [a Q&A section](QandA.md), and links for further reading.
+<a href="scores.png" target="_blank"><img src="scores.png" width="300"></a>
 
 ## Facts & initial observations
-
-- I used to be a pretty thin person.
-- Unfortunately, since marrying, I've been gaining more and more weight. I peaked in 2013, over 60 lbs higher than my steady-state weight of my twenties.
-- North America is an area where obesity is an epidemic.
-- Poorer demographics in America have higher levels of obesity.
-
-Does a US typical lifestyle have anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects:
-
- - Fast food is highly available, and is very cheap compared to most alternatives
- - Most food we buy and eat is heavily processed -- watch [Food, Inc. (documentary)](http://www.takepart.com/foodinc/film)
- - "No Fat" and "Low Fat" labels are everywhere on supermarket shelves
- - Many foods are enriched and sweetened with high-fructose corn-syrup -- watch [Sugar Coated (documentary)](http://sugarcoateddoc.com/)
-
-As in many other instances, I realized I need to think for myself. Ignore most "experts" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic & data I can collect myself and trust.
-
-Once I did, the results followed.
+I used to be a pretty thin person. But with time and stress I've been gaining more and more weight. I peaked in 2013, over 60 lbs higher than my steady-state weight of my twenties. North America is an area where obesity is an epidemic.
+Does a US typical lifestyle have anything to do with this epidemic? After reading on the subject, I could point at a few of the main suspects: Fast food is highly available, and is very cheap compared to most alternatives. Most food we buy and eat is heavily processed.  "No Fat" and "Low Fat" labels are everywhere on supermarket shelves. Many foods are enriched and sweetened with high-fructose corn-syrup. I realized I need to think for myself. Ignore most "experts" advice. Question widely accepted ideas like the FDA "food pyramid". Start listening to my own body, my own logic & data I can collect myself and trust. Once I did, the results followed.
 
 ## What didn't work
-
-In the past, I tried several times to change my diet. After reading one of Atkins' books, I realized, checked, and accepted the fact that excess carbs are a major factor in gaining weight. But that realization alone has not led to success.
-
-My will power, apparently, was insufficient. I had too much love of pizza and bread.  I would reduce my carb consumption, lose a few pounds (typically ~5 pounds), and then break-down, go back to consuming excess carbs, and gain all these pounds back, and then some. My longest diet stretch lasted just a few months.
-
-It was obvious that something was missing in my method. I just had to find it.  I could increase my physical activity, say start training for a mini-marathon, but that's not something I felt comfortable with.
-
-I realized early on that I need to adopt a lifestyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable so it can turn into a painless routine. Something that:
-
-> - I could do for years
-> - Never feel the urge to break habits
-> - Is not hard, or unpleasant for me to do
+I tried several times to change my diet. After reading one of Atkins' books, I realized, checked, and accepted the fact that excess carbs are a major factor in gaining weight. But that realization alone has not led to success. My will power, apparently, was insufficient. I would reduce my carb consumption, lose a few pounds (typically ~5 pounds), and then break-down, go back to consuming excess carbs, and gain all these pounds back, and then some. My longest diet stretch lasted just a few months.
+It was obvious that something was missing in my method. I just had to find it.  I could increase my physical activity, say start training for a mini-marathon, but that's not something I felt comfortable with. I realized early on that I need to adopt a lifestyle that not just reduces carbs, or add exercise, but is also sustainable and even enjoyable so it can turn into a painless routine. Something that: I could do for years. Never feel the urge to break habits. Is not hard, or unpleasant for me to do
 
 ## Early insights & eureka moments
 
