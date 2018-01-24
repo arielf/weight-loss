@@ -5,6 +5,7 @@ The lessons learned below is what worked for me. Your situation may be different
  ![weight vs time in the past 16 months or so](weight.2015.png  "weight loss progress")
 The weight vs time chart uses the arielf dataset (weight vs. time in 2015). My (JFG's) experience was and continues to be very similar, it started in 2013 and is sustained until now (2018). JFG's weights ((2013april 210lbs) (2013may 200lbs) (2013jun 190lbs) (2013jul 180lbs) (2013aug 175lbs) (2013sep 180lbs)... (2014 to 2018 175-180lbs)). The chart was generated from a data-set [`weight.2015.csv`](weight.2015.csv) by the script [`date-weight.r`](date-weight.r) in this git repository.  It requires [`R`](http://r-project.org) and [`ggplot2`](http://ggplot2.org/). The code herein is used to separate signal from noise in the data collected. This separation was critical to help lead me in the right direction. This github repository includes the programming code, [a Q&A section](QandA.md), and links for further reading.  These are the lessons learned (see further for a higher resolution picture).
 
+
 <a href="scores.png" target="_blank"><img src="scores.png" width="300"></a>
 
 ## Observations
