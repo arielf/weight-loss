@@ -161,6 +161,15 @@ conv: $(TRAINFILE)
 clean:
 	/bin/rm -f $(MODELFILE) $(ITEMFILE) $(RANGEFILE) *.cache* *.tmp*
 
+db docker-build:
+	docker build -t score .
+
+ds docker-score: docker-build
+	docker run -v $(CURDIR):$(CURDIR) -w $(CURDIR) score make
+
+dsc docker-score-chart: docker-build
+	docker run -v $(CURDIR):$(CURDIR) -w $(CURDIR) score make sc
+
 # -- more friendly error if original data doesn't exist
 $(MASTERDATA):
 	@echo "=== Sorry: you must provide your data in '$(MASTERDATA)'"
@@ -176,4 +185,3 @@ gh:
 	git merge master && \
 	git push && \
 	git checkout master
-
