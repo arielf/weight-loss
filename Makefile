@@ -177,3 +177,15 @@ gh:
 	git push && \
 	git checkout master
 
+#
+# Trick for introspection of this Makefile variables from the outside
+# (Needs VARNAME=<some_makefile_varname>):
+#
+# Examples:
+#       $ make VARNAME=MASTERDATA echovar
+#
+#       $ make VARNAME=TRAINFILE ev
+#
+ev echovar:
+	@echo $($(VARNAME))
+
