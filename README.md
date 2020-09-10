@@ -71,7 +71,7 @@ The file I kept was fairly simple. A CSV with 3 columns:
 The last column is a arbitrary-length list of *`word[:weight]`* items.
 
 The (optional) numerical-weight following `:`, expresses higher/lower quantities. The default weight, when missing is 1:
- 
+
     #
     # -- Comment lines (ignored)
     #
@@ -177,7 +177,7 @@ The 3rd accelerator was understanding the concepts of [Glycemic index](https://e
 
 I now believe and hope that I can go all the way back to my original weight when I first landed on US soil.
 
-If I can keep the present rate, it should take 1-2 years to completely reverse the damage of the past ~20 years. 
+If I can keep the present rate, it should take 1-2 years to completely reverse the damage of the past ~20 years.
 
 It is important to stress that I also *feel much better the more weight I lose*. As a welcome side-effect, the few borderline/high levels in my blood tests, have moved significantly towards normal averages, during the period I lost weight.
 
@@ -253,16 +253,18 @@ The above is a very simplified, and hopefuly easy to digest, version of what som
 
 A nice 7:41 minute video of James McCarter in Quantified Self (an eye opener for me):
 
-- [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263) 
+- [James McCarter: The Effects of a Year in Ketosis](https://vimeo.com/147795263)
 
 #### Questions, Answers, Comments
 
 [Some questions and comments I got and tried to answer](QandA.md)
 
+<!--
 #### More friendly interface
 
 [Shyal Beardsley](http://shyal.com) has built a starter front-end for this: ***[weightbrains.com](http://weightbrains.com)***
 (Note and fair warning: this is a prototype, experimental, work in progress)
+-->
 
 ## Acknowledgements
 
