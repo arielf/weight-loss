@@ -8,7 +8,7 @@
 >
 > Since publishing I've become aware of one site using this work as a back-end. Please note this is very early, experimental, work in progress:
 >
->    ***[weightbrains.com](http://weightbrains.com)***
+>    ***[weightbrains.com](http://weightbrains.com) alas, link is now dead***
 >
 > It would be cool to see more people taking this work further.
 >
@@ -48,7 +48,7 @@
 
 > Possibly. The number of days in the data (about 120) may be too small, and my scales have low resolution. There may have other data-entry errors in it.
 >
-> OTOH: I tried many combinations, data-subsets, shufflings, bootstrapping, and while the details varied, the main conclusions were pretty consistent: longer sleep, Low carb, high fat, were leading me to losing weight.
+> OTOH: I tried many combinations, data-subsets, shuffling, bootstrapping, and while the details varied, the main conclusions were pretty consistent: longer sleep, Low carb, high fat, were leading me to losing weight.
 >
 > More data, and data from many people is always welcome.
 >
@@ -94,7 +94,7 @@
 >
 > These are all chemical names, not brand names, the last two on the list are the brands: known as "Lipitor" and "Crestor".
 >
-> So I don't know. I'm 100% sure all my doctors are well meaning and caring and I have nothing against them, but my confidence in such health suggestions, in research funded by big-pharma, and in the new great-statin of-the-era while america keeps getting obese and less healthy, is, how can I put it? a bit shaken.
+> So I don't know. I'm 100% sure all my doctors are well meaning and caring and I have nothing against them, but my confidence in such health suggestions, in research funded by big-pharma, and in the new great statin de-jour while America keeps getting obese and less healthy, is, how can I put it? A bit shaken.
 >
 > Again, just prove me wrong, and I'll change my view.
 
@@ -104,9 +104,9 @@
 >
 > From my PoV, it was totally accidental.
 >
-> I was trying to lose weight, and since I'm into ML, I found it natural to us some machine learning to guide me, especially in the early stages. It helped.
+> I was trying to lose weight, and since I'm into ML, I found it natural to try some machine learning to guide me, especially in the early stages. It helped.
 >
-> When I told this to a colleague of mine, she suggested I really have to share this more widely. So I dusted it up a it, cleaned the code to make it a bit more usable by others, wrote a few pages of background and put it on github.
+> When I told this to a colleague of mine, she suggested "You heave to share this more widely!" So I dusted it up a bit, cleaned the code to make it a bit more usable by others, wrote a few pages of background and put it on github.
 >
 > On github it sat for a few months with zero forks, zero stars, zero watchers, totally ignored by the world :-)
 >
@@ -116,10 +116,9 @@
 >
 > Some minutes later, I got an email from someone else I don't know, Victor, via github, saying "Congratulations, you've just made it to the top of HN..."
 >
-> It was a Friday evening. That's weekend I couldn't sleep. My mailbox was exploding too. It went viral over the interwebs. Hundreds of comments, thousands of stars on the github repository, many forks, people offering me jobs, invites to present at conferences, you name it.
+> It was a Friday evening. That's weekend I couldn't sleep. My mailbox was exploding too. It went viral over the "interwebs". Hundreds of comments, thousands of stars on the github repository, many forks, people offering me jobs, invites to present at conferences, you name it.
 >
 >  There were some follow-ups on Reddit, Quora, and some other forums, and it quickly became the top unpaid link on google when searching for a few terms combining weight-loss and machine-learning.
 >
 > In moments like this, one wishes they had two copies of oneself. I have another life too.
 >
-
