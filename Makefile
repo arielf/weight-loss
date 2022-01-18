@@ -88,8 +88,6 @@ VW_ARGS = \
 	--l2 $(L2) \
 	-c --passes $(P)
 
-
-
 # -- Commented out random shuffling methods
 #    now sorting examples by abs(delta).
 #    Overfitting is countered (though not completely avoided) by:
@@ -121,7 +119,7 @@ SCPNG := $(NAME).scores.png
 all:: score
 
 s score scores.txt: $(TRAINFILE)
-	$(VARINFO) $(VW_ARGS) $(TRAINFILE) | tee scores.txt
+	$(VARINFO) $(VW_ARGS) -d $(TRAINFILE) | tee scores.txt
 
 c charts: weight-chart score-chart
 
@@ -138,7 +136,7 @@ sc score-chart $(SCPNG): scores.txt score-chart.r
 
 # -- model
 m model $(MODELFILE): Makefile $(TRAINFILE)
-	$(VW) $(VW_ARGS) -f $(MODELFILE) $(TRAINFILE)
+	$(VW) $(VW_ARGS) -f $(MODELFILE) -d $(TRAINFILE)
 
 # -- train-set generation
 t train $(TRAINFILE): Makefile $(MASTERDATA) $(TOVW)
@@ -156,7 +154,7 @@ conf confidence r range $(RANGEFILE): $(MODELFILE) $(ITEMFILE)
 
 # -- convergence chart
 conv: $(TRAINFILE)
-	$(VW) $(VW_ARGS) $(TRAINFILE) 2>&1 | vw-convergence
+	$(VW) $(VW_ARGS) -d $(TRAINFILE) 2>&1 | vw-convergence
 
 clean:
 	/bin/rm -f $(MODELFILE) $(ITEMFILE) $(RANGEFILE) *.cache* *.tmp*
